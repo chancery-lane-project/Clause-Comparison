@@ -1,0 +1,61 @@
+Sasha's Clause
+Guidelines to incorporate wider environmental protections into companies’ whistleblowing regimes in line with their adopted policies on net zero.  
+Template drafting for incorporation into company net zero policy
+[
+Drafting note: where your company already has a whistleblowing policy, it may be most practical to widen the scope of such policy to cover the company's net zero policy, once adopted. Where no such whistleblowing policy exists, use the guidelines below to expand these draft clauses as relevant.
+]
+ 
+1. Whistleblowing regime for Climate-Related Issues
+1.1 To show our commitment to these objectives and policy [we have established a whistleblowing regime][we will incorporate Climate–Related Issues into our existing whistleblowing regime] for [employees, workers, volunteers, interns[,][and] business partners [and suppliers]*].
+* 
+[
+Drafting note: the training and monitoring required to include suppliers may not be feasible in practice.
+]
+1.2 This regime will provide a contact for the whistleblower, who can make reports anonymously if they wish to do so.* [The whistleblower may seek advice and support from the company’s whistle-blowing champion [who will maintain the anonymity of the whistleblower unless the whistleblower requests otherwise]].
+* 
+[
+Drafting note: see ‘Reporting channels’ guidelines below - note that the appropriate contact point may be a committee of the Board (for example, the audit committee) rather than an individual. HR should not be involved in the investigation process. In larger companies, it is unlikely that the Board will be the initial management body to which the report is made. Consider including the ability to report to auditors.
+]
+1.3 Following receipt of the information by the contact, an internal assessment and investigation will be conducted by [
+appropriate individual(s) identified in accordance with the ‘Reporting channels’ guidelines below
+].
+[
+Drafting note: if a standalone policy is being conducted, further details as to the process from the point of making the report to taking action (if required) and reporting to the Board should be included (see ‘Reporting channels’ and 'Acknowledging reports and providing updates' guidelines below).
+]
+1.4 If the conclusion of the investigation is that there is credit to the report it will be reported to the board of the company. 
+[1.5 Regardless of whether the report is found to be creditable and conveyed to the board of the company pursuant to clause 1.4, the contact shall:
+(a) notify the whistleblower promptly of the conclusion of the internal assessment and investigation; and
+(b) [where the company deems reasonable] respond promptly and in reasonable detail to any enquiries the whistleblower may have about the internal assessment and investigation, provided such enquiries are not malicious, abusive or frivolous [and are made within [10 business days] of its conclusion].] [
+Drafting note: see ‘Reporting channels’ and 'Acknowledging reports and providing updates' guidelines below.
+]
+1.6 Unless a report is malicious, abusive or frivolous, the making of a report will result in no retaliation and will have no negative effect on the whistleblower's career.
+Guidelines and considerations for implementing the whistleblowing regime
+Reporting channels: 
+[
+Drafting note: this area may already be covered by a company's whistleblowing policy. Consider setting up a specific committee to investigate and handle whistleblowing and including the ability to report to the company’s auditors.
+]
+Specify the reporting modes available to whistleblowers and consider how to provide the option of anonymous reporting and/ or a whistleblowing champion. It may be that this is included in the company’s current whistleblowing policy with a warning that although the company will encourage such reports, they may not fall within protection afforded by the local legislation on whistleblowing.
+Determine the most suitable person(s) (who will be given training) for the receipt and treatment of internal reports. In larger companies, this would likely be the audit committee or a steering committee, with such committees then reporting regularly to the board. Alternatives could be, for example, compliance officers, legal counsel, or such processing can be outsourced. The reporting channels should be clearly and regularly communicated to all staff and business partners.
+Acknowledging reports and providing updates:
+ The EU Whistleblowing Directive requires that whistleblowers be informed of the receipt of their report within seven days and of any action taken (including the status outcome of the internal investigation) within three months. Companies are not bound by the Directive and it should be considered whether to reduce the time frame for initial acknowledgement (for example, to 1-2 business days), or for providing reports on the status of the outcome. Specify these timeframes in the whistleblowing policy and procedure. It is worth noting that, depending on the outcome of the investigation, it may not be appropriate to provide details on the outcome of the investigation other than to note that the whistleblower’s concerns were found to have grounding and that action was being taken. [
+Drafting note: this area may already be covered by a company's whistleblowing policy
+]
+Training: 
+Training workers regularly on how the whistleblowing regime works and its process and features is crucial. Workers need to know that the whistleblowing regime is an option available to them and that they are encouraged to use it, if appropriate. Training can be part of all employee on-boarding, and also be provided to business partners, with regular communications to remind the relevant stakeholders of the policy.
+Identifying reportable breaches: 
+Consider what situations would breach the company’s stated net zero policy and provide tangible examples in stakeholder training, such that they may be able to identify a similar reportable situation if it occurs. If for example the company has a commitment to working with suppliers with certain green credentials as part of its net zero policy, and a stakeholder becomes aware that the company is working with a supplier that does not in fact meet these credentials that could form the basis of a report. Consider using real-life scenarios in training (anonymised), to make the examples more accessible.
+[
+Whistleblower reward: 
+consider whether you would like to incentivise employee/ stakeholder buy-in through a reward, appropriate to the size and nature of your business. This could be a small financial reward, a voucher or a non-financial reward such as, for example, the opportunity to attend external training or something of value to the relevant stakeholder. This should be considered in light of any incentives given with regard to any other whistleblowing policy.] [
+Drafting note: see the comments in '
+Sasha's Clause - Essential notes and guidance
+: Legal Context section' on whether or not it is advisable to include whistleblower rewards.
+]
+Transparency
+: The net zero whistleblowing reports received and actions taken in response to any whistleblower’s information investigated and reported should be reported regularly to the Board, and made available to other stakeholders (consider also making publicly available). What constitutes "regular" will differ on a case by case basis, but will likely be no less than annually. Whistleblower anonymity must be preserved.
+Regime statistics: 
+Consider collecting statistics on the number of net zero whistleblowing reports made and using those statistics to measure the effectiveness of the policy's implementation (consider also making them publicly available). A small number of reports can indicate that there are no (or very few) breaches. However, receiving no reports at all may also indicate that potential whistleblowers do not know the policy exists or do not feel comfortable using it.
+Safe storage of reports:
+ Reports must be safely and confidentially stored, such as by using an information barrier. [
+Drafting note: this area may already be covered by a company's whistleblowing policy and will also need to adhere with any data privacy requirements and company privacy policies.
+]

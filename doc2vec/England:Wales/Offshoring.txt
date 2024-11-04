@@ -1,0 +1,21 @@
+1
+
+Offshoring describes geographically relocating a company's high greenhouse gas emitting activities to another country. Importing goods and services is a form of emissions offshoring.
+Emissions offshoring could be used to make it appear that a company has reduced its greenhouse gas emissions. Where companies are measuring their 
+Scope 3 Emissions
+, these must cover any offshored emissions.
+Studies show that when firms increase their imports, their own emissions fall with a corresponding rise in supplier generated emissions.
+This definition is deliberately broad so it can be easily adjusted to fit a variety of contracts and contexts.
+
+Offshoring
+ means the relocation of [
+insert business activities
+] to another country or the outsourcing of such activities to a third party in another country for the purpose of one or more of the following:
+(a) reducing its emissions
+(b) avoiding [
+Environmental Performance
+] targets in [original country] due to more lenient environmental regulation in [the country of relocation]
+(c) using unreasonably low-cost labour
+(d) exploiting weaker labour laws and practices in [the country of relocation]
+(e) carrying out practices in [the country of relocation] which would be illegal in [original country]
+(f) carrying out practices in [the country of relocation] which could be reasonably considered to adversely affect achieving [a just transition] [and] [the UN Sustainable Development Goals OR wider social and ecological goals].

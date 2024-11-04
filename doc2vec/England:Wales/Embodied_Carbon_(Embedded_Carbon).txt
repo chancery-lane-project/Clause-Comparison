@@ -1,0 +1,29 @@
+2
+
+Embedded carbon is used interchangeably with embodied carbon and appears to mean the same (see 
+Greenspec: Embodied Carbon &amp; EPD
+s).
+Relevant sectors
+Construction
+The concept of embodied carbon is particularly relevant to the construction and property sectors as it is used to ensure that GHG reductions are achieved for the whole lifecycle of a development. For example, GHG reduction targets will not be achieved if a development has high embodied carbon even if its operational carbon emissions are low.
+Product design
+The concept is also relevant in product design. Industry standards such as PAS 2080: Carbon management in infrastructure encourages companies to manage their 
+Carbon Footprint,
+ with an emphasis on embodied carbon. It can be used to compare environmental impacts of different materials, designs and processes, and can therefore be used to help promote alternative options which reduce emissions.
+Option 2
+Option 2 follows the approach taken by University College London Engineering and The Royal Institution of Chartered Surveyors (RICS). It includes emissions caused by the deconstruction and disposal of the building’s elements at the end of its lifetime.
+The definition provided by the UK Green Building Council includes emissions caused by maintenance but this does not appear to be included in the definition used by other organisations.
+
+Embodied Carbon
+ means the 
+Greenhouse Gases
+ that are emitted through the production and delivery of building materials for and used in the [Development].
+
+Embodied Carbon
+ (also known as 
+Embedded Carbon
+ or 
+Embodied Energy
+ ) means the total 
+Greenhouse Gases
+ emitted in the [construction of the Development OR manufacturing and production of the Goods]. This includes those emissions caused by extraction, manufacture, transportation and assembly of every element in the [Development OR Goods], as well as emissions caused by deconstruction at the end of the [Development’s lifetime OR Good’s useful life] (if applicable). It does not include operational emissions.

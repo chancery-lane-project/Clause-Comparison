@@ -1,0 +1,21 @@
+1
+
+This definition derives from that in the 
+Alternative Fuel Infrastructure Directive 2014 (2014/94/EU).
+The definition captures fuels, even those derived from fossil fuels, that have a lower term greenhouse gas intensity than conventional fossil fuels and that may be used to decarbonise the transport sector in the transition to net zero.
+The classification of alternative fuels is a technical area. For more information on EU and UK legislation in this area, see:
+Practical Law, Regulation of vehicle emissions in England and Wales: summary
+; and
+LexisNexis, Alternative vehicle fuels - natural gas (liquefied natural gas (LNG) or compressed natural gas (CNG))
+.
+
+Alternative Fuel
+ means fuel or power sources used as a substitute for fossil oil sources in transport. They have the potential to help to decarbonise the transport sector and enhance its 
+Environmental Performance
+ and include:
+(a) electricity;
+(b) hydrogen;
+(c) liquid or gaseous biofuels derived from biomass;
+(d) synthetic and paraffinic fuels;
+(e) natural gas, including biomethane in gaseous form (compressed natural gas) and liquefied form (liquefied natural gas ( LNG )); and
+(f) liquefied petroleum gas.

@@ -1,0 +1,48 @@
+2
+
+While the terms net zero and carbon neutral are used interchangeably, the concept of net zero is distinct from carbon neutral:
+Carbon neutrality can be achieved entirely through offsetting without greenhouse gas removal. This allows companies to continue to emit greenhouse gases as normal. This is inconsistent with the Paris Agreement goal of keeping global warming to well below 2 Celsius (see 
+TCLP’s Discussion Document: Offsets, Insets and Carbon Credits
+).
+While net zero allows for some offsetting, it requires companies to reduce their greenhouse gas emissions to achieve the Paris Agreement’s temperature goals.
+The 
+Carbon Trust
+ differentiated the two terms using:
+PAS 2060 (an internationally-recognised standard) to define carbon neutral; and
+SBTi’s draft definition of net zero.
+The 
+IPCC
+ differentiates net zero and carbon neutral by the scope of climate forcers - carbon neutrality concerns only carbon dioxide emissions, net zero concerns all greenhouse gas emissions. See Annex 3, Supplementary Table 1 in 
+SBTi’s Foundations for Science-Based Net-Zero Target Setting in the Corporate Sector 
+for a summary.
+PAS 2060
+The PAS 2060 Standard is currently the only carbon neutral specific standard that sets out the requirements of how to achieve carbon neutrality specifically. This is being updated to reflect the recent changes in this sector. 
+ISO 14068
+ is a new carbon neutrality standard that is under development and is expected to be released in 2023.
+Note that in PAS 2060, measuring, reducing, and removing Scope 3 emissions is optional.
+The PAS 2060 certification can be awarded by a certification body, such as the 
+Carbon Trust
+/ 
+NQA Certification Ltd
+/ TÜV NORD. The company can also self-certify in compliance with PAS 2060 requirements. The operative clause should specify how the company or contract party will obtain its PAS 2060 certification.
+
+Carbon Neutral
+ means the [organisation OR activity OR product] has been certified under the PAS 2060 Standard by [
+Carbon Trust
+/ 
+NQA Certification Ltd
+/ TÜV NORD/ the organisation through self-certification] as having offset an equivalent amount of its 
+Scope 1, 2 and 3 Emissions.
+
+Carbon Neutral
+ means the 
+Greenhouse Gases
+ emitted by [
+an entity
+] are equal to Greenhouse Gases sequestered by [
+the entity
+] or offset by carbon credits purchased by [th
+e entity
+]) [in [
+define time period
+]].

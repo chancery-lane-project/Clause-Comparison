@@ -1,0 +1,17 @@
+1
+
+The credits that can be used under the EU Emissions Trading Scheme are specified in articles 58-61 of the 
+Fifth Registries Regulation
+ (Commission Regulation (EU) No 389/2013) and Article 11a(8) of the 
+EU ETS Linking Directive 2004
+ (Directive 2004/101/EC), which was replaced by the 
+EU ETS Amending Directive 2009
+ (Directive 2009/29/EC). 
+Using this option would mean Emission Reduction Units from UNFCCC Joint Implementation projects would be permissible for use as offsets.
+
+Offset Provider
+ means an organisation providing carbon credits or voluntary emission reduction credits for one of the following:
+(a) a project verified in accordance with [
+insert name of voluntary standard
+]
+(b) a United Nations Framework Convention on Climate Change (UNFCCC) clean development mechanism (CDM) [or successor UNFCCC mechanism] project.

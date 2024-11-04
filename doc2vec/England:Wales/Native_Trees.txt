@@ -1,0 +1,24 @@
+3
+
+Native trees are beneficial to the survival of other native species (for example, insects and vertebrates). Providing new native tree habitats and/or corridors may improve the climate resilience of native species.
+So-called 'productive woodlands' that are managed for timber often use non endemic or non-native species.
+Section 14 of the Wildlife and Countryside Act 1981 includes the concept of native range in defining when a new species is introduced in the UK. It also includes a list of non-native species at Schedule 9.
+Option 1
+Parts of this definition are adopted from the Dasgupta Review: Independent Review on the Economics of Biodiversity Interim Report (April 2020).
+Option 2
+This definition was developed by the UK’s Natural Capital Committee for its Natural Capital Valuation. TCLP has adopted it without significant amendments as we consider it will be suitable for TCLP's clauses.
+Option 3
+The words ‘which make their lives possible’ narrows the definition to exclude natural assets which are not necessary for residents of the Property (as defined). You could delete this text if you do not want to narrow the definition in this way.
+Options 2 and 3
+Options 2 and 3 provide alternative definitions for use in agreements in other jurisdictions or regions.
+
+Native Trees
+ means those species of trees that are native to the United Kingdom since the last ice age and listed as such on the Forestry Commission website.
+
+Native Trees
+ means those species of trees which, since the last ice age, have grown in the geographic area now called the [United Kingdom] and which are listed as native on the [Forestry Commission website].
+
+Native Trees
+  means trees which are indigenous to [
+specify region or jurisdiction
+], naturally occurring, and not having been introduced directly or indirectly through the actions of humans.

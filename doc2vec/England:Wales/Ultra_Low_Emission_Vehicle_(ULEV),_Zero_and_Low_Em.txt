@@ -1,0 +1,61 @@
+5
+
+Since 2018, vehicle emissions in the UK and across the EU for new car registrations have been measured using the World Harmonised Light Vehicle Test Procedure (WLTP). This was specified as the current European type approval test in 
+Commission Regulation (EU) 2017/1151
+ and was brought into UK law by 
+The Road Vehicles (Defeat Devices, Fuel Economy and Type-Approval) (Amendment) Regulations 2018 (SI 2018/673)
+.
+Before the introduction of WLTP, emissions testing was done using the New European Driving Cycle (NEDC). However, this test is considered outdated and does not provide as accurate a measure of a vehicle’s real-world emissions as WLTP. This clause therefore specifies that vehicles must be tested using WLTP to qualify as ULEV or ZLEV.
+The 
+Office for Zero Emission Vehicles
+ (OZEV) applies different CO2 standards to different types of vehicles (that is: cars, vans, motorbikes, mopeds and taxis). Depending on the type of vehicle that is relevant to the contract, you may need to amend the level of CO2 in the definition to reflect the relevant standards.
+Ultra Low Emission Vehicle (ULEV)
+The definition of ULEV is based on the definition in the Department for Transport's strategy paper, 
+The Road to Zero
+ (2018), p.24.
+This definition is likely to change over time and become more restrictive. The OZEV has indicated that from 2021 it expects the definition of ULEVs to include only cars and vans which emit less than 50g of CO2 per km.
+Different types of ULEVs include:
+Plug-in hybrid electric vehicles (PHEVs) - which have a battery that is charged when connected to the electricity grid and switch between running on electricity and fossil fuels.
+Hybrid electric vehicles (HEVs) - which do not plug into the electricity grid, have a much smaller battery which is recharged while driving and switch between running on electricity and fossil fuels.
+Battery electric vehicles (BEVs), or ‘all-electric’ vehicles - which use a battery as their only power source.
+Fuel cell electric vehicles (FCEVs) - which generate their own electricity onboard from a fuel such as hydrogen.
+The terms ULEV and EV are sometimes used interchangeably, although ULEVs include ‘pure’ EVs (which have zero tail-pipe emissions) and hybrid models (which combine an electric motor with a combustion engine).
+Electric Vehicle (EV)
+The definition of EV is based on the definition of Charge Point in the 
+Automated and Electric Vehicles Act 2018
+.
+The terms ULEV and EV are sometimes used interchangeably, although note that ULEVs include:
+‘pure’ EVs (which have zero tail-pipe emissions); and
+hybrid models (which combine an electric motor with a combustion engine).
+Zero and Low Emission Vehicle (ZLEV)
+This definition for ZLEV is based on the definition in 
+EU Regulation (EU) 2019/631
+ read in accordance with 
+Commission Regulation (EU) 2017/1151
+. The term ZLEV is the term preferred by the European Commission in its publications.
+Note the definition of ZEV differs from the definition of ZLEV. This is because the term ZLEV is based on the definition in 
+EU Regulation (EU) 2019/631
+ which sets CO2 emissions performance targets for new passenger cars and new light commercial vehicles.
+Light Commercial Vehicle (LCV)
+The definition of an LCV is based on the European classification for fuel categories as used by the European Alternative Fuels Observatory.
+Zero Emissions Vehicle (ZEV)
+The definition of ZEV differs from the definition of ZLEV. The definition of ZLEV is based on the definition in 
+EU Regulation (EU) 2019/631
+ which sets CO2 emissions performance targets for new passenger cars and new light commercial vehicles. You may wish to add a definition of 
+Greenhouse Gases (GHGs)
+.
+
+Ultra Low Emissions Vehicle (ULEV)
+ means a vehicle that emits less than [75g] of CO2 per kilometre travelled as measured by the World Harmonised Light Vehicle Test Procedure (WLTP).
+
+Electric Vehicle (EV)
+ means a vehicle that is capable of being propelled by electrical power derived from a storage battery.
+
+Zero and Low Emission Vehicle (ZLEV)
+ means a car or light commercial vehicle (LCV) which emits [0 to 50g] of CO2 per kilometre as measured by the World Harmonised Light Vehicle Test Procedure (WLTP).
+
+Light Commercial Vehicle (LCV)
+ means a vehicle used for the carriage of goods that has a maximum mass not exceeding 3.5 tonnes.
+
+Zero Emissions Vehicle (ZEV)
+ means an engine, motor, process or other energy source that, while in operation, produces no greenhouse gases.

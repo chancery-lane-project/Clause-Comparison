@@ -1,0 +1,33 @@
+1
+
+Distinguishing insetting from offsetting
+Insetting (also known as supply chain interventions) is an extension of 
+Offsetting
+. The location of the offsetting project is what differentiates the two concepts.
+Offsetting refers to carbon credits purchased from greenhouse gas (GHG) reduction or removal projects that are unrelated to the purchaser (see 
+TCLP’s Discussion document: offsets, insets and carbon credits
+).
+Insetting refers to purchasing carbon credits from a greenhouse gas reduction or removal project within a company’s own supply or value chain.
+Calculating inset emissions
+The GHG Protocol does not yet have any guidelines on how to account for emissions removed from insetting. The Science Based Targets Initiative (SBTi) recommends a conservative approach (
+see SBTi Corporate Net Zero Standard
+). For more details on the types of carbon offset projects and verification standards, see 
+TCLP’s Discussion document: offsets, insets and carbon credits
+.
+Standard definition for 'inset'
+There is currently no standard definition for insetting. TCLP's definition is based on the Insetting Report by the International Carbon Reduction and Offset Alliance (ICROA).
+ICROA recommended the following best practices:
+The company invests financially in the development and maintenance of a carbon offset project within the perimeter of its supply chain.
+The insetting project occurs within the supply chain or supply chain community.
+Supply chain
+ refers to the operational participation in the company’s supply chain.
+Supply chain community
+ refers to stakeholders that have a direct link with the supply chain (e.g. direct involvement in the production of the product or service or those that are positively or negatively impacted by the supply chain operations).
+The insetting project should generate GHG emission reduction units that respect all the principles of international standards (that is, additionality, permanence, uniqueness, measurability, verifiability and so on).
+The insetting project should be verified by a carbon offset standard.
+
+Insetting
+ means investing in a greenhouse gas emissions reduction or removal project, verified by [
+insert name of voluntary standard
+], that takes place within a company’s value chain or value chain communities.
+﻿

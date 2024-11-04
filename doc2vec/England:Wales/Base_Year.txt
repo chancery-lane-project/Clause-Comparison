@@ -1,0 +1,71 @@
+4
+
+Base year greenhouse gas ( GHG ) emissions are the emissions in the year that companies, cities or other entities choose as their reporting baseline:
+under the 
+The Greenhouse Gas Protocol – A Corporate Accounting and Reporting Standard or the Global Reporting Initiative (GRI) Standards (305) 
+(GHG Protocol); and
+when setting 
+Science Based Targets (Science Based Target Initiative (SBTi) Corporate Net Zero Standard)
+.
+The base year serves as a benchmark for companies to track its GHG emissions reduction progress.
+The Science Based Targets initiative ( SBTi ) recommends that the following be considered in selecting a base year:
+The base year should be the most recent year when a company's Scope 1, 2 and 3 emissions data is accurate and verifiable.
+Base year emissions should be representative of a company's typical GHG profile.
+The base year should be chosen such that targets have sufficient forward-looking ambition
+The base year must be no earlier than 2015.
+Option 1
+Option 1 is a general definition for wide application. It encompasses a company's 
+Scope 1, 2 and 3 Emissions.
+This definition uses a fixed base year approach, which uses a constant historical reference to compare current emissions. Using a fixed base year allows emissions data to be compared on a like-with-like basis over a longer time period than a rolling base year approach (see Option 4). Most emissions trading and registry programs require organisations to use a fixed base year to monitor GHG emissions.
+This definition can be used with glossary term 
+GHG Reporting
+ and when setting and agreeing 
+Science-Based Targets
+ in contracts.
+Option 2
+Option 2 is company specific and more likely to be used in corporate policy and governance documents.
+The positive obligation of who should assess the company's emissions reduction progress should be contained in an operative clause.
+Options 1, 3 and 4 - Different base year models
+A base year can be:
+Fixed
+ - uses an invariable historical reference with which to compare current emissions;
+Multi-year
+ - involves calculating an average of annual emissions over several consecutive years to smooth out fluctuations in emissions that may occur over time; or
+Rolling
+ - requires establishing a new base year every year.
+Option 3 - Multi-year Base Year
+A multi-year average may help smooth out unusual fluctuations in GHG emissions that would make a single year’s data unrepresentative of the company’s typical emissions profile.
+Option 4 - Rolling Base Year
+Companies may consider using a rolling base year if obtaining and maintaining reliable and verifiable data for a fixed base year is likely to be challenging (for example, due to frequent acquisitions). With a rolling base year, the base year rolls forward at regular intervals, usually one year, so that emissions are always compared against the previous year.
+Recalculating base year emissions
+Base year emissions should be recalculated to reflect changes in the company that would otherwise compromise the consistency and relevance of the reported GHG emissions. Companies should recalculate their base year emissions in the following instances:
+Structural changes in the organisation that have a significant impact on the company’s base year emissions. Structural changes include: - Mergers, acquisitions and divestments. - Outsourcing and insourcing of emitting activities.
+Changes in calculation methodology or improvements in the accuracy of emission factors or activity data that result in a significant impact on the base year emissions data.
+Discovery of significant errors, or a number of cumulative errors, that are collectively significant.
+Companies should develop a base year emissions recalculation policy, and clearly explain how and when the base year will be recalculated.
+
+Base Year
+ means [
+insert relevant year
+] that the [Company OR Party] will use to benchmark its 
+Scope 1, 2, and 3 Emissions
+ reductions each calendar year.
+
+Base Year
+ means 
+[insert relevant year
+] which is the year [set by the Board of the Company] against which [the Sustainability Committee] will assess the [Company’s] progress in reducing its 
+Scope 1, 2, and 3 Emissions.
+﻿
+
+Base Year
+ means an annual average of [Company's] 
+Scope 1, 2, and 3 Emissions
+ over [
+insert multiple consecutive years
+].
+
+Base Year
+ means the year before the [
+insert the current calendar year
+].

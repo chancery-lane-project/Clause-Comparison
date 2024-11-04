@@ -1,0 +1,26 @@
+3
+
+Option 1
+This definition is adopted from the UN Convention on Biological Diversity ( CBD ). It is broad in the sense that it refers to biodiversity of species, environments and ecosystems.
+It should be used in the context of a specific species or environment and, may need to be tailored. For example, if the definition is used in contract documents for a project impacting wetlands, it may need to refer specifically to the biodiversity of amphibians or protected species in the local area.
+Option 2
+This definition is adopted from Latham & Watkins’ Book of Environmental, Social & Governance Jargon (first edition).
+Option 3 (Biodiversity Loss)
+This definition is adopted from the Dasgupta Review: Independent Review on the Economics of Biodiversity Interim Report (30 April 2020).
+Application
+Supply chain clauses, corporate governance documentation and project documents to incorporate the promotion of sustainable biodiversity use, real estate development documentation where promotion of biodiversity may be mandated (mandatory biodiversity net gain).
+For example:
+the contract may oblige a party to observe ‘sustainable use’ provisions referring to biodiversity in extractive industries or supply chains, which promote the ‘sustainable use’ of, or conservation of, biodiversity; or
+the company may develop policies and plans, or project documentation may require a company to prepare such policies, which require the ‘sustainable use’ or conservation of biodiversity across their supply chains and in their business dealings.
+In this context, ‘sustainable use’ means the use of components of biological diversity in a way, and at a rate, that does not lead to the long-term decline of biological diversity, thereby maintaining its potential to meet the needs and aspirations of present and future generations. The ‘sustainable use’ definition is adopted from the CBD.
+
+Biodiversity
+ or 
+Biological Diversity
+  means the variability among living organisms from all sources including, inter alia, terrestrial, marine and other aquatic ecosystems and the ecological complexes of which they are part. This includes diversity within species, between species and of ecosystems.
+
+Biodiversity
+ means the wide-ranging variety of life forms that inhabit a particular habitat or ecosystem.
+
+Biodiversity Loss
+ means the reduction of any aspect of Biological Diversity in a particular area, which can be lost through death (including extinction), destruction or manual removal.

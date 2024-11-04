@@ -1,0 +1,19 @@
+1
+
+Companies should use the same boundaries when: (i) accounting for their current emissions; and (ii) setting net zero targets and emissions reduction targets.
+See the 
+Greenhouse Gas Protocol
+ for an understanding of the different organisational boundary approaches.
+
+Target Boundary
+ means all of the following parameters [the Company] [will OR should] use when setting its [
+Net Zero Target
+ OR emissions reduction target]:
+(a) the [operational control OR financial control OR equity share] method will be used to determine [Company's] organisational boundary
+(b) near-term emissions reduction targets will cover at least [95 (ninety-five) percent] of Company-wide 
+Scope 1 and 2 Emissions
+ and at least [67 (sixty-seven)percent] of Scope 3 Emissions
+(c) long-term emissions reduction targets will cover at least [95 (ninety-five) percent] of Company-wide Scope 1 and 2 Emissions and at least [90 (ninety) percent] of Scope 3 Emissions
+(d) emissions reduction targets will cover all 
+Greenhouse Gases
+.

@@ -1,0 +1,40 @@
+1
+
+Mitigation hierarchy
+Abatement measures rank first on the mitigation hierarchy. A mitigation hierarchy is a strategy to reduce a contract party's environmental impact that prioritises reducing value chain emissions before any other type of measure. For more information, see TCLP glossary term 
+Mitigation Hierarchy
+.
+Examples of abatement measures
+Examples by sector are:
+Energy: emerging technologies, 
+Carbon Capture and Storage (CCS).
+Real estate: insulation of new buildings, retrofitting of older buildings, energy efficiency and alternative energy sources.
+Consumer discretionary and staples: increase energy efficiency and use of alternative energy sources, behavioural change (for example, consumers eating less meat).
+Transport: shift to rail transport, electric vehicles, reducing international business travel, prevent takeoff of empty airplanes.
+Capital goods: increase energy efficiency in electrical, construction and engineering equipment.
+Forestry and agriculture: prevent deforestation in tropical areas, encourage land restoration, reducing methane emissions from livestock through improved processing of manure.
+Important considerations
+Abatement measures can be implemented by governments, corporates, non-corporate entities or individuals. There are a wide variety of measures that can be taken. The GHG savings achieved will vary depending on geographical location, culture, sector and the parties involved.
+When choosing which abatement measures to use, consider:
+Relevant sector.
+Geographical location.
+When identifying appropriate abatement measures, consider the abatement measures that are already in place (or supported) in the relevant location or sector.
+Number of emitters and volume of their GHG emissions. For example:
+The fuel and energy sector is characterised by a relatively small number of emitters producing large amounts of GHGs.
+The forestry and agriculture sector is characterised by billions of emitters producing small amounts of GHGs.
+Local and national policy that have a practical and financial impact on the parties to the contract.
+Policies determine the efficacy of abatement measures, in particular by reducing or removing associated costs.
+Neutralisation measures
+Carbon Capture and Storage (CCS)
+ technologies that 
+prevent the release 
+of GHGs at source are abatement measures. CCS technologies that 
+r
+emove GHGs from the atmosphere are 
+Neutralisation Measures
+. Lawyers should understand the relevant CCS technology to determine whether it is an abatement measure (prevent release) or a neutralisation measure (remove).
+
+Abatement Measures
+ means methods to reduce, prevent or eliminate 
+GHG Emissions
+ [including the specific measures set out in [document]].

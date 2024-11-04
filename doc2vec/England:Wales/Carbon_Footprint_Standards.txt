@@ -1,0 +1,23 @@
+1
+
+There are a variety of standards that can be used to measure an organisation’s carbon footprint. Some of the key standards are listed below as well as in TCLP's glossary term 
+Environmental Performance.
+The World Resources Institute ( WRI ) and World Business Council for Sustainable Development ( WBCSD ) GHG Protocol Standards
+These are globally recognised frameworks to track, measure and manage Greenhouse Gas ( GHG ) emissions from private and public sector operations, value chains and mitigation actions. They include the Corporate Accounting and Reporting Standard and the Product Life Cycle Accounting and Reporting Standard.
+The International Organisation of Standardisation ( ISO )
+The ISO14000 series of environmental management standards are intended to assist organisations in managing their environmental impact. They include:
+ISO 14001, which allows organisations to demonstrate that their environmental impact is being measured and improved.
+ISO 14064, which allows programmes to measure, quantify and reduce GHG emissions and removals and to achieve carbon neutrality.
+ISO 50001, which is an energy management system to help companies become more energy efficient.
+BSI PAS 2050:2011
+The British Standards Institution ( BSI ) issued the PAS 2050 standard, which is widely used by businesses to calculate the carbon emissions of goods and services.
+The Global Reporting Initiative ( GRI ) Sustainability Reporting Standards
+GRI is an international standards body convened by Ceres, a non-profit coalition of investor, environmental, and social justice groups. The Sustainability Reporting Standards are a set of standards for sustainability reporting (including environmental and climate change reporting) to enable corporations to measure and understand their impacts on the environment, society and the economy.
+The Carbon Footprint Standards
+This draws together the leading standards to create a unified standard in assessing, reporting and offsetting emissions to enable businesses to promote their low carbon credentials.
+
+Carbon Footprint Standards
+  means internationally recognised standards to measure, manage and demonstrate carbon credentials covering:
+(a) the Company and its supply [and value] chains, in particular [the BEIS Voluntary Reporting Guidelines] [GHG Protocol Corporate Accounting and Reporting Standard] [ISO 14064]);
+(b) projects, products and services, in particular [PAS 2050:2011] [ISO 14001] [ISO 14064] [GHG Protocol Product Life Cycle Accounting and Reporting Standard]; and
+(c) events, particularly [PAS2060] [ISO 20121].

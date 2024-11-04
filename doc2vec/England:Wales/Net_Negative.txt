@@ -1,0 +1,47 @@
+6
+
+We provide several options because 'carbon negative' and 'net negative' are not currently widely used in contracts.
+TCLP's definition of net negative ensures that all greenhouse gases (not just carbon dioxide) are covered in the definition.
+Calculating net negative
+There is not yet an agreed methodology for calculating if a product or activity is net negative in the same way as there is for 
+Carbon Neutral
+.
+Which definition you use will depend on the subject and purpose of the clause you are writing. Issues to consider include:
+Do you require an organisation to be net negative?
+Is an organisation committing to be net negative?
+Do you require an organisation to only use net negative technology or to produce a net negative product?
+On a global scale, removals of greenhouse gases should be consistent with the mitigation pathways that would limit global warming to 1.5 Celsius, with little to no overshoot. See 
+IPCC Special Report on Global Warming of 1.5 ºC, Summary for Policymakers, Part C Emission Pathways and System Transitions Consistent with 1.5°C Global Warming
+.
+The technology or activity used to remove greenhouse gases from the atmosphere must have a degree of permanence. Protocols or rules relevant to the area and project also need to be developed and documented to ensure the quality of removals. Reliable and independent auditors should validate and verify the measurements.
+Note that the term 'carbon positive' is used by some organisations instead of 'carbon negative' when describing their work to reduce their greenhouse gas emissions.
+
+Net Negative
+ means the 
+Greenhouse Gases (GHGs)
+ removed from the atmosphere [by a party] are greater than [its] 
+GHG Emissions.
+
+Net Negative
+ is a state where there is a net [sequestration OR removal OR absorption] effect from either production or total lifecycle impact of a product leading to negative 
+Scope 1, 2 and 3 Emissions.
+
+Net Negative
+ means that the aggregate of [a party’s OR the Company’s] actions to reduce its 
+GHG Emissions
+ and remove them from the atmosphere exceeds its unabated 
+GHG Emissions.
+
+Net Negative
+ is a state where the [activity OR technology] absorbs more 
+Scope 1, 2 and 3 Emissions
+ from the atmosphere than it emits.
+
+The amount of 
+Scope 1, 2 and 3 Emissions
+ [sequestered OR removed from the atmosphere OR absorbed by the [processes OR activities]] must be measured using a standardised method of measuring and quantification to be agreed between the parties.
+
+Net Negative Amount
+ means the amount to be paid by the [party OR parties] where Net Negative is achieved by [
+date
+].
