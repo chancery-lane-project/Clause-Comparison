@@ -1,0 +1,24 @@
+2
+
+Net Zero v Gross Zero
+Most countries, cities, companies and other entities are setting net zero targets rather than gross zero targets. This is because net zero targets allow both:
+a reduction in greenhouse gas emissions
+offsetting any emissions that cannot be reduced.
+Option 1
+The words 'all sources' refer to 
+Scope 1, 2 and 3 Emissions.
+ If you intend that the definition refers to only one or two of these categories of emissions, you will need to amend the reference to 'all sources'.
+
+Gross Zero Target
+ means the reduction of all of [the Company's] greenhouse gas emissions from all sources to zero by [
+specified date
+].
+﻿
+
+Gross Zero Target
+ means an absolute reduction in 
+Greenhouse Gas Emissions 
+from all operations [including its value chain] to zero by [
+a specified date
+] and for each subsequent year thereafter.
+﻿

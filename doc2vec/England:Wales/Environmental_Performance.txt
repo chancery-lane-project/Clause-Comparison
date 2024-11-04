@@ -1,0 +1,84 @@
+2
+
+Sufficient budget and resources
+Measuring environmental performance is not a tick-box exercise and available budget and resources need to be considered when choosing the method of measurement. A relevant question is whether any financing needs to include the costs of such assessments.
+Independent verification
+This defined term should be used with an operative provision that mandates the appointment of an independent expert who will determine whether the relevant party or company has met the key performance indicators. In particular, the provision should describe with how the independent expert is appointed, who pays for their services and how disagreements between the parties about the expert's appointment or findings will be dealt with.
+An operative provision might look like this:
+The Company’s performance against the [Net Zero OR Environmental] Performance key performance indicators will be measured [quarterly] by the Independent Expert appointed by the Parties in accordance with clause [●]. The Independent Expert will issue a report on the Company’s performance against the [Net Zero OR Environmental] Performance Targets to the Board [within 30 (thirty) calendar days of] each quarter.
+Option 1
+This option provides a menu of key performance factors that could be used to measure the company's success in achieving all of the following:
+its organisational net zero target (and interim net zero targets)
+emissions reductions targets set by the contract which either or both parties are obliged to deliver on during the contract term
+other environmental targets
+This definition also provides some ideas for specific environmental standards and guidelines against which the key performance indicators can be set. The parties can replace these with other standards and guidelines that they are working towards. If the parties wish to determine their own metrics, these could be set out in a schedule. In this case, the metrics should be quantitative where possible and the schedule should clearly set out how they are to be calculated.
+Option 2
+This definition measures the environmental impact of a premises or building over its entire lifecycle. The aim is to achieve a net zero and environmental key performance indicators across the whole of the premises or building’s life - from the manufacture, use and disposal of the premises or building.
+As with option 1, lawyers can tailor the menu appropriate to their contract or client.
+
+Environmental Performance
+ means the [annual] performance of the Company [and its Affiliates] against all of the following environmental key performance indicators:
+(a) [a reduction in the amount of OR a target of [
+insert figure
+] for] 
+Scope 1, 2 and 3 Emissions
+, measured in accordance with [The 
+Greenhouse Gas Protocol – A Corporate Accounting and Reporting Standard
+ OR the 
+Global Reporting Initiative (GRI) Standards (305)
+]
+(b) the adoption of an Environmental Management Systems, in accordance with the requirements of [
+ISO 14001
+]
+(c) the adoption of measurable goals, objectives and indicators in accordance with [the 
+International Union for Conservation of Nature Guidelines for planning and monitoring corporate biodiversity performance
+] that will allow the Company to measure its impact on 
+Biodiversity
+;
+(d) compliance with the 
+International Finance Corporation’s Environmental and Social Performance Standard 6 – Biodiversity Conservation and Sustainable Management of Living Natural Resources
+(e) the adoption of environmental key performance indicators applicable to the Company's activities in accordance with the Department for Environment, Food and Rural Affairs (Defra) Environmental Key Performance Indicators
+(f) compliance with the Global Sustainability Standards Board (GSSB)'s 
+GRI 101: Biodiversity 2024 (formerly GRI Biodiversity Standard (304))
+;
+(g) an annually decreasing target for energy consumption, measured in accordance with [the GSSB's 
+GRI Energy Standard (302)]
+(h) an annually decreasing target for waste production, measured in accordance with [GSSB's 
+GRI Waste Standard (306)
+]
+(i) compliance with the 
+International Finance Corporation’s Environmental and Social Performance Standard 3 – Resource Efficiency and Pollution Prevention
+(j) an annually decreasing target for emissions to water, measured in accordance with [
+Defra: Environmental Key Performance Indicators – KPIs 7-8
+]
+(k) an annually decreasing target for emissions to land, measured in accordance with [
+Defra: Environmental Key Performance Indicators – KPIs 9-11 and 13
+]
+(l) an annually decreasing target for emissions to air, measured in accordance with the [limits in the 
+Air Quality Standards Regulations 2010 (SI 2010/1001)
+ and the 
+Air Quality Standards (Wales) Regulations 2010 (SI 2010/1433
+)
+].
+
+Environmental Performance
+ means the [annual] performance of [the Premises OR Building OR Estate] in relation to all of the following:
+(a) design
+(b) construction
+(c) operation
+(d) demolition
+(e) waste treatment or disposal.
+All of the following factors shall be taken into account by the [Board OR Independent Expert] when setting Environmental Performance key performance indicators:
+(a) the source of materials
+(b) the use of materials
+(c) energy sources and consumption
+(d) water sources, consumption and discharge
+(e) flexibility, durability and resilience
+(f) pollution and waste processing
+(g) transport
+(h) landscape and ecology
+(i) deconstruction and disposal
+(j) waste generation and management
+(k) 
+Greenhouse Gas Emissions
+(l) [other adverse environmental impacts].

@@ -1,0 +1,24 @@
+4
+
+Including coal in the definition
+A strict chemical definition of hydrocarbons does not specifically include coal because coal contains elements in addition to carbon and hydrogen. Consider if your definition of hydrocarbons should specifically refer to coal or other fossil fuels. This is because the terms 'hydrocarbons' and 'fossil fuels' are often used interchangeably.
+Local legal definitions of fossil fuels
+Check the governing law of the contract to see if it provides legal definitions for fossil fuels such as petroleum, coal and natural gas. If the governing law does indeed provide legal definitions for fossil fuels, consider using these in your contract. For example, in England and Wales, the Petroleum Act 1998 defines petroleum and the Coal Industry Act 1994 defines coal.
+Option 1
+This is a commonly used definition and includes fossil fuels.
+Option 2
+This is a strictly scientific definition.
+Option 3
+This definition harmonises option 1 and 2 by referring to fossil fuels in which hydrocarbons are found.
+
+Hydrocarbons
+ means a class of organic chemical compounds predominantly consisting of hydrogen and carbon, which includes fossil fuels such as coal, crude oil and natural gas.
+
+Hydrocarbons
+ means an organic compound consisting entirely of hydrogen and carbon, which includes crude oil and natural gas.
+
+Hydrocarbons
+ means organic chemical compounds consisting of hydrogen and carbon, which are found in fossil fuels such as coal, crude oil and natural gas.
+
+Hydrocarbons
+ means principally oil, gas and coal or other fuel source derived from an organic compound made up of hydrogen and carbon.

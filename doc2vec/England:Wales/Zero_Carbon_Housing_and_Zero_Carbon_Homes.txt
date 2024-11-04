@@ -1,0 +1,77 @@
+8
+
+Zero Carbon Homes
+Option 2
+Option 2 is an ambitious definition that requires the zero carbon home to do both of the following:
+be designed so that it operates with maximum energy efficiency
+be built with construction processes and materials that result in zero GHG emissions.
+The definition includes an option to refer to a BREEAM rating or Passive House standards as a way of assessing the design of the housing.
+Option 2 and 3
+Options 2 and 3 follow the approach taken in the UK Green Building Council’s (UKGBC) 'Net Zero Carbon Buildings: A Framework Definition' by splitting out the operational energy and construction or design aspects of a zero carbon building.
+Net Zero Carbon Building
+This definition is based on the UKGBC’s Net Zero Carbon Buildings: A Framework Definition (April 2019).
+Ultra Low Energy Buildings
+This definition is based on bigEE’s policy roadmap for ULEBs. bigEE distinguishes ULEBs and NZEBs based on the latter’s inclusion of building integrated renewable energy technologies in addition to the ULEB design.
+
+Zero Carbon Homes
+ means dwellings that are both of the following:
+(a) designed to [maximum energy efficiency standards OR Passive House standards OR BREEAM rating outstanding]; and
+(b) to be heated and powered only through [on-site OR off-site] renewable technologies
+where their construction has resulted in 
+Net Zero
+ including through efficient methods of construction, the use of materials with low 
+Embodied Carbon
+ and the use of 
+Offsetting
+ for 
+Residual Emissions
+.
+
+Zero Carbon Homes
+ means highly energy efficient dwellings where the operational energy requirements are met by on-site or off-site renewable energy technologies so that the use of the building results in zero 
+Greenhouse Gas Emissions.
+
+Zero Carbon Homes
+ means dwellings that have been modified to improve their energy efficiency so that following completion of the [retrofitting] works their operational energy use results in zero 
+Greenhouse Gas Emissions
+ and where the materials used in the [retrofitting] works had low 
+Embodied Carbon
+.
+
+Zero Carbon Housing
+ has the same meaning as Level 6 of the Code for Sustainable Homes [or any successor or equivalent standard].
+
+Net Zero Carbon Building
+ means
+Option A:
+in relation to the construction of that building, where the amount of 
+Greenhouse Gas Emissions
+ associated with a building’s product and construction stages up to practical completion is zero or negative, through the use of 
+Offsets
+ or the net export of on-site renewable energy.
+OR
+Option B:
+a highly energy efficient building powered from on-site [and/or] off-site 
+Renewable Energy Sources
+, with any remaining 
+Residual Emissions
+ 
+Offset
+ so that the amount of 
+Greenhouse Gas Emissions
+ associated with the building’s operational energy on an annual basis is zero or negative.
+
+Low or Zero Carbon (LZC)
+ as defined in the 
+RICS: The future of policy and standards for low and zero carbon homes
+.
+
+Nearly Zero Energy Buildings Target (NZEB)
+ as defined by the 
+European Commission: Nearly zero-energy buildings
+.
+
+Ultra Low Energy Buildings (ULEBs)
+ means buildings that achieve the lowest 
+GHG Emissions
+ through energy efficiency measures alone.

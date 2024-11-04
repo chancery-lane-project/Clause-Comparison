@@ -1,0 +1,594 @@
+This guide enables companies to:
+
+
+
+
+
+
+
+
+align their corporate strategy and 
+transition plan
+
+
+
+
+
+
+incentivise board members to achieve their emissions-reduction targets
+
+
+
+
+
+
+mitigate reputational and liability risks, especially 
+greenwashing
+
+
+
+
+
+
+demonstrate climate leadership and commitment to reducing 
+greenhouse gas emissions
+.
+
+
+
+
+
+
+
+
+Align directors’ duties with climate targets
+
+
+
+
+
+
+Use governance documents to make directors accountable for reducing the company’s emissions and achieving other climate goals.
+
+
+
+
+
+
+Write directors’ responsibilities into, for example, company policies or articles of association. This incentivises directors to align the business with 
+Paris Agreement goals
+, especially if they risk personal liability for failing to comply.
+
+
+
+
+
+
+
+
+
+
+Example wording
+
+
+
+
+
+
+Subject to the articles, the directors are responsible for the management of [the Company]’s business, for which purpose they may exercise all the powers of [the Company]. 
+
+
+
+
+
+
+
+
+
+
+
+
+The directors shall manage [the Company] in a manner that achieves all of the following:
+
+
+
+
+
+
+
+
+reduces or eliminates its 
+scope 1, 2 and 3
+  
+greenhouse gas emissions
+
+
+
+
+
+
+meets emissions-reduction targets that comply with international standards (for example, 
+Science Based Target initiative net zero standard
+)
+
+
+
+
+
+
+promotes a 
+just transition
+ to a fair, equitable and low-carbon economy.
+
+
+
+
+
+
+
+
+The directors shall do all of the following:
+
+
+
+
+
+
+
+
+make judgments regarding climate risk that are based on a reasonable consensus of scientific opinion
+
+
+
+
+
+
+accord appropriate weight to climate risk
+
+
+
+
+
+
+implement reasonable measures to mitigate the risks to the long-term financial profitability and resilience of [the Company] in the transition to a low-carbon economy aligned with the global temperature objective of 1.5C under the Paris Agreement
+
+
+
+
+
+
+adopt strategies which are reasonably likely to meet [the Company]’s targets to mitigate climate risk
+
+
+
+
+
+
+ensure that the strategies adopted to manage climate risk are reasonably in the control of both existing and future directors.
+
+
+
+
+
+
+
+
+
+
+
+
+Establish a board committee for sustainability
+
+
+
+
+
+
+The highest level of management buy-in is required if the company is to successfully decarbonise. Establish a board committee with specific responsibility to deliver the 
+transition plan
+ and emissions-reduction targets.
+
+
+
+
+
+
+The committee should comprise or be advised by subject matter experts who can improve the accountability, evidence base and transparency of the company’s climate decisions and measures. The company may want to appoint an external climate expert. See [
+Jedda’s Clause] Indigenous/ Local Knowledge in Board Director Appointments
+].
+
+
+
+
+
+
+
+
+
+
+Example wording
+
+
+
+
+
+
+[The Company] shall establish a sustainability committee of the board to oversee the development, implementation and review of its transition plan. 
+
+
+
+
+
+
+
+
+
+
+
+
+The committee shall be [chaired by a non-executive director with experience of improving sustainability, reducing a business’s 
+carbon footprint
+ and enhancing climate resilience]
+
+
+
+
+
+
+
+
+
+
+
+
+or [advised by an appropriately qualified climate or sustainability consultant with the skills and experience to diligently, competently and professionally advise [the Company] on how to achieve its transition plan, reduce its carbon footprint and enhance climate resilience.]
+
+
+
+
+
+
+
+
+
+
+Link executive remuneration to achieving climate goals
+
+
+
+
+
+
+Directors should be rewarded for achieving climate goals and emissions-reduction targets as well as held accountable if they fail to do so.
+
+
+
+
+
+
+
+
+
+
+Example wording
+
+
+
+
+
+
+Key principles of the remuneration policy for executive directors
+
+
+
+
+
+
+The executive directors’ compensation package should promote the long-term, sustainable success of [the Company], with a focus on its environmental, social and governance (ESG) targets.
+
+
+
+
+
+
+
+
+
+
+
+
+The ESG targets are set on an annual basis and aligned with our externally communicated ambitions. Where performance is below the agreed ambition, the remuneration committee will use its discretion to assess vesting based on performance against the stated ambition and any other relevant information. The remuneration committee will determine the actual weighting of an award prior to grant.
+
+
+
+
+
+
+
+
+
+
+
+
+The remuneration committee seeks guidance each year from the sustainability committee when assessing and reviewing performance ESG targets. The remuneration committee has taken a holistic view of [the Company]’s performance in critical areas, including any matters outside the targets which the sustainability committee considers relevant.
+
+
+
+
+
+
+
+
+
+
+
+
+The [relevant incentive arrangement] is subject to the following performance conditions:
+
+
+
+
+
+
+
+
+
+
+
+
+Financial performance condition
+
+
+
+
+
+
+[●]
+
+
+
+
+
+
+
+
+
+
+
+
+ESG performance condition
+
+
+
+
+
+
+[●] percent of the [relevant incentive arrangement] is subject to [the Company] achieving the ESG performance condition.
+
+
+
+
+
+
+
+
+
+
+
+
+The remuneration committee will assess the ESG performance condition based on [the Company] meeting the following criteria by [date]:
+
+
+
+
+
+
+
+
+
+
+
+
+Criteria
+Weighting
+Environmental targets
+[●] percent
+Social targets
+[●] percent
+Governance targets
+[●] percent
+
+
+
+
+
+
+
+
+
+
+
+
+Remuneration report
+
+
+
+
+
+
+Environmental targets
+
+
+
+
+
+
+Subject to shareholder approval of the proposed [year] policy, the targets for the [relevant incentive arrangement] will be reviewed annually by the committee and those agreed for [year] are:
+
+
+
+
+
+
+
+
+within [time period], setting emissions-reduction targets validated by the Science Based Targets initiative and signing up to 
+Race to Zero
+
+
+
+
+
+
+meeting its public commitment to reduce 
+scope 1, 2 [and 3] emissions 
+by [●] percent by [year]
+
+
+
+
+
+
+achieving [●] of the interim targets set out in its 
+transition plan
+
+
+
+
+
+
+assessing and verifying [the Company]’s 
+carbon footprint
+ in accordance with [one of the recognised carbon footprint standards]
+
+
+
+
+
+
+purchasing electricity for its offices [and other premises] on a green tariff that uses 100 percent renewable energy
+
+
+
+
+
+
+making investment decisions for carbon capture, utilisation and storage projects [insert other specific type of relevant low-carbon fuel technology, if relevant]
+
+
+
+
+
+
+using web hosts and cloud service providers that run their servers on 100 percent renewable energy or have their own net-zero target
+
+
+
+
+
+
+establishing and implementing a training programme for all employees on the actions taken by [the Company] to achieve its net-zero target, the need for the transition to 
+net zero
+ to be a 
+just transition
+ and, in particular, how employees can help to reduce [the Company]’s scope 3 emissions
+
+
+
+
+
+
+donating [●] percent of its net profits to entities who aim to mitigate the impact of climate change
+
+
+
+
+
+
+using contract clauses to align [the Company]’s activities and relationships, including its supply chain contracts, with its emissions-reduction targets and providing support required by its contract partners to assist them in fulfilling those obligations.
+
+
+
+
+
+
+
+
+[Include an analysis of [the Company]’s performance against each target and an analysis of trends or changes in the entity’s performance.]
+
+
+
+
+
+
+
+
+
+
+
+
+Personal and strategic objectives for the [job title] in [year]
+
+
+
+
+
+
+[Objectives could include: to ensure carbon data methodology and data collection process is robust enough to anchor our ESG roadmap;  to address performance issues and capability requirements to drive forward our ESG agenda; to complete energy audits, together with action plans for achieving reductions by the end of [year].]
+
+
+
+
+
+
+Category
+    Objective(s) set
+ Met?  
+    Commentary
+ESG
+[insert objectives
+relevant to the 
+Company]
+ 
+[the remuneration report
+should  report on progress
+against these objectives]
+
+
+
+
+
+
+
+
+
+
+
+
+Climate clauses using the contractual solutions in this guide
+
+
+
+
+
+
+
+
+
+
+
+
+Glossary definitions used in this guide
+
+
+
+
+
+
+
+
+
+
+
+
+Related guides

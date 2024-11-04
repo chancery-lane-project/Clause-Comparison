@@ -1,0 +1,40 @@
+Hanley's Clause
+Standard drafting for heads of terms that makes climate a key consideration for any deal team. These heads of terms are particularly relevant for parties with public decarbonisation or net-zero targets.
+Key climate change considerations
+1.1 The [proposed transaction] will be structured so as not to increase, or amplify: 
+(a) the impact(s) of climate change; or
+(b) the Parties’ or their subsidiaries’ greenhouse gas emissions (GHG emissions).
+1.2 The Parties [have signed up to the 
+Race to Zero
+ and] acknowledge their common intention to achieve their respective [decarbonisation targets OR Net Zero Targets] and align with the objectives of the Paris Agreement, in particular pursuing efforts to limit global temperature increase to 1.5 Celsius above pre-industrial levels, and achieving net-zero or net-negative emissions by 2050 or sooner, in a manner that promotes a just transition to a low-carbon economy and that results in at least a 7 (seven) percent* reduction of GHG emissions year on year.
+1.3 The Parties agree to work together to:
+1.3.1 identify and implement opportunities to reduce the GHG emissions relating to the [proposed transaction];
+1.3.2 incorporate GHG emissions-reduction targets and related financial incentives into the [proposed transaction] [and where possible to involve other parties related to the [proposed transaction] in such emissions reductions].
+1.3.4 Measure and report GHG emissions relating to the [proposed transaction].
+1.4 After minimising GHG emissions in accordance with paragraph 1.3 the Parties shall [jointly agree to] offset their remaining GHG emissions.
+1.5 The respective directors of the Parties will consider: 
+1.5.1 the financial risks relating to climate change as part of the due diligence for the [proposed transaction] [in accordance with the [recommendations of the 
+International Financial Reporting Standards Foundation (IFRS)
+ OR 
+Bank of England’s climate risk taxonomy and climate stress tests
+] including the:
+a) physical risks;
+b) transition risks; and
+c) litigation risks],
+and related scenario analysis as recommended by the 
+International Financial Reporting Standards Foundation (IFRS)
+; and
+1.5.2 how wider local and global stakeholders (including employees, clients, end customers and supply chain partners) may be affected by climate risk and the transition to a low-carbon economy in relation to the proposed transaction and how the Parties might help to improve their resilience.
+[1.6 If having considered the risks [summarised in paragraph 1.5] the Parties conclude that there are [significant] climate risks present in the [proposed transaction] they will, as a Condition Precedent or Condition Subsequent, agree a plan to mitigate the risks identified.]
+[1.7 The Parties shall conduct the proposed transaction and related due diligence in accordance with the Green Transaction Execution Protocols annexed at Schedule 1.]
+[1.8 The Parties [undertake to disclose to each other all climate policy engagement, climate leadership, lobbying activities, trade association memberships and public policy positions that may support or undermine the goals of the Paris Agreement OR agree not to undertake any direct or indirect climate policy engagement, lobbying activities, trade association memberships or public policy positions that may undermine the goals of the Paris Agreement.]
+* [The
+ ‘Carbon Law’
+; and J. Rockström et al.,
+ A roadmap for rapid decarbonisation
+, Science 355.6331, 1269-1271 (2017)]
+ 
+Schedule 1
+[Insert 
+Evan’s protocols (green transaction execution protocols
+)]

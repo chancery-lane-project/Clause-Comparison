@@ -1,0 +1,57 @@
+2
+
+Net zero versus carbon neutral
+Net zero and carbon neutral are often used interchangeably. However, they are not interchangeable as the concept of net zero is distinct from carbon neutral in a number of important respects:
+Carbon neutrality can be achieved entirely through offsetting, allowing companies to continue to emit greenhouse gases as normal.
+Although net zero allows for some offsetting, it requires companies to reduce their greenhouse gas emissions to achieve the Paris Agreement’s temperature goals.
+The 
+Carbon Trust
+ differentiated the two terms using PAS 2060, an internationally-recognised standard, to define carbon neutral and SBTi’s draft net zero definition to define net zero.
+It is important to keep these important distinctions in mind and to make sure that each term is used clearly and precisely.
+Option 1
+If you use option 1, you will also need to use these additional glossary terms:
+Greenhouse Gases (GHGs)
+Paris Agreement Goals
+.
+Option 2
+This definition sets out high level steps that a company needs to take to achieve net zero.
+It also requires an independent expert to verify that the company has indeed achieved a state of net zero.
+The definition deliberately refers to removing and reducing emissions first before resorting to offsetting. This is in line with 
+SBTI's Corporate Net-Zero Standard
+.
+Parties can remove their scope 1, 2 and 3 emissions using neutralisation measures.
+If you use option 2, you will also need to use these additional glossary terms:
+Greenhouse Gas Emissions
+Offset
+Residual Emissions
+Scope 1, 2 and 3 Emissions
+potentially, 
+Just Transition
+.
+If using option 2, make sure that your contract contains operative provisions relating to the appointment of the independent expert.
+Just transition
+For more information on UNFCCC requirements for just transition, see the 
+UNFCCC Just Transition of the Workforce and the Creation of Decent Work and Quality Jobs Technical Paper
+.
+
+Net Zero
+ means a balance between [a party's] sources and sinks of greenhouse gases by [2050 OR 
+insert earlier date
+]. This is achieved by reducing 
+Greenhouse Gas (GHG) Emissions 
+and removing GHGs [to meet [the goals of the Paris Agreement OR 
+Paris Agreement Goals
+]].
+
+Net Zero
+ means the time when [the Project OR Company] [and its Affiliates] has, according to an Independent Expert done all of the following:
+(a) reduced and removed its 
+Scope 1, 2 and 3 Emissions
+ to a level consistent with the goals of the Paris Agreement
+(b) fully 
+Offset
+ its 
+Residual Emissions
+(c) adhered to the UNFCCC requirements for a 
+Just Transition
+.

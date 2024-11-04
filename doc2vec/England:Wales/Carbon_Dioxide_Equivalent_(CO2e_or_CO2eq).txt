@@ -1,0 +1,24 @@
+2
+
+Global warming potential
+The various 
+Greenhouse Gases (GHGs)
+ contribute to the greenhouse effect to different extents and remain in the atmosphere for different periods of time.
+To make the effects of different GHGs comparable, the Intergovernmental Panel on Climate Change of the United Nations ( IPCC ) has defined the Global Warming Potential ( GWP
+ 
+) for each GHG.
+This index expresses the warming effect of a certain amount of a GHG over a set period of time (usually 100 years) when compared to carbon dioxide ( CO2 ). For example, methane’s effect on the climate is 28 times more severe than CO2, but it doesn’t stay in the atmosphere as long.
+
+Carbon Dioxide Equivalent ( CO2e or CO2eq )
+ means the standard metric measure to compare the global warming potential of various 
+Greenhouse Gases
+ ( GHGs ) over a specified timescale. [It allows a 
+Carbon Footprint
+ consisting of different GHGs to be expressed as a single number].
+﻿
+
+Carbon Dioxide Equivalent ( CO2e
+ or 
+CO2eq )
+ means a unit of measurement that is used to standardise the climate effects of various 
+Greenhouse Gases.

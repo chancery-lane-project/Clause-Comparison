@@ -1,0 +1,30 @@
+2
+
+Residual emissions are necessary for understanding and calculating a net zero target. Once you have calculated your residual emissions, you can introduce a plan for balancing them out to achieve net zero.
+Mitigation hierarchy 
+An organisation's residual emissions should be reduced to the greatest extent possible before resorting to offsetting. This is achieved by avoiding, reducing or removing the emissions before resorting to offsetting.
+Routine checks 
+The parties should regularly update and maintain their contractual commitments to emissions trajectories to net zero and estimates of residual emissions.
+The appropriate trajectory will depend on the sector[s], level of climate ambition and available investment for the relevant entities. It is likely to result from the advice of a 
+Climate Professional 
+as part of a 
+Carbon Footprint
+ assessment.
+Option 1 
+The words 'all operations' and 'all scopes' in square brackets refer to 
+Scope 1, 2 and 3 Emissions.
+ If the clause you are writing refers only to one or two of these categories of emissions, you will need to amend the definition accordingly.
+
+Residual Emissions 
+means [a party’s] 
+GHG Emissions
+ [from all operations including its value chain] that are emitted after all reasonable efforts have been made to reduce them.
+
+Residual Emissions 
+are any 
+GHG Emissions
+ which remain after a project or organisation has implemented all technically and economically feasible opportunities, as determined by a 
+Climate Professional 
+as part of a 
+Carbon Footprint 
+assessment, to reduce emissions in all scopes and from all sources.

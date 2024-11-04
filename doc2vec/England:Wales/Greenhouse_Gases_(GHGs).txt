@@ -1,0 +1,34 @@
+2
+
+The GHGs covered by the UNFCCC and subsequent international agreements may change as scientific knowledge evolves.
+The definitions include wording to capture other climate forcing gases or particulates that the UNFCCC may include within the international agreements. Selecting the option of particulates would cover black carbon emissions, which also have a warming effect.
+You may wish to include other optional GHGs (for example, GHGs regulated by the Montreal Protocol on Substances that Deplete the Ozone Layer) within the scope of the relevant agreement.
+The GHG Protocol includes optional GHGs within its reporting requirements in certain circumstances including as long as the 100-year Global Warming Potential (
+GWP
+) values for these GHGs have been defined in IPCC Assessment Reports (see 
+GHG Protocol: Required Greenhouse Gases in Inventories
+).
+
+Greenhouse Gases (GHGs)
+ means the gases [or particulates] that trap thermal radiation in the earth’s atmosphere. They are specified by the United Nations Framework Convention on Climate Change (
+UNFCCC
+) in Annex A to the Kyoto Protocol and may be updated periodically.
+
+Greenhouse Gases (GHGs)
+ means natural and anthropogenic gases [or particulates] that contribute to or accelerate the greenhouse effect by absorbing infrared radiation, including carbon dioxide (
+CO2
+), methane (
+CH4
+), nitrous oxide (
+N2O
+), sulphur hexafluoride (
+SF6
+), hydrofluorocarbons (
+HFCs
+), perfluorocarbons (
+PFCs
+), chlorofluorocarbons (
+CFCs
+) and nitrogen trifluoride (
+NF3
+).

@@ -1,0 +1,32 @@
+1
+
+Origins of the concept
+The concept of avoided emissions developed from marketing claims by companies that their products or services would help their consumers or clients to reduce their greenhouse gas emissions. The concept is controversial as companies making these claims have not used a standardised methodology so their claims could be overstated and are difficult to compare with similar products or services.
+Calculating avoided emissions
+Calculating avoided emissions involves estimating and disclosing the GHG emissions impact of a product or service, relative to the counterfactual position where that product does not exist. The differences may be negative or positive. Positive differences are often called 'avoided emissions'.
+How do they relate to Scope 1, 2 and 3 emissions?
+Avoided emissions do not fall within 
+Scope 1, 2 and 3 Emissions
+ classified in the 
+GHG Protocol 
+as they occur outside of the product’s life cycle inventory and are outside of the company’s scope 1, 2 and 3 inventory.
+The following terms are sometimes used to describe avoided emissions:
+climate positive;
+net-positive; and
+scope 4 emissions.
+Reporting and disclosure
+Avoided emissions must be reported separately from scope 1, 2 and 3 emissions. They are calculated using a separate methodology to that for calculating a company’s scope 1, 2 and 3 emissions.
+It is suggested that ‘consequential estimation’ is used when calculating and reporting avoided emissions. This is where the reporting company accounts for the sum of all system-wide changes in emissions occurring because of the product. This is the accepted method of calculating avoided emissions accurately.
+Example products that avoid GHG emissions
+Examples of products that avoid GHG emissions include:
+low-temperature detergents;
+fuel-saving tyres;
+energy-efficient ball-bearings; and
+teleconferencing services.
+
+Avoided Emissions
+ means the 
+GHG Emissions
+ of the [Product OR Service OR Project], relative to the counterfactual situation where such [Product OR Service OR Project] does not exist. The avoided emissions shall be calculated using the methodology set out in the [
+Greenhouse Gas Protocol's Product Protocol
+].

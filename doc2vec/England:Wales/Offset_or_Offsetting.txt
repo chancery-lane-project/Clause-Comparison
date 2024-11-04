@@ -1,0 +1,26 @@
+1
+
+Contract writers may prefer to specify which voluntary or regulated market they want to purchase carbon credits from.
+The credits that can be used under the EU Emissions Trading System are specified in articles 58-61 of the 
+Fifth Registries Regulation
+ (Commission Regulation (EU) No 389/2013) and Article 11a(8) of the 
+EU ETS Linking Directive 2004
+ (Directive 2004/101/EC), which was replaced by the 
+EU ETS Amending Directive 2009
+ (Directive 2009/29/EC).
+Using this option would mean Emission Reduction Units from UNFCCC Joint Implementation projects would be permissible for use as offsets.
+For information on how organisations can offset their 
+Residual Emissions
+ from emission reduction or removal projects within their value chain, see TCLP's glossary term 
+Insetting
+.
+
+Offset
+ or 
+Offsetting
+ means buying carbon credits from a project that meets all of the following:
+(a) that has been verified by [insert name of voluntary standard] or the United Nations Framework Convention on Climate Change (UNFCCC) clean development mechanism (CDM) [or successor UNFCCC mechanism]
+(b) where the emissions of GHGs avoided, reduced or removed by the project are additional
+(c) [that prioritises removing GHGs from the atmosphere rather than avoiding or reducing third party emissions of GHGs]
+(d) that, for GHG removals, uses storage methods with a low risk of reversal over millennia
+(e) that takes account of a just transition and addresses wider social and environmental goals.

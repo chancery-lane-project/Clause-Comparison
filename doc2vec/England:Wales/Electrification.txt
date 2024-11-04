@@ -1,0 +1,21 @@
+3
+
+Option 1
+This is a broad definition. It refers to the general transition to electricity as a power source across a wide range of applications but particularly transportation and heating.
+In the context of net zero, the general assumption is that the primary motivation for electrification is a reduction in carbon emissions. However, the degree to which electrification results in reduced carbon emissions depends on how the electricity used is generated.
+To exemplify this point, if you are negotiating or writing a contractual obligation to buy electric vehicle fleets or to only use systems powered by electricity, that obligation must be accompanied by a corresponding obligation to power those vehicles or systems with electricity generated from renewables.
+Option 2
+This is a definition for infrastructure project development and investment agreements.
+Option 3
+This option is specific to rail transport. It can be adapted easily to apply to other sectors (for example, road transport).
+The definition presupposes that the contract it is used in contains the defined terms Rail Transport and Finite Power Source.
+The ‘third rail element’ in this definition may be phased out over time. This is because third rail electrification is seen increasingly as a hindrance to faster rail travel (trains running on third rail systems can travel at top speeds of 100mph as opposed to 125mph using overhead power lines). As a result, this aspect of the definition is optional and in square brackets.
+
+Electrification
+  means [the process of] converting or replacing infrastructure, machines, appliances, devices and other objects which are powered by a Finite Power Source so that electricity is used as a permanent replacement power source.
+
+Electrification
+  means the conversion of a [town] [village] [region] [rural OR remote population] to a[n] [on-grid] [mini-grid] [off-grid] electrical power source.
+
+Electrification
+  in Rail Transport means the provision of an electrical power supply to previously non-electrified railway lines using overhead power lines [or an electrified third rail system].

@@ -1,0 +1,27 @@
+2
+
+Epi-Terra
+This term derives from the Greek ÉπÍ, epi, ‘upon or above’ and Latin terra ‘earth or land’ to denote an event that impacts a specific area. The term follows the same structure as the word ‘epidemic’, which is used to describe a disease spread to a number of people within a specific population.
+It is used in 
+Iris’ Clause
+ to recognise climate change events that amount to force majeure and may prevent a party from performing its obligations under an agreement.
+Pan-Terra
+This term derives from the Greek πãv, pan, ‘all’ and Latin terra ‘earth or land’ to denote an event that impacts multiple areas. The term follows the same structure as the word ‘pandemic’, which is used to describe a disease spread across a large region, multiple continents or worldwide.
+Like epi-terra, it is used in 
+Iris’ Clause
+ to recognise climate change events that amount to force majeure and may prevent a party from performing its obligations under an agreement.
+If using these terms in a contract, consider if the definition of Epi-terra Climate Change Event or Pan-terra Climate Change Event should apply to all parties to the contract or to specified parties only.
+
+Epi-Terra Climate Change Event
+ means an event, series of events or circumstance arising from the physical impacts of 
+Climate Change
+ that affects a large number of people within a community, population, or region [and prevents [
+Party A
+ OR a party] from performing its obligations under this agreement].
+
+Pan-Terra Climate Change Event
+  means an event, a series of events or circumstances arising from the physical impacts of 
+Climate Change
+ that affects multiple countries or continents [and prevents [
+Party A 
+OR a party] from performing its obligations under this agreement].

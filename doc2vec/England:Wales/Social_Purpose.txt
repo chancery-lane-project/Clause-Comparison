@@ -1,0 +1,30 @@
+2
+
+Option 1
+This definition of social purpose is used in 
+Frank’s Clause
+ (Green Investment Obligations). The operative provision in Frank's Clause in which the definition appears gives the social purpose (as defined) primacy over (i) the capital purpose; and (ii) the commercial purpose.
+This drafting only works if it is consistent with the constitution of the company and the statutory duties that flow from this.
+Option 2
+This option provides the opportunity to tailor the definition of social purpose. There are a number of different ways to define the social purpose of a company, including:
+Reviewing and adapting suitable wording for the purpose of a company as suggested by online tools like 
+Purposely
+.
+Identifying purposes that the company exists to achieve (akin to the objects clause of a charity).
+Defining purpose by reference to specific UN SDGs (this option 2 gives you the option to link the company’s social purpose with the SDGs and include a commitment that the company will not act in any way that is materially inconsistent with all, or specified, SDGs).
+Making a commitment to:
+benefit the company’s members as a whole;
+benefit wider society and the environment, in a manner commensurate with the size of the company and the nature of its operations; and
+reduce harms the company creates or costs it imposes on wider society or the environment, with the goal of eliminating any such harm or costs. This might be instead of, or alongside, a statement of a specific purpose.
+
+Social Purpose
+ means [
+insert relevant purpose for investee company which is likely to be linked to a UN Sustainable Development Goal (SDG)
+].
+
+Social Purpose
+ means [
+insert relevant purpose for investee company as expressed in the company’s articles
+][and that contribute to and are not [materially] inconsistent with UN SDGs [
+insert relevant UN SDGs
+]].

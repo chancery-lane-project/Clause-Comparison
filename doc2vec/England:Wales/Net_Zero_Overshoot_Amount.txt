@@ -1,0 +1,72 @@
+2
+
+Calculating net zero overshoot amount
+The parties agree the method for calculating the net zero overshoot amount and place this in an operative clause or annex. Since greenhouse gas (GHG) emissions vary significantly across industries, project-specific methods should be used.
+One approach for calculating the net zero overshoot amount is to increase the severity of the penalty as the excess of emissions increases.
+Applying the funds received
+Irrespective of the definition and calculation chosen by the parties, the net zero overshoot amount should be applied by the receiving party or fund to reduce the GHG emissions arising from the activities in the contract. This obligation can be made explicit in an operative clause in the contract, for example:
+The Net Zero Overshoot Amount must be applied by [
+party B
+ OR manager of the 
+environmental fund
+] in [
+insert a specific measure that will reduce party B's GHG Emissions in the performance of its obligations under the contract
+].
+Timing of payment
+To ensure the net zero overshoot amount is paid in a timely manner, there should be an operative clause in the contract specifying when payment is due. For example:
+The Net Zero Overshoot Amount must be paid by [
+party A
+] to [
+party B 
+OR 
+environmental fund
+] no later than [
+specific date 
+OR [●] business days after [
+insert a specific date relating to the contract
+]].
+Just transition
+It may not always be clear which party is responsible for ensuring that the contract is fulfilled with minimal GHG emissions. As a rule of thumb, the onus should fall on the party who most directly produces the emissions and has the ability to control them. However, there are situations in which it is fairer or more just to break this rule.
+For example, if a large company has a contract with a small supplier who produces GHG emissions to supply the goods or services under the contract, the larger company could offer to share responsibility or otherwise support the supplier to meet its obligations. In this case, a net zero overshoot amount will not be appropriate. The larger company could instead provide resources to assist the small supplier in reducing its GHG emissions.
+Option 1
+This option can be adapted to any industry and contract. It requires additional glossary terms 
+GHG Emissions
+ and 
+Net Zero
+.
+Option 2
+This option is designed to be included in share or asset purchases. It requires additional glossary terms 
+Completion Net Carbon
+ and 
+Net Zero
+.
+
+Net Zero Overshoot Amount
+ means the amount to be paid by [
+party A
+] to [
+party B
+ OR environmental fund] if its net 
+GHG Emissions
+ in fulfilling its obligations under the contract exceed [
+Net Zero
+ OR the 
+Carbon Budget
+]. [The method of calculation is in [clause 
+●
+ ].]
+
+Net Zero Overshoot Amount
+ means the amount to be paid by [
+party A
+] to [
+party B
+ OR environmental fund] if the 
+Completion Net Carbon
+ exceeds [
+Net Zero
+ OR the 
+Carbon Budget
+]. [The method of calculation is in [clause 
+●
+ ].]

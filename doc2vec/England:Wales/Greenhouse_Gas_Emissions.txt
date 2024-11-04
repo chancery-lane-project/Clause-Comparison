@@ -1,0 +1,39 @@
+3
+
+Option 1
+This definition is interchangeable with '
+GHG
+ emissions' where 'GHG' is defined to mean the greenhouse gases listed at Annex A of the 1998 Kyoto Protocol to The United Nations Framework Convention on Climate Change, as may be amended from time to time. See TCLP's glossary definition of 
+GHGs
+.
+Option 2
+Option 2 concerns only the emissions that relate to the activities governed by the contract.
+Option 3
+Option 3 concerns only organisation emissions.
+The importance of distinguishing 'GHGs' from organisation and contract-related 'GHG Emissions' in contract definitions
+An example of where you might need to distinguish the definition of GHGs from GHG Emissions is when you refer to offsetting in your contract. See TCLP's glossary term 
+Offsetting
+ as an example.
+In our definition of Offsetting, we deliberately refer to 'emissions of GHG' and do not use the defined term 'GHG Emissions'. This is because:
+Organisations should only offset residual emissions that they have been unable to avoid, reduce or remove.
+The emissions subject to the offset are third party emissions in the atmosphere - not organisational emissions or contract-related emissions.
+Many TCLP clauses use define GHG Emissions to mean contract-related or organisation emissions only.
+As the offset emissions are not contract-related or organisation emissions, we refer to them as 'emissions of GHGs'.
+
+GHG Emissions
+ means emissions of the greenhouse gases listed at Annex A of the 1998 Kyoto Protocol to The United Nations Framework Convention on Climate Change (UNFCCC), as may be amended from time to time including carbon dioxide (CO2), methane (CH4), nitrous oxide (N2O), nitrogen trifluoride (NF3), hydrofluorocarbons (HFCs), perfluorocarbons (PFCs) and sulphur hexafluoride (SF6), each expressed as a total in units of 
+Carbon Dioxide Equivalent (CO2e).
+
+GHG Emissions
+ means emissions of 
+GHGs
+ related to this [Agreement] classified as [scope 1, 2 and 3 emissions/ primary and secondary effects] by [the 
+GHG Protocol
+] [, expressed as a total in units of carbon dioxide equivalent (CO2e)].
+
+GHG Emissions
+ means [the Company’s] emissions of 
+GHGs
+ classified as scope 1, 2 and 3 emissions by [the 
+GHG Protocol
+] [, expressed as a total in units of carbon dioxide equivalent (CO2e)].

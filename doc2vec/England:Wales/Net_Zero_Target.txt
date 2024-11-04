@@ -1,0 +1,71 @@
+4
+
+Net zero target setting
+A number of countries have already set net zero targets (or have committed to do so) for reaching net zero emissions on timescales compatible with the Paris Agreement temperature goals.
+The 
+net zero tracker
+ shows each countries’ targets and progress. Organisations must ensure that their own net zero targets are also compatible with the Paris Agreement temperature goals.
+Increasing climate ambition
+To increase the climate ambition of these definition, contract writers using this term need to include a requirement that the party adopt a 
+near-
+ and 
+long-term Science Based Target
+ validated by the 
+Science Based Targets initiative
+.
+Option 4
+The words 'all sources' in option 4 refer to 
+Scope 1, 2 and 3 Emissions
+. If you intend that the definition refers to only one or two of these categories of emissions, you will need to amend the reference to 'all sources'.
+Interim target setting
+To ensure that a net zero target is met, organisations and countries should set interim milestones that describe their trajectory to net zero. The appropriate trajectory will depend on the sector[s], level of ambition and available investment for the relevant entities or country, and is likely to be the result of advice from a 
+Climate Professional
+.
+Net zero target date
+The net zero target date should align with the organisation’s net zero target date. This will vary, but for many organisations their net zero target date will be 2050.
+Distinguishing net zero from carbon neutral
+While the terms 
+Net Zero
+ and 
+Carbon Neutral
+ are used interchangeably, the concept of net zero is distinct from carbon neutrality in several respects:
+Carbon neutrality can be achieved entirely through offsetting, allowing companies to continue to emit greenhouse gases as normal.
+Net zero, while it allows for some offsetting, requires companies to reduce their greenhouse gas emissions to achieve the Paris Agreement’s temperature goals.
+The 
+Carbon Trust
+ differentiated the two terms using PAS 2060, an internationally-recognised standard, to define carbon neutral and SBTi’s draft net zero definition to define net zero.
+It is important to keep in mind that net zero and carbon neutral are distinct terms that mean different things. Contract writers need to use each term carefully and precisely in their contracts.
+
+Net Zero Target
+  means a target to achieve 
+Net Zero
+ by [2050 OR 
+insert earlier date
+] and validated by [the Science Based Targets initiative OR 
+insert other standard
+].
+
+Net Zero Target
+  means a target to reduce and remove 
+GHG Emissions
+, including by offsetting 
+Residual Emissions
+, to achieve a balance between [the Party’s] sources and sinks of GHGs. This must be achieved by [2050 OR 
+insert earlier date
+] and align with [the goals of the Paris Agreement OR 
+Paris Agreement Goals
+].
+
+Net Zero Target
+ means the goal of balancing a party’s emissions and removals of greenhouse gases. This must be done by [2050 OR 
+insert earlier date
+] and aligned with the 
+Paris Agreement Goals
+.
+
+Net Zero Target
+  means the net reduction of 
+Greenhouse Gases (GHGs)
+ from all sources to zero by [
+insert date
+] so that there is a balance between emissions by sources and removals by sinks of Greenhouse Gases that is consistent with the goals of the Paris Agreement, taking into account the need for a just transition.

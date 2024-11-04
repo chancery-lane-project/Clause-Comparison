@@ -1,0 +1,19 @@
+1
+
+A system of carbon budgets (or interim emissions reduction targets) is a useful tool for organisations to manage and reduce their carbon footprint and achieve their emissions reduction targets.
+Measuring emissions
+Emissions are measured in carbon dioxide equivalent ( CO2e or CO2eq ), which compares the global warming potential ( GWP ) of various greenhouse gases ( GHGs ) to that of carbon dioxide. The most up-to-date GWP values can be found at Table 7.SM.7, page 1842 of the IPCC Sixth Assessment Report.
+Independent verification
+The definition suggests that the final value should be calculated by an independent expert, and the parties should consider what experience or qualification this expert should have and how any disagreements over the expert’s findings should be resolved.
+Define the term 'independent expert' to remove uncertainty.
+
+Carbon Budget
+ means the maximum amount of 
+Scope 1, 2 and 3 Emissions 
+the Company [and its Affiliates] may emit for the specified period and shall be [●] t
+CO2e
+ for the period [●] to [●], measured by an [independent expert] [
+Climate Professional
+] appointed by [●] in accordance with [the IPCC Sixth Assessment Report Global Warming Potential Values] [
+GHG Protocol
+].

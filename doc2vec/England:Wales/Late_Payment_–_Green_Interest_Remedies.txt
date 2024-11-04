@@ -1,0 +1,23 @@
+Matthew's Clause
+Creative interest rate remedies by which payments are made either to a “green” cause or an off-setter. 
+1. If [Party 2] fails to make a payment due to [Party 1] OR a party fails to make a payment due to [the OR any] other party] under this agreement by the due date, then[, without limiting [[Party 1] OR the other party]'s remedies under clause [NUMBER] (Termination),] [[Party 2] OR the defaulting party] shall [at the direction of Party 1/the non-defaulting party]:
+1.1  pay interest at a rate of [ ]% [(per annum)] to [Party 1/ the non-defaulting party] on the overdue sum from the due date until payment of the overdue sum, whether before or after judgment (
+Interest
+); or
+1.2 pay a sum equal to the Interest to:
+(i) an Appointed Beneficiary; or
+(ii) a Carbon Offset Provider,
+one or any of (1.1) and (1.2) above, in such proportions as [Party 1/the non-defaulting party] shall specify.
+2. Interest under this clause will accrue each day at [ ]% a year above the rate of [
+green bank*
+] from time to time, but at [ ]% a year for any period when that rate is below 0%.
+* [
+Insert name of green bank (from, for example, the following resources). A bank that:
+has used the Green Bond Principles (as amended from time to time by the International Capital Market Association and as evidenced at 
+Sustainable bonds database
+) in the issue of green bonds/other as agreed by the parties; or
+is a certified B Corporation credit provider (as evidenced at 
+Directory | Certified B Corporation
+) with values that prioritise the reduction of carbon footprint; or
+other as appropriate.
+]

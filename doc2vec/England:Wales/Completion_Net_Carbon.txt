@@ -1,0 +1,38 @@
+2
+
+Options 1 and 2 use TCLP's glossary definitions of 
+GHG Emissions
+, 
+Insetting
+ and 
+Offsetting.
+ The term Carbon Statement is as defined in 
+Felix's Clause
+.
+Commercial use
+This term is for use in a share purchase agreement ( SPA ) where one company buys a controlling percentage of a target company’s shares. It can also be used for asset purchases.
+It is envisaged that a lower completion net carbon value will result in a higher purchase price for the target. As buyers will want to acquire a company with low net carbon that will keep them on track to meet their net zero targets, sellers will be incentivised to reduce the GHG emissions associated with the target to increase the sale price and their negotiating power.
+Just transition considerations
+If the buyer is in a weaker bargaining position owing to its geographical location, the clause could be adapted to exclude scope 3 emissions.
+Pricing mechanism
+The definition could be amended to increase a company’s purchase price inversely to its completion net carbon.
+
+Completion Net Carbon
+ means the aggregate 
+GHG Emissions
+ of the Target and the Subsidiaries at the [Completion Date], as set out in the Carbon Statement, excluding any carbon 
+Insetting
+ or 
+Offsetting
+ by the Target and the Subsidiaries between the date the 
+GHG Emissions
+ were calculated and the [Completion Date].
+
+Completion Net Carbon
+ means the aggregate 
+GHG Emissions
+ of the Target and the Subsidiaries at the [Completion Date], as set out in the Carbon Statement, and including any carbon 
+Insetting
+ or 
+Offsetting
+ by the Target and the Subsidiaries between the date the GHG Emissions were calculated and the [Completion Date].
