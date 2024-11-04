@@ -8,4 +8,5 @@ The **determine_dialect.py file** is a tool to detect the predominant dialect (B
 
 The **doc2vec** folder includes the TCLP clauses that pertain to England/Wales as well as glossary terms and guides. It also contains two scripts: one with a GUI and one without. Both match the user's uploaded document to the content it most matches from TCLP. 
 
-- **Notes**: This would be made better if it can scrape clauses from the TCLP website in real time, not needing to have them stored locally. It would also be better if the model did not train inside the script, and was instead loaded in. 
+- **Notes**: This would be made better if it can scrape clauses from the TCLP website in real time, not needing to have them stored locally. It would also be better if the model did not train inside the script, and was instead loaded in.
+- **bowGUI.py** is similar to doc2vec but allows the user to play around with the bag of words approach. Still needs the England/Wales folder but does not train a model internally so it is improved in that way. 
