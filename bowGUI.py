@@ -1,94 +1,8 @@
 # bag of words with GUI
 
 import tkinter as tk
-from tkinter import ttk, filedialog, messagebox
-import os
-import numpy as np
-import pandas as pd
-from sklearn.feature_extraction.text import CountVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
-
-
-# Load documents from the folder
-def load_documents(folder_path):
-    documents = []
-    file_names = []
-
-    for filename in os.listdir(folder_path):
-        file_path = os.path.join(folder_path, filename)
-        if os.path.isfile(file_path) and filename.endswith(".txt"):
-            with open(file_path, "r", encoding="utf-8") as file:
-                documents.append(file.read())
-                file_names.append(filename)
-
-    return documents, file_names
-
-
-# Find the top 3 most similar documents and return relevant data
-def find_top_similar(target_doc, documents, file_names, similarity_threshold=0.15):
-    custom_stop_words = [
-        "clause",
-        "agreement",
-        "contract",
-        "parties",
-        "shall",
-        "herein",
-        "company",
-        "date",
-        "form",
-        "party",
-        "ii",
-        "pursuant",
-    ]
-
-    vectorizer = CountVectorizer(stop_words="english")
-    combined_stop_words = list(
-        set(vectorizer.get_stop_words()).union(custom_stop_words)
-    )
-    vectorizer = CountVectorizer(stop_words=combined_stop_words)
-
-    all_documents = documents + [target_doc]
-    X = vectorizer.fit_transform(all_documents)
-
-    cosine_similarities = cosine_similarity(X[-1:], X[:-1])
-    top_indices = np.argsort(cosine_similarities[0])[::-1][:3]
-    top_scores = cosine_similarities[0][top_indices]
-
-    if all(score > similarity_threshold for score in top_scores):
-        return (
-            [file_names[i] for i in top_indices],
-            top_scores,
-            [documents[i] for i in top_indices],
-            vectorizer,
-            X,
-            top_indices,
-        )
-    else:
-        return [], top_scores, [], vectorizer, X, top_indices
-
-
-# Generate the feature chart for overlapping words
-def output_feature_chart(vectorizer, X, most_similar_index):
-    feature_names = vectorizer.get_feature_names_out()
-    X_array = X.toarray()
-    target_vector = X_array[-1]
-    most_similar_vector = X_array[most_similar_index]
-
-    target_df = pd.DataFrame({"word": feature_names, "target_frequency": target_vector})
-    similar_df = pd.DataFrame(
-        {"word": feature_names, "similar_frequency": most_similar_vector}
-    )
-
-    merged_df = target_df.merge(similar_df, on="word")
-    merged_df = merged_df[
-        (merged_df["target_frequency"] > 0) & (merged_df["similar_frequency"] > 0)
-    ]
-    merged_df["total_frequency"] = (
-        merged_df["target_frequency"] + merged_df["similar_frequency"]
-    )
-    merged_df = merged_df.sort_values(by="total_frequency", ascending=False)
-
-    return merged_df
+from tkinter import ttk, filedialog
+import utils
 
 
 # GUI Application
@@ -98,7 +12,7 @@ class SimilarityApp:
         self.root.title("Document Similarity Checker")
         self.root.geometry("600x700")
 
-        self.documents, self.file_names = load_documents("England:Wales")
+        self.documents, self.file_names = utils.load_clauses("England:Wales")
         self.merged_df = None
         self.top_clause_text = ""
         self.contract_text = ""
@@ -151,9 +65,15 @@ class SimilarityApp:
             self.display_results(self.contract_text)
 
     def display_results(self, target_doc):
-        top_names, top_scores, top_texts, vectorizer, X, top_indices = find_top_similar(
+        top_matches = utils.find_top_similar_bow(
             target_doc, self.documents, self.file_names
         )
+
+        # Extract elements from the returned dictionary
+        top_names = top_matches["Top_Matches"]
+        top_scores = top_matches["Scores"]
+        top_texts = top_matches["Documents"]
+        feature_chart = top_matches["Feature_Chart"]
 
         self.result_text.delete(1.0, tk.END)
 
@@ -166,7 +86,7 @@ class SimilarityApp:
                 self.result_text.insert(tk.END, f"{i}. Clause: {name}\n")
                 self.result_text.insert(tk.END, f"   Similarity Score: {score:.4f}\n\n")
 
-            self.merged_df = output_feature_chart(vectorizer, X, top_indices[0])
+            self.merged_df = feature_chart
             self.view_chart_button.config(state=tk.NORMAL)
             self.view_clause_button.config(state=tk.NORMAL)
             self.view_contract_button.config(state=tk.NORMAL)
