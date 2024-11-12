@@ -1,17 +1,22 @@
-# legalBERTGUI.py
+# encryptGUI.py
 import tkinter as tk
-from tkinter import ttk, filedialog
+from tkinter import ttk, filedialog, messagebox
 from transformers import AutoTokenizer, AutoModel
 import os
 import numpy as np
 import threading
 import nltk
-import utils
+import utils  # Import utils for reusable functions
+from cryptography.fernet import Fernet
 
 light_blue_text = "#e6f5ff"
 mid_blue_text = "#b8e2ff"
 navy = "#001f3f"
 font = "Helvetica"
+
+# Generate or load encryption key (for demonstration, use a static key or save/load securely)
+encryption_key = Fernet.generate_key()
+cipher = Fernet(encryption_key)
 
 
 class TCLPApp:
@@ -45,8 +50,7 @@ class TCLPApp:
         self.documents = []
         self.file_names = []
         self.embeddings = {}
-        self.top_clause_text = ""
-        self.contract_text = ""
+        self.encrypted_contract = None
 
         # Loading screen
         self.loading_screen = tk.Label(
@@ -152,10 +156,10 @@ class TCLPApp:
         )
         self.browse_button.pack(pady=10)
 
-        self.view_contract_button = tk.Button(
+        self.view_encrypted_contract_button = tk.Button(
             self.root,
-            text="View Contract Text",
-            command=self.view_contract,
+            text="View Encrypted Contract",
+            command=self.view_encrypted_contract,
             state=tk.DISABLED,
             font=(font, 12),
             bg=light_blue_text,
@@ -166,7 +170,7 @@ class TCLPApp:
             padx=10,
             pady=5,
         )
-        self.view_contract_button.pack(pady=5)
+        self.view_encrypted_contract_button.pack(pady=5)
 
         self.result_frame = tk.Frame(self.root, bg=navy)
         self.result_frame.pack(pady=20, padx=20, fill=tk.BOTH, expand=True)
@@ -197,8 +201,11 @@ class TCLPApp:
         if file_path:
             with open(file_path, "r", encoding="utf-8") as file:
                 query = file.read()
-            self.contract_text = query
-            self.view_contract_button.config(state=tk.NORMAL)
+            # Encrypt the contract text
+            self.encrypted_contract = cipher.encrypt(query.encode("utf-8")).decode(
+                "utf-8"
+            )
+            self.view_encrypted_contract_button.config(state=tk.NORMAL)
             selected_method = self.method_var.get()
             self.display_results(query, selected_method)
 
@@ -210,7 +217,7 @@ class TCLPApp:
             self.result_frame,
             text="Click on the name of the clauses below to see the full text of the top 3 matching clauses for your contract:",
             font=(font, 16, "bold"),
-            fg=mid_blue_text,  # Slightly darker light blue
+            fg=mid_blue_text,
             bg=navy,
             wraplength=500,
         )
@@ -247,8 +254,14 @@ class TCLPApp:
             )
             clause_button.pack(side="bottom", anchor="w", fill="x", padx=5, pady=5)
 
-    def view_contract(self):
-        self.show_text_in_window("Contract Text", self.contract_text)
+    def view_encrypted_contract(self):
+        """Display the encrypted text in a new window."""
+        if self.encrypted_contract:
+            self.show_text_in_window("Encrypted Contract Text", self.encrypted_contract)
+        else:
+            messagebox.showwarning(
+                "Warning", "No contract file has been encrypted yet."
+            )
 
     def view_clause_text(self, clause_name):
         # Ensure clause_name is formatted to match entries in self.file_names
@@ -263,6 +276,7 @@ class TCLPApp:
             print(f"Error: {formatted_name} not found in file names.")
 
     def show_text_in_window(self, title, content):
+        """Create a new window to display text content."""
         new_window = tk.Toplevel(self.root)
         new_window.title(title)
         text_widget = tk.Text(
