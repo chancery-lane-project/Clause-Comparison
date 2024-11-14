@@ -2,6 +2,7 @@
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 import os
+import re
 
 # setting the stage with necessary variables and namespaces
 
@@ -36,6 +37,8 @@ for item in root.findall("channel/item"):
 
         # glossary terms are a special case, as they have multiple definitions so we need to extract them all
         # this means this code is the most "hard coded" and if ever content about glossary terms changes, this code will need to be updated
+
+        # I am changing this so that it excludes drafting notes
         if post_type == "glossary-term":
             definitions = []
             for meta in item.findall(
@@ -49,19 +52,85 @@ for item in root.findall("channel/item"):
                 )
 
                 # Currently, glossary content is stored under "drafting_notes" and "term_definition_" meta keys
-                if meta_key == "drafting_notes" or meta_key.startswith(
-                    "term_definition_"
-                ):
-                    # Use beautiful soup to parse HTML and remove tags
+                if meta_key.startswith("term_definition_"):
                     soup = BeautifulSoup(meta_value, "html.parser")
                     definitions.append(soup.get_text(separator="\n").strip())
             cleaned_content = "\n\n".join(definitions)
+
+        elif post_type == "clause":
+            content_element = item.find(f"{content_namespace}encoded")
+            full_content = ""
+
+            if content_element is not None and content_element.text:
+                soup = BeautifulSoup(content_element.text, "html.parser")
+                full_content = soup.get_text(separator="\n").strip()
+
+            # Extract content from `clause_recitals` and add it to `full_content`; this is only necessary for Roberto's Recitals at the moment
+            for meta in item.findall(
+                "wp:postmeta", namespaces={"wp": "http://wordpress.org/export/1.2/"}
+            ):
+                meta_key = (
+                    meta.find(f"{wp_namespace}meta_key").text
+                    if meta.find(f"{wp_namespace}meta_key") is not None
+                    else ""
+                )
+                if meta_key == "clause_recitals":
+                    recitals_text = (
+                        meta.find(f"{wp_namespace}meta_value").text
+                        if meta.find(f"{wp_namespace}meta_value") is not None
+                        else ""
+                    )
+
+                    # Only parse and add recitals if `recitals_text` is not None or empty
+                    if recitals_text:
+                        recitals_soup = BeautifulSoup(recitals_text, "html.parser")
+                        cleaned_recitals = recitals_soup.get_text(
+                            separator="\n"
+                        ).strip()
+                        full_content = (
+                            f"{cleaned_recitals}\n\n{full_content}"
+                            if cleaned_recitals
+                            else full_content
+                        )
+
+                    # Possible start points in order of priority
+                    possible_start_points = [
+                        "(A)",
+                        "1. ",
+                        "1",
+                        "For",
+                        "Sub",
+                        "(a)",
+                        "General",
+                    ]
+
+                    # Initialize start_index to -1 to indicate no start point found initially
+                    start_index = -1
+                    for start_point in possible_start_points:
+                        start_index = full_content.find(start_point)
+                        if start_index != -1:
+                            # Exit loop once the first start point is found
+                            break
+
+            # Extract content from the start point if found
+            if start_index != -1:
+                cleaned_content = full_content[start_index:].strip()
+            else:
+                print(f"No valid start point found in content for: {title}")
+                cleaned_content = ""
+
+            # Remove all content between "[Drafting note:" and the first "]" after it
+            cleaned_content = re.sub(
+                r"\[\s*Drafting note:.*?\]",
+                "",
+                cleaned_content,
+                flags=re.DOTALL | re.IGNORECASE,
+            )
 
         else:
             # for other post types, we can just use the main content field
             content_element = item.find(f"{content_namespace}encoded")
             if content_element is not None and content_element.text:
-                # Use beautiful soup to parse HTML and remove tags
                 soup = BeautifulSoup(content_element.text, "html.parser")
                 cleaned_content = soup.get_text(separator="\n").strip()
 
