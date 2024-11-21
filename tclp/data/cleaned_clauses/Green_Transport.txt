@@ -1,0 +1,7 @@
+4 Green Transport means any mode of transport, conventionally motorised or powered by an[Alternative Power Source][Alternative Fuel], which is classed by the UK Vehicle Certification Agency as an Ultra-Low Emissions Vehicle or a Zero Emissions Vehicle .
+
+Green Transport means any mode of transport which is powered by[an Alternative Power Source][Alternative Fuel]or physical human force such that, when in operation, it produces[minimal][almost no]Greenhouse Gases .
+
+Alternative Fuel means fuel or power sources which serve, at least partly, as a substitute for fossil oil sources in the energy supply to transport and which have the potential to contribute to its decarbonisation and enhance the Environmental Performance of the transport sector and includes the following:(a)electricity(b)hydrogen(c)liquid or gaseous biofuels derived from biomass(d)synthetic and paraffinic fuels(e)natural gas, including biomethane in gaseous form(compressed natural gas)and liquefied form(liquefied natural gas(LNG))(f)liquefied petroleum gas.
+
+Alternative Power Source means all alternative sources of energy for transport, such as electricity and hydrogen, that do not have to be released through combustion or non-combustion oxidation.

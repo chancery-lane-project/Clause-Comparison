@@ -1,0 +1,4 @@
+*.txt
+!tclp/data/cleaned_clauses/*.txt
+*.npy
+*.xml
