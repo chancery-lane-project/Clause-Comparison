@@ -1,0 +1,5 @@
+3 GHG Emissions means emissions of the greenhouse gases listed at Annex A of the 1998 Kyoto Protocol to The United Nations Framework Convention on Climate Change(UNFCCC), as may be amended from time to time including carbon dioxide(CO2), methane(CH4), nitrous oxide(N2O), nitrogen trifluoride(NF3), hydrofluorocarbons(HFCs), perfluorocarbons(PFCs)and sulphur hexafluoride(SF6), each expressed as a total in units of Carbon Dioxide Equivalent(CO2e).
+
+GHG Emissions means emissions of GHGs related to this[Agreement]classified as[scope 1, 2 and 3 emissions/ primary and secondary effects]by[the GHG Protocol][, expressed as a total in units of carbon dioxide equivalent(CO2e)].
+
+GHG Emissions means[the Company’s]emissions of GHGs classified as scope 1, 2 and 3 emissions by[the GHG Protocol][, expressed as a total in units of carbon dioxide equivalent(CO2e)].
