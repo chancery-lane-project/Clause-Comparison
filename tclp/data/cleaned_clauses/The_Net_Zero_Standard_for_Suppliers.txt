@@ -1,0 +1,35 @@
+1. Contract emissions reporting and targets 1.1 The Supplier acknowledges and understands the Customer's Net Zero Target.
+
+Accordingly, the Supplier agrees to measure, manage and report the Total Emissions in accordance with the provisions of this clause[1][and to develop and implement a plan of continual improvement with the objective of reducing the Total Emissions as rapidly as possible to contribute to efforts to limit global temperature increase to 1.5 Celsius above pre-industrial levels].
+
+1.2 The Supplier shall measure and calculate the Total Emissions in accordance with the Reporting Standard during each Contract Year.
+
+1.3 Within[30(thirty)days]of the Commencement Date and no later than[30(thirty)days]following the end of each Contract Year, the Supplier shall submit a report to the Customer in respect of the 12(twelve)month period preceding the Commencement Date or the preceding Contract Year(as applicable)(the Reporting Period)[in the format provided in[Appendix ●]](or in such other format as the Customer shall specify from time to time)which shall include:1.3.1 the industry best practices on managing and reducing Total Emissions that the Supplier has applied during the Reporting Period; 1.3.2 the Total Emissions as measured during the Reporting Period; 1.3.3 any reduction in the Total Emissions for the Reporting Period measured against the Total Emissions in the Contract Year preceding the Reporting Period(where relevant); 1.3.4 the difference(if any)between the Total Emissions for the Reporting Period and the Target Total Emissions for that period(where relevant); and 1.3.5. the steps to be taken by the Supplier with a view to achieving, at a minimum, the Target Total Emissions, during the current Contract Year[(including, but not limited to, any steps taken by the Supplier to encourage a reduction in the Total Emissions emitted from sources in the Supplier’s supply or value chain that relate to the Supplier's obligations under this agreement), (Annual Emissions Report).
+
+1.4 The Supplier represents and warrants that the content of any Annual Emissions Report provided by the Supplier to the Customer in accordance with this Clause[1]is in all material respects complete, accurate and not misleading.
+
+1.5 The Annual Emissions Report shall be verified by the Auditor, the costs of which shall be met by[the Supplier OR the Customer OR both parties jointly].*[If the parties are unable to agree on the appointment of an Auditor within 10(ten)business days from the beginning of the appointment process, the Customer(acting reasonably)shall appoint an Auditor of its choosing.]** * ** 2. Supplier organisational requirements[Insert organisational requirements of the Supplier, as required, from Sebastian’s Clause .]3. Cascading obligations The Supplier shall[as far as possible OR use best endeavours to]* ensure that this Annex will be added into any and all of its[supply chain OR procurement]contracts that relate to its obligations under this agreement.
+
+*[4. Offsetting The[parties shall agree to jointly OR Supplier shall]Offset the Total Emissions within[60(sixty)OR 90(ninety)days]of the end of the relevant Reporting Period.]5. Variation in price 5.1 There will be no variation to the[Price]under this agreement where the Total Emissions are lower than, equal to or are within[1(one)]percent of the Target Total Emissions.
+
+5.2[Option 1:simple discount .
+
+Where the Total Emissions are greater than the Target Total Emissions[by more than[1(one]percent], the[Price]shall be reduced by[5(five)]percent(the Climate Discount).
+
+This adjustment will take effect on[insert date].]*[OR]*[Option 2:matching discount .
+
+In relation to each Reporting Period, where the Total Emissions exceeds the Target Total Emissions[by more than[1(one)]percent], the[Price]will be reduced by the same percentage amount by which the Total Emissions exceeds the Target Total Emissions[up to a cap of[●]percent](the Climate Discount).* This adjustment will take effect on[insert date].]**[OR]* **[Option 3:simple rebate .
+
+Where the Total Emissions are less than the Target Total Emissions[by more than[1(one)]percent], the[Price]will increase by[2(two)percent].
+
+This adjustment will take effect on[insert date].][OR][Option 4:matching rebate .
+
+Where the Total Emissions are less than the Target Total Emissions[by at least 1(one)percent], the[Price]will be increased by the same percentage amount that the Total Emissions are less than the Target Total Emissions[up to a cap of[●]percent].* This adjustment will take effect on[insert date].]* 5.3 Unless the Climate Discount has been applied to the[Price], it[shall be payable on demand by the Customer or as a credit on the account of the Customer][may be withheld from any payment due from the Customer to the Supplier].
+
+5.4 The Supplier is entitled to include any rebates to which the Supplier is entitled under this Clause[5]as an additional charge in its next invoice issued by the Supplier to the Customer.
+
+5.5 The Customer shall pay the Climate Discount to a[UK OR insert applicable jurisdiction]registered charity with a primary focus on tackling climate change and/ or nature conservation, as selected by the Customer[and notified to the Supplier].
+
+6.[Supplier code of conduct or environmental and sustainability policy]In performing its obligations under this agreement, the Supplier is required to comply with the Customer’s[Supplier Code of Conduct OR Environmental and Sustainability Policy].
+
+Appendix[●]:form of Annual Emissions Report[Insert pro forma Annual Emissions Report..
