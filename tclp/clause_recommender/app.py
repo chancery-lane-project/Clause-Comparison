@@ -1,11 +1,11 @@
 from fastapi import FastAPI, UploadFile, Form
-from fastapi.responses import HTMLResponse
 from fastapi.middleware.cors import CORSMiddleware
 from transformers import AutoTokenizer, AutoModel
-import utils
+from tclp.clause_recommender import utils
 import numpy as np
 import os
 from fastapi import HTTPException
+from fastapi.responses import FileResponse
 
 app = FastAPI()
 
@@ -20,11 +20,11 @@ app.add_middleware(
 
 # Load model and embeddings
 # NOTE: This still requires the user to have some things stored locally including the utils file
-local_model_dir = "../legalbert/legalbert_model"
-embeddings_dir = "../legalbert/legalbert_embeddings"
+local_model_dir = "/app/tclp/legalbert/legalbert_model"
+embeddings_dir = "/app/tclp/legalbert/legalbert_embeddings"
 tokenizer = AutoTokenizer.from_pretrained(local_model_dir)
 model = AutoModel.from_pretrained(local_model_dir)
-documents, file_names = utils.load_clauses("../data/cleaned_clauses")
+documents, file_names = utils.load_clauses("/app/tclp/data/cleaned_clauses")
 
 embeddings = {}
 for method in ["cls", "mean", "max", "concat", "specific"]:
@@ -74,20 +74,10 @@ def get_clause(clause_name: str):
 
 @app.get("/")
 def read_root():
-    return HTMLResponse(
-        """
-        <!DOCTYPE html>
-        <html>
-        <body>
-        <h2>Welcome to TCLP Clause Matcher</h2>
-        <p>Use a frontend to interact with this backend.</p>
-        </body>
-        </html>
-        """
-    )
+    return FileResponse("/app/tclp/clause_recommender/index.html")
 
 
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run("app:app", host="127.0.0.1", port=8000, reload=True)
+    uvicorn.run("app:app", host="0.0.0.0", port=8000, reload=True)
