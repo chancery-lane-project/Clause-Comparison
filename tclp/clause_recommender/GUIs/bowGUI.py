@@ -1,8 +1,11 @@
 # bag of words with GUI
+"""This is a file to launch a local GUI of the bag of words approach.
+
+This was not the selected approach for the final output but is included for completeness."""
 
 import tkinter as tk
 from tkinter import ttk, filedialog
-import utils
+from tclp.clause_recommender import utils
 
 
 # GUI Application
@@ -12,7 +15,9 @@ class SimilarityApp:
         self.root.title("Document Similarity Checker")
         self.root.geometry("600x700")
 
-        self.documents, self.file_names = utils.load_clauses("../data/cleaned_clauses")
+        self.documents, self.file_names = utils.load_clauses(
+            "../../data/cleaned_clauses"
+        )
         self.merged_df = None
         self.top_clause_text = ""
         self.contract_text = ""

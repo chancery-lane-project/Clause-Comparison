@@ -1,4 +1,9 @@
 # legalBERTGUI.py
+
+"""This is a file to launch a localGUI of the legalBERT approach.
+
+Most users will be more interested in using the dockerized version but this is included for completeness."""
+
 import tkinter as tk
 from tkinter import ttk, filedialog
 from transformers import AutoTokenizer, AutoModel
@@ -6,7 +11,7 @@ import os
 import numpy as np
 import threading
 import nltk
-import utils
+from tclp.clause_recommender import utils
 
 light_blue_text = "#e6f5ff"
 mid_blue_text = "#b8e2ff"
@@ -71,8 +76,8 @@ class TCLPApp:
         self.load_model_thread.start()
 
     def load_model(self):
-        local_model_dir = "./legalbert_model"
-        embeddings_dir = "./legalbert_embeddings"
+        local_model_dir = "../legalbert/legalbert_model"
+        embeddings_dir = "../legalbert/legalbert_embeddings"
         self.progress["maximum"] = 6
 
         if not os.path.exists(local_model_dir):
@@ -88,7 +93,7 @@ class TCLPApp:
         self.progress["value"] += 1
         self.root.update_idletasks()
 
-        folder_path = "../data/cleaned_clauses"
+        folder_path = "../../data/cleaned_clauses"
         self.documents, self.file_names = utils.load_clauses(folder_path)
 
         if not os.path.exists(embeddings_dir):

@@ -1,10 +1,12 @@
 # doc2vec with GUI
 
-# this must be run with the England:Wales folder in the same directory as this script
+"""This is a file to launch a local GUI of the doc2vec approach.
+
+This was not the selected approach for the final output but is included for completeness."""
 
 # necessary imports
 import tkinter as tk
-from tkinter import ttk, filedialog, messagebox
+from tkinter import ttk, filedialog
 from gensim.models.doc2vec import Doc2Vec, TaggedDocument
 from nltk.tokenize import word_tokenize
 from sklearn.metrics.pairwise import cosine_similarity
@@ -15,7 +17,7 @@ import nltk
 
 # Load the pre-trained Doc2Vec model (or train one if not available)
 def load_model():
-    folder_path = "../data/cleaned_clauses"
+    folder_path = "../../data/cleaned_clauses"
     documents = []
     file_names = []
 

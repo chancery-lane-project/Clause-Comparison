@@ -1,22 +1,17 @@
 # utils.py
-
+"""This is the utils file for the clause_recommender task."""
 import os
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from gensim.models.doc2vec import Doc2Vec, TaggedDocument
-from nltk.tokenize import word_tokenize
 import numpy as np
 import os
 import matplotlib.pyplot as plt
 from sklearn.metrics.pairwise import cosine_similarity
 import pandas as pd
-import nltk
-import utils
 import torch
-from sklearn.feature_extraction.text import TfidfVectorizer
 
 
 def load_clauses(folder_path):

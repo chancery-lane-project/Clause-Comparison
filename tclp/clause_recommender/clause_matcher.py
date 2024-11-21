@@ -1,3 +1,12 @@
+# clause_matcher.py
+
+"""
+This allows you to create an instance of the LegalBERTMatcher class and use it to find the best matching clause in a set of clauses for a given query text.
+
+It is used for inserting clauses in the clause_detector class.
+
+Most users will not have to use this file."""
+
 import os
 import numpy as np
 from transformers import AutoTokenizer, AutoModel
@@ -9,7 +18,9 @@ nltk.download("punkt")
 
 class LegalBERTMatcher:
     def __init__(
-        self, model_dir="./legalbert_model", embeddings_dir="./legalbert_embeddings"
+        self,
+        model_dir="../legalbert/legalbert_model",
+        embeddings_dir="../legalbert/legalbert_embeddings",
     ):
         self.model_dir = model_dir
         self.embeddings_dir = embeddings_dir
