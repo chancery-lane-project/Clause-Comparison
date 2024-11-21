@@ -1,7 +1,7 @@
 from fastapi import FastAPI, UploadFile, Form
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import HTMLResponse
+from fastapi.responses import FileResponse
 from tclp.clause_detector import detector_utils as du
 import os
 import shutil
@@ -19,7 +19,7 @@ app.add_middleware(
 )
 
 # load model when application starts
-model_name = "../clause_identifier_model.pkl"
+model_name = "/app/tclp/clause_detector/clause_identifier_model.pkl"
 model = du.load_model(model_name)
 
 
@@ -128,20 +128,10 @@ async def process_contract(files: list[UploadFile], is_folder: str = Form("false
 
 @app.get("/")
 def read_root():
-    return HTMLResponse(
-        """
-        <!DOCTYPE html>
-        <html>
-        <body>
-        <h2>Welcome to TCLP Clause Detector</h2>
-        <p>Use a frontend to interact with this backend.</p>
-        </body>
-        </html>
-        """
-    )
+    return FileResponse("/app/tclp/clause_detector/index.html")
 
 
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run("detector:app", host="127.0.0.1", port=8080, reload=True)
+    uvicorn.run("detector:app", host="0.0.0.0", port=8080, reload=True)
