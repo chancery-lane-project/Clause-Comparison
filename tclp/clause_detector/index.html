@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clause Detector</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        button {
+            margin: 10px 5px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        input[type="file"] {
+            margin: 10px 0;
+        }
+        .result, .loading {
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+        }
+        .progress-bar {
+            width: 100%;
+            background-color: #f3f3f3;
+            border-radius: 5px;
+            overflow: hidden;
+            margin: 10px 0;
+        }
+        .progress-bar-inner {
+            height: 20px;
+            background-color: #007BFF;
+            width: 0%;
+            transition: width 0.5s;
+        }
+        .hidden {
+            display: none;
+        }
+        .error-banner {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Clause Detector</h1>
+
+        <!-- Display error message if there is an error in the query params -->
+        <div id="errorBanner" class="error-banner hidden">
+            <p id="errorMessage"></p>
+        </div>
+
+        <!-- Step 1: Choose "File" or "Folder" -->
+        <div id="selectionStep">
+            <button id="selectFile">Upload File</button>
+            <button id="selectFolder">Upload Folder</button>
+        </div>
+
+        <!-- Step 2: File Upload -->
+        <form id="uploadForm" class="hidden">
+            <label id="uploadLabel" for="uploadInput"></label>
+            <input type="file" id="uploadInput" name="file" multiple>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div id="loading" class="loading hidden">
+            <p>Just one moment! We're preparing your results...</p>
+            <div class="progress-bar">
+                <div id="progressBar" class="progress-bar-inner"></div>
+            </div>
+        </div>
+        <div id="result" class="result hidden"></div>
+    </div>
+
+    <script>
+        const selectFileButton = document.getElementById("selectFile");
+        const selectFolderButton = document.getElementById("selectFolder");
+        const uploadForm = document.getElementById("uploadForm");
+        const uploadLabel = document.getElementById("uploadLabel");
+        const uploadInput = document.getElementById("uploadInput");
+        const resultDiv = document.getElementById("result");
+        const loadingDiv = document.getElementById("loading");
+        const progressBar = document.getElementById("progressBar");
+        const errorBanner = document.getElementById("errorBanner");
+        const errorMessage = document.getElementById("errorMessage");
+
+        const MAX_FILE_LIMIT = 1000; 
+
+        let isFolderUpload = false;
+        function hideErrorBanner() {
+            errorBanner.classList.add("hidden");
+        }
+
+        //handle "Upload File" selection
+        selectFileButton.addEventListener("click", () => {
+            isFolderUpload = false;
+            uploadLabel.innerText = "Upload Contract File:";
+            uploadInput.removeAttribute("webkitdirectory");
+            uploadInput.removeAttribute("directory");
+            uploadInput.setAttribute("accept", ".txt"); 
+            showUploadForm();
+            hideErrorBanner(); 
+        });
+
+        //handle "Upload Folder" selection
+        selectFolderButton.addEventListener("click", () => {
+            isFolderUpload = true;
+            uploadLabel.innerText = "Upload Contract Folder:";
+            uploadInput.removeAttribute("accept"); 
+            uploadInput.setAttribute("webkitdirectory", true);
+            uploadInput.setAttribute("directory", true);
+            showUploadForm();
+            hideErrorBanner(); 
+        });
+
+        function showUploadForm() {
+            document.getElementById("selectionStep").classList.add("hidden");
+            uploadForm.classList.remove("hidden");
+        }
+
+        uploadForm.addEventListener("submit", async function (event) {
+            event.preventDefault();
+
+            //hide any previously shown results and error banner
+            resultDiv.classList.add("hidden");
+            errorBanner.classList.add("hidden");
+            loadingDiv.classList.remove("hidden");
+            progressBar.style.width = "0%";
+
+            if (!uploadInput.files.length) {
+                alert("Please upload a file or folder.");
+                loadingDiv.classList.add("hidden");
+                return;
+            }
+
+            //check the number of files
+            if (uploadInput.files.length > MAX_FILE_LIMIT) {
+                //redirect to the home screen with an error message
+                window.location.href = '/?error=too-many-files';  
+                return;
+            }
+
+            const formData = new FormData();
+            for (const file of uploadInput.files) {
+                formData.append("files", file); 
+            }
+
+            formData.append("is_folder", isFolderUpload ? "true" : "false");
+
+            //progress bar
+            let progress = 0;
+            const progressInterval = setInterval(() => {
+                if (progress < 90) {
+                    progress += 10;
+                    progressBar.style.width = progress + "%";
+                }
+            }, 500);
+
+            const response = await fetch("http://127.0.0.1:8080/process/", {
+                method: "POST",
+                body: formData,
+            });
+
+            try {
+                const result = await response.json();
+
+                clearInterval(progressInterval);  //stop the progress bar once we have the response
+                progressBar.style.width = "100%"; //complete the progress bar
+
+                loadingDiv.classList.add("hidden");
+
+                if (!response.ok) {
+                    const error = result.error || "An error occurred while processing.";
+                    resultDiv.classList.remove("hidden");
+                    resultDiv.innerHTML = `<p style="color: red;">${error}</p>`;
+
+                    //redirect to the home screen
+                    window.location.href = '/?error=processing-failed';
+                    return;
+                }
+
+                //results for both folder and file uploads
+                if (isFolderUpload) {
+                    resultDiv.classList.remove("hidden");
+                    resultDiv.innerHTML = `
+                        <p><strong>Percentages:</strong></p>
+                        <ul>
+                            <li>Not Likely: ${result.not_likely}%</li>
+                            <li>Likely: ${result.likely}%</li>
+                            <li>Very Likely: ${result.very_likely}%</li>
+                            <li>Extremely Likely: ${result.extremely_likely}%</li>
+                        </ul>
+                    `;
+                } else {
+                    resultDiv.classList.remove("hidden");
+                    resultDiv.innerHTML = `<p><strong>Classification:</strong> ${result.classification}</p>`;
+                }
+            } catch (error) {
+                console.error(error);
+                loadingDiv.classList.add("hidden");
+                resultDiv.classList.remove("hidden");
+                resultDiv.innerHTML = `<p style="color: red;">Error processing your request. Please try again.</p>`;
+            }
+        });
+
+        const urlParams = new URLSearchParams(window.location.search);
+        const errorType = urlParams.get('error');
+
+        //show error message
+        if (errorType) {
+            const errorBanner = document.getElementById("errorBanner");
+            const errorMessage = document.getElementById("errorMessage");
+
+            if (errorType === 'too-many-files') {
+                errorMessage.textContent = "This server can only handle up to 1000 files; please try again.";
+            } else if (errorType === 'processing-failed') {
+                errorMessage.textContent = "There was an issue processing your files. Please try again.";
+            }
+
+            errorBanner.classList.remove("hidden");  
+
+            //clear the query parameter after displaying the banner
+            history.replaceState(null, '', window.location.pathname); 
+        }
+    </script>
+</body>
+</html>
