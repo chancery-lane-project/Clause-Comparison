@@ -1,4 +1,14 @@
-# Necessary imports
+# xml_parse.py
+"""
+This script is used to parse the XML file downloaded from the WordPress site and extract the content of the clauses, guides, and glossary terms.
+
+Users will likely not need to run this script as the information has already been extracted and cleaned for you.
+
+However, this file is included in the repository for transparency and to show how the data was extracted and cleaned.
+
+And for those that might wish to start from scratch."""
+
+#  Necessary imports
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 import os
@@ -8,14 +18,14 @@ import re
 
 # NOTE: The XML file must be downloaded from the WordPress site and saved in the same directory as this script
 # Please name it "thechancerylaneproject.WordPress.xml" or update the file name in the code below
-tree = ET.parse("thechancerylaneproject.WordPress.xml")
+tree = ET.parse("data/thechancerylaneproject.WordPress.xml")
 
 root = tree.getroot()
 content_namespace = "{http://purl.org/rss/1.0/modules/content/}"
 wp_namespace = "{http://wordpress.org/export/1.2/}"
 
 # make a new directory to store the text files
-output_dir = "tclp_content"
+output_dir = "data/tclp_raw_content"
 os.makedirs(output_dir, exist_ok=True)
 
 # parsing the XML file and extracting the content; this code will extract clauses, guides, and glossary terms
