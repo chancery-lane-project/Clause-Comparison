@@ -102,7 +102,7 @@
         const errorBanner = document.getElementById("errorBanner");
         const errorMessage = document.getElementById("errorMessage");
 
-        const MAX_FILE_LIMIT = 1000; 
+        const MAX_FILE_LIMIT = 1000;
 
         let isFolderUpload = false;
         function hideErrorBanner() {
@@ -115,20 +115,20 @@
             uploadLabel.innerText = "Upload Contract File:";
             uploadInput.removeAttribute("webkitdirectory");
             uploadInput.removeAttribute("directory");
-            uploadInput.setAttribute("accept", ".txt"); 
+            uploadInput.setAttribute("accept", ".txt");
             showUploadForm();
-            hideErrorBanner(); 
+            hideErrorBanner();
         });
 
         //handle "Upload Folder" selection
         selectFolderButton.addEventListener("click", () => {
             isFolderUpload = true;
             uploadLabel.innerText = "Upload Contract Folder:";
-            uploadInput.removeAttribute("accept"); 
+            uploadInput.removeAttribute("accept");
             uploadInput.setAttribute("webkitdirectory", true);
             uploadInput.setAttribute("directory", true);
             showUploadForm();
-            hideErrorBanner(); 
+            hideErrorBanner();
         });
 
         function showUploadForm() {
@@ -154,13 +154,13 @@
             //check the number of files
             if (uploadInput.files.length > MAX_FILE_LIMIT) {
                 //redirect to the home screen with an error message
-                window.location.href = '/?error=too-many-files';  
+                window.location.href = '/?error=too-many-files';
                 return;
             }
 
             const formData = new FormData();
             for (const file of uploadInput.files) {
-                formData.append("files", file); 
+                formData.append("files", file);
             }
 
             formData.append("is_folder", isFolderUpload ? "true" : "false");
@@ -235,10 +235,10 @@
                 errorMessage.textContent = "There was an issue processing your files. Please try again.";
             }
 
-            errorBanner.classList.remove("hidden");  
+            errorBanner.classList.remove("hidden");
 
             //clear the query parameter after displaying the banner
-            history.replaceState(null, '', window.location.pathname); 
+            history.replaceState(null, '', window.location.pathname);
         }
     </script>
 </body>
