@@ -1,0 +1,9 @@
+5 Ultra Low Emissions Vehicle(ULEV)means a vehicle that emits less than[75g]of CO2 per kilometre travelled as measured by the World Harmonised Light Vehicle Test Procedure(WLTP).
+
+Electric Vehicle(EV)means a vehicle that is capable of being propelled by electrical power derived from a storage battery.
+
+Zero and Low Emission Vehicle(ZLEV)means a car or light commercial vehicle(LCV)which emits[0 to 50g]of CO2 per kilometre as measured by the World Harmonised Light Vehicle Test Procedure(WLTP).
+
+Light Commercial Vehicle(LCV)means a vehicle used for the carriage of goods that has a maximum mass not exceeding 3.5 tonnes.
+
+Zero Emissions Vehicle(ZEV)means an engine, motor, process or other energy source that, while in operation, produces no greenhouse gases.
