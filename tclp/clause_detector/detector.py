@@ -2,7 +2,7 @@ from fastapi import FastAPI, UploadFile, Form
 from fastapi.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse
-import detector_utils as du
+from tclp.clause_detector import detector_utils as du
 import os
 import shutil
 
@@ -19,7 +19,7 @@ app.add_middleware(
 )
 
 # load model when application starts
-model_name = "clause_identifier_model.pkl"
+model_name = "../clause_identifier_model.pkl"
 model = du.load_model(model_name)
 
 
