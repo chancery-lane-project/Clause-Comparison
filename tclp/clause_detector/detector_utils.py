@@ -93,7 +93,6 @@ def find_ending_row(data, end_index):
 
 
 def custom_train_test_split(full_data, real_clause_column):
-
     # setting the real clauses aside for exclusive use in the training set
     real_clauses = full_data[full_data[real_clause_column] == 1]
     rest_data = full_data[full_data[real_clause_column] == 0]

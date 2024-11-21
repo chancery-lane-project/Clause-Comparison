@@ -62,9 +62,12 @@ class TCLPApp:
         self.root.geometry("600x500")
 
         # Model and documents
-        self.model, self.document_vectors, self.documents, self.file_names = (
-            load_model()
-        )
+        (
+            self.model,
+            self.document_vectors,
+            self.documents,
+            self.file_names,
+        ) = load_model()
         self.top_clause_text = ""
         self.contract_text = ""
 
@@ -112,14 +115,16 @@ class TCLPApp:
             self.display_results(query)
 
     def display_results(self, query):
-        best_match_names, best_match_scores, best_match_texts = (
-            find_best_matching_document(
-                query,
-                self.model,
-                self.document_vectors,
-                self.documents,
-                self.file_names,
-            )
+        (
+            best_match_names,
+            best_match_scores,
+            best_match_texts,
+        ) = find_best_matching_document(
+            query,
+            self.model,
+            self.document_vectors,
+            self.documents,
+            self.file_names,
         )
         self.result_text.delete(1.0, tk.END)
 

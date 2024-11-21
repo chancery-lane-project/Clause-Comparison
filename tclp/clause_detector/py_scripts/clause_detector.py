@@ -1,7 +1,11 @@
 # clause_detector.py
-"""This file will take a contract or a set of contracts and tell you if it contains a clause or not."""
+"""This file will take a contract or a set of contracts and tell you if it contains a clause or not.
 
-import detector_utils as du
+This is designed for a command line interface.
+
+Users will likely prefer the docerkized version of this code, which is available in the parent directory."""
+
+from tclp.clause_detector import detector_utils as du
 
 
 def main():
@@ -26,7 +30,7 @@ def main():
         contract_dir = input("Please enter the path to your contract: ").strip()
 
     # Load model
-    model_name = "clause_identifier_model.pkl"
+    model_name = "../clause_identifier_model.pkl"
     model = du.load_model(model_name)
 
     # Load and process contracts

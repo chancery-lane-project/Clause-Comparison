@@ -1,15 +1,22 @@
+# insert_clause.py
+"""This script is designed to utilize the LegalBERTMatcher class to insert clauses into contracts.
+
+You do not need to run this unless you want to create your own synthetic dataset.
+
+The created synthetic dataset will be available in the online data storage if you just want to download it."""
+
 import os
 import random
 import argparse
-from clause_matcher import LegalBERTMatcher
+from tclp.clause_recommender.clause_matcher import LegalBERTMatcher
 
 matcher = LegalBERTMatcher()
-clauses_folder_path = "../tclp_content/cleaned_clauses"
-generated_clause_folder_path = "../tclp_content/cleaned_noisy_clauses"
-modified_folder_path = "../tclp_content/synth_data/modified_real"
-untouched_folder_path = "../tclp_content/synth_data/untouched"
-modified_gen_folder_path = "../tclp_content/synth_data/modified_gen"
-combined_folder_path = "../tclp_content/synth_data/combined"
+clauses_folder_path = "../../data/cleaned_clauses"
+generated_clause_folder_path = "../../data/cleaned_gen_clauses"
+modified_folder_path = "../../data/synth_data/modified_real"
+untouched_folder_path = "../../data/synth_data/untouched"
+modified_gen_folder_path = "../../data/synth_data/modified_gen"
+combined_folder_path = "../../data/synth_data/combined"
 
 os.makedirs(modified_folder_path, exist_ok=True)
 os.makedirs(untouched_folder_path, exist_ok=True)
