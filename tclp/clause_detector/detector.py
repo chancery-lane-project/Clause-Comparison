@@ -1,6 +1,8 @@
 from fastapi import FastAPI, UploadFile, Form
 from fastapi.responses import JSONResponse, FileResponse
+from fastapi.responses import JSONResponse, FileResponse
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 from fastapi.staticfiles import StaticFiles
 from tclp.clause_detector import detector_utils as du
 import os
@@ -23,10 +25,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 temp_dir = os.path.join(BASE_DIR, "temp_uploads")
 output_dir = os.path.join(temp_dir, "output")
 
-# Ensure output directory exists at startup
 os.makedirs(output_dir, exist_ok=True)
-
-# Mount the output directory for serving static files
 app.mount("/output", StaticFiles(directory=output_dir), name="output")
 
 # Load model when application starts
@@ -54,6 +53,7 @@ async def process_contract(files: list[UploadFile], is_folder: str = Form("false
         if os.path.exists(temp_dir):
             shutil.rmtree(temp_dir)
         os.makedirs(temp_dir, exist_ok=True)
+        os.makedirs(output_dir, exist_ok=True)
         os.makedirs(output_dir, exist_ok=True)
 
         if is_folder == "true":
@@ -85,6 +85,7 @@ async def process_contract(files: list[UploadFile], is_folder: str = Form("false
         else:
             print("Processing single file upload...")
 
+            # Handle single file upload
             # Handle single file upload
             file = files[0]
             if not file.filename.endswith(".txt"):
@@ -171,10 +172,6 @@ async def process_contract(files: list[UploadFile], is_folder: str = Form("false
         return JSONResponse(content=response)
 
     except Exception as e:
-        # Enhanced error logging
-        print(f"Error processing contract: {e}")
-        print("Debug: Does temp_dir exist?", os.path.exists(temp_dir))
-        print("Debug: Does output_dir exist?", os.path.exists(output_dir))
         return JSONResponse(
             content={"error": f"An error occurred: {str(e)}"}, status_code=500
         )
