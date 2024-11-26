@@ -38,8 +38,9 @@ for method in ["cls", "mean", "max", "concat", "specific"]:
 
 
 @app.post("/find_clauses/")
-async def find_clauses(file: UploadFile, method: str = Form("cls")):
+async def find_clauses(file: UploadFile):
     content = await file.read()
+    method = "mean"
     query = content.decode("utf-8")
     query_embedding = utils.encode_text(query, tokenizer, model, method).reshape(1, -1)
     document_embeddings = embeddings[method]
