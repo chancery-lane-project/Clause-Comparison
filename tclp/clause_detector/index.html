@@ -199,17 +199,28 @@
 
                 //results for both folder and file uploads
                 if (isFolderUpload) {
+                    const percentages = result.percentages;
+                    const links = result.download_links;
+
                     resultDiv.classList.remove("hidden");
                     resultDiv.innerHTML = `
-                        <p><strong>Percentages:</strong></p>
+                        <p><strong>Results:</strong></p>
                         <ul>
-                            <li>Not Likely: ${result.not_likely}%</li>
-                            <li>Likely: ${result.likely}%</li>
-                            <li>Very Likely: ${result.very_likely}%</li>
-                            <li>Extremely Likely: ${result.extremely_likely}%</li>
+                            <li>Not Likely: ${percentages.not_likely}%
+                                <a href="${links.none_zip}" target="_blank">Download</a>
+                            </li>
+                            <li>Likely: ${percentages.likely}%
+                                <a href="${links.likely_zip}" target="_blank">Download</a>
+                            </li>
+                            <li>Very Likely: ${percentages.very_likely}%
+                                <a href="${links.very_likely_zip}" target="_blank">Download</a>
+                            </li>
+                            <li>Extremely Likely: ${percentages.extremely_likely}%
+                                <a href="${links.extremely_likely_zip}" target="_blank">Download</a>
+                            </li>
                         </ul>
                     `;
-                } else {
+                }  else {
                     resultDiv.classList.remove("hidden");
                     resultDiv.innerHTML = `<p><strong>Classification:</strong> ${result.classification}</p>`;
                 }

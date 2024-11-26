@@ -1,7 +1,7 @@
 from fastapi import FastAPI, UploadFile, Form
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, FileResponse
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 from tclp.clause_detector import detector_utils as du
 import os
 import shutil
@@ -9,7 +9,7 @@ import shutil
 app = FastAPI()
 MAX_FILE_LIMIT = 1000
 
-# frontend and backend to communication
+# Enable CORS for frontend-backend communication
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -18,8 +18,21 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# load model when application starts
-model_name = "/app/tclp/clause_detector/clause_identifier_model.pkl"
+# Absolute paths for directories
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+temp_dir = os.path.join(BASE_DIR, "temp_uploads")
+output_dir = os.path.join(temp_dir, "output")
+
+# Ensure output directory exists at startup
+os.makedirs(output_dir, exist_ok=True)
+
+# Mount the output directory for serving static files
+app.mount("/output", StaticFiles(directory=output_dir), name="output")
+
+# Load model when application starts
+model_name = os.path.join(
+    BASE_DIR, "/app/tclp/clause_detector/clause_identifier_model.pkl"
+)
 model = du.load_model(model_name)
 
 
@@ -37,11 +50,11 @@ async def process_contract(files: list[UploadFile], is_folder: str = Form("false
         )
 
     try:
-        # temp directory to store the uploaded files
-        temp_dir = "temp_uploads"
+        # Cleanup and recreate temp directories
         if os.path.exists(temp_dir):
             shutil.rmtree(temp_dir)
         os.makedirs(temp_dir, exist_ok=True)
+        os.makedirs(output_dir, exist_ok=True)
 
         if is_folder == "true":
             print("Processing folder upload...")
@@ -72,7 +85,7 @@ async def process_contract(files: list[UploadFile], is_folder: str = Form("false
         else:
             print("Processing single file upload...")
 
-            # handle single file upload
+            # Handle single file upload
             file = files[0]
             if not file.filename.endswith(".txt"):
                 return JSONResponse(
@@ -88,8 +101,8 @@ async def process_contract(files: list[UploadFile], is_folder: str = Form("false
 
             processed_contracts = du.load_unlabelled_contract(file_path)
 
+        # Model predictions
         results = model.predict(processed_contracts["text"])
-
         contract_df = du.create_contract_df(
             processed_contracts["text"], processed_contracts, results, labelled=False
         )
@@ -99,7 +112,7 @@ async def process_contract(files: list[UploadFile], is_folder: str = Form("false
         )
 
         if is_folder == "true":
-            response = du.print_percentages(
+            percentages = du.print_percentages(
                 likely,
                 very_likely,
                 extremely_likely,
@@ -107,6 +120,41 @@ async def process_contract(files: list[UploadFile], is_folder: str = Form("false
                 contract_df,
                 return_result=True,
             )
+            uploaded_files = os.listdir(temp_dir)
+            print("Uploaded Files:", uploaded_files)
+            (
+                likely_folder,
+                very_likely_folder,
+                extremely_likely_folder,
+                none_folder,
+            ) = du.make_folders(
+                likely, very_likely, extremely_likely, none, temp_dir, output_dir
+            )
+            zip_files = {}
+            for category, folder in zip(
+                ["likely", "very_likely", "extremely_likely", "none"],
+                [
+                    likely_folder,
+                    very_likely_folder,
+                    extremely_likely_folder,
+                    none_folder,
+                ],
+            ):
+                zip_path = f"{folder}.zip"
+                du.zip_folder(folder, zip_path)
+                zip_files[category] = zip_path
+
+            # Return download links
+            response = {
+                "percentages": percentages,
+                "download_links": {
+                    "likely_zip": "/output/likely.zip",
+                    "very_likely_zip": "/output/very_likely.zip",
+                    "extremely_likely_zip": "/output/extremely_likely.zip",
+                    "none_zip": "/output/none.zip",
+                },
+            }
+            return JSONResponse(content=response)
         else:
             result = du.print_single(
                 likely, very_likely, extremely_likely, none, return_result=True
@@ -115,12 +163,18 @@ async def process_contract(files: list[UploadFile], is_folder: str = Form("false
 
         print(response)
 
-        # cleanup
+        # Cleanup
         shutil.rmtree(temp_dir, ignore_errors=True)
+        os.makedirs(
+            output_dir, exist_ok=True
+        )  # Recreate the output directory after cleanup
         return JSONResponse(content=response)
 
     except Exception as e:
+        # Enhanced error logging
         print(f"Error processing contract: {e}")
+        print("Debug: Does temp_dir exist?", os.path.exists(temp_dir))
+        print("Debug: Does output_dir exist?", os.path.exists(output_dir))
         return JSONResponse(
             content={"error": f"An error occurred: {str(e)}"}, status_code=500
         )
@@ -128,7 +182,16 @@ async def process_contract(files: list[UploadFile], is_folder: str = Form("false
 
 @app.get("/")
 def read_root():
-    return FileResponse("/app/tclp/clause_detector/index.html")
+    return FileResponse(os.path.join(BASE_DIR, "/app/tclp/clause_detector/index.html"))
+
+
+@app.get("/test-file")
+async def test_file():
+    test_path = os.path.join(output_dir, "test.txt")
+    if not os.path.exists(test_path):
+        with open(test_path, "w") as f:
+            f.write("This is a test file.")
+    return FileResponse(test_path)
 
 
 if __name__ == "__main__":
