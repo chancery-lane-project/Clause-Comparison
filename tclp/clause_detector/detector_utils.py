@@ -8,6 +8,7 @@ import random
 import pickle
 import shutil
 import zipfile
+from termcolor import colored
 
 
 def load_labeled_contracts(data_folder, modified=False):
@@ -220,6 +221,33 @@ def threshold_graphs(contract_df, thresholds=range(1, 7), metric_type="f1"):
     plt.show()
 
     return values, thresholds
+
+
+def highlight_climate_content(text, prediction, highlight_color="yellow"):
+    highlighted_text = ""
+
+    for segment, pred in zip(text, prediction):
+        if pred == 1:
+            # Highlight text segment
+            highlighted_segment = (
+                f"<span style='background-color: {highlight_color};'>{segment}</span>"
+            )
+            highlighted_text += highlighted_segment + "<br><br>"
+        else:
+            # Add non-highlighted segment
+            highlighted_text += segment + "<br><br>"
+
+    # Wrap in basic HTML structure
+    html_content = f"<html><body>{highlighted_text}</body></html>"
+
+    # convert to docx
+
+    return html_content
+
+
+def save_file(filename, content):
+    with open(filename, "w") as f:
+        f.write(content)
 
 
 def create_contract_df(X, data, y_pred, labelled=True):
