@@ -229,7 +229,7 @@ def highlight_climate_content(text, prediction, highlight_color="yellow"):
         if pred == 1:
             # Highlight text segment
             highlighted_segment = (
-                f"<span style='background-color: {highlight_color};'>{segment}</span>"
+                f"<span id='first-highlight' style='background-color: {highlight_color};'>{segment}</span>"
             )
             highlighted_text += highlighted_segment + "<br><br>"
         else:
@@ -464,20 +464,20 @@ def make_folders(likely, very_likely, extremely_likely, none, temp_dir, output_f
 def print_single(likely, very_likely, extremely_likely, none, return_result=False):
     result = ""
     if len(extremely_likely) != 0:
-        result = "<div class='result-blk extremely-likely'><strong>It is extremely likely</strong> <span class='desc'>that this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
-        output = "<div class='result-blk extremely-likely'><strong>It is extremely likely</strong> <span class='desc'>that this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
+        result = "extremely likely"
+        output = "extremely likely"
     elif len(very_likely) != 0:
-        result = "<div class='result-blk very-likely'><strong>It is very likely</strong> <span class='desc'>that this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
-        output = "<div class='result-blk very-likely'><strong>It is very likely</strong> <span class='desc'>that this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
+        result = "very likely"
+        output = "very likely"
     elif len(likely) != 0:
-        result = "<div class='result-blk likely'><strong>It is likely</strong> <span class='desc'>that this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
-        output = "<div class='result-blk likely'<strong>>It is likely</strong> <span class='desc'>that this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
+        result = "likely"
+        output = "likely"
     elif len(none) != 0:
-        result = "<div class='result-blk unlikely'><strong>It is unlikely</strong> <span class='desc'>that this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
-        output = "<div class='result-blk unlikely'><strong>It is unlikely</strong> <span class='desc'>that this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
+        result = "unlikely"
+        output = "unlikely"
     else:
-        result = "<div class='result-blk unknown'><strong>It is unknown</strong> <span class='desc'>if this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
-        output = "<div class='result-blk unknown'><strong>It is unknown</strong> <span class='desc'>if this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
+        result = "unknown"
+        output = "unknown"
     if return_result:
         return result
     else:

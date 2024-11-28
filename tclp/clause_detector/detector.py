@@ -104,6 +104,10 @@ async def process_contract(files: list[UploadFile], is_folder: str = Form("false
 
         # Model predictions
         results = model.predict(processed_contracts["text"])
+        if is_folder == "false":
+            highlighted_output = du.highlight_climate_content(processed_contracts["text"], results)
+            du.save_file("highlighted_output.html", highlighted_output)
+            
         contract_df = du.create_contract_df(
             processed_contracts["text"], processed_contracts, results, labelled=False
         )
@@ -160,7 +164,7 @@ async def process_contract(files: list[UploadFile], is_folder: str = Form("false
             result = du.print_single(
                 likely, very_likely, extremely_likely, none, return_result=True
             )
-            response = {"classification": result}
+            response = {"classification": result, "highlighted_content": highlighted_output}
 
         print(response)
 

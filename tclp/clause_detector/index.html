@@ -638,12 +638,22 @@
 						</div>
 					`;
 				} else {
+					const classification = result.classification;
+					const highlight = result.highlighted_content;
+					
 					uploadForm.classList.add("hidden");
 					resultDiv.classList.remove("hidden");
 					resultDiv.innerHTML = `
 						<h2>Result for the single contract</h2>
 						<div class="detection-result single">
-						  ${result.classification}
+							<div class='result-blk extremely-likely'><strong>It is ${classification}</strong> <span class='desc'>that this contract contains climate aligned clauses.</span>
+							<a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>
+						</div>
+						<div id="contract-text-hightlight" class="contract-listing hidden">
+						  <h1>Text that looks climate aligned</h1>
+						  <a href='#first-highlight'>Skip to highlighted text</a><br /><br />
+						  ${highlight}
+						  <button data-fancybox-close type="submit" class="cfc-button">Close</button>
 						</div>
 					  `;
 				}
@@ -692,28 +702,6 @@
 		<li>Doloribus Temporibus Sint Sapiente Nihil <a href="#">View text [+]</a></li>
 		<li>Earum Ducimus Placeat <a href="#">View text [+]</a></li>
 	  </ul>
-	  <button data-fancybox-close type="submit" class="cfc-button">Close</button>
-	</div>
-
-	<div id="contract-text-hightlight" class="contract-listing hidden">
-	  <h1>Text that looks climate aligned</h1>
-
-	  <h3>Instance 1</h3>
-	  <div class="contact-text-preview">
-		<p>Quia aut doloremque sapiente.</p>
-		<p>Voluptas ipsa doloribus quis est non voluptatibus <mark>placeat excepturi beatae dolor minima doloremque eveniet vel perferendis</mark>. Repellendus excepturi praesentium dolor tempore ea quibusdam velit eum nihil delectus sapiente. A ipsum animi consequatur eligendi aliquam. Et illo voluptatem ipsam commodi et dicta.</p>
-		 <p>Est sit <mark>ratione earum fugit autem ad nemo rerum ullam cumque eum qui</mark> delectus et.</p>
-	  </div>
-
-	  <h3>Instance 2</h3>
-	  <div class="contact-text-preview">
-		<p><mark>Nulla voluptas blanditiis velit perspiciatis et quia quasi ut totam.</mark></p>
-	  </div>
-
-	  <h3>Instance 3</h3>
-	  <div class="contact-text-preview">
-		<p>Voluptas <mark>ipsa doloribus quis est non voluptatibus placeat excepturi beatae dolor minima doloremque eveniet vel perferendis</mark>.</p>
-	  </div>
 	  <button data-fancybox-close type="submit" class="cfc-button">Close</button>
 	</div>
 
