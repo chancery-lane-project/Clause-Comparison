@@ -7,8 +7,6 @@ import pandas as pd
 import random
 import pickle
 import shutil
-import zipfile
-from termcolor import colored
 
 
 def load_labeled_contracts(data_folder, modified=False):
@@ -223,33 +221,6 @@ def threshold_graphs(contract_df, thresholds=range(1, 7), metric_type="f1"):
     return values, thresholds
 
 
-def highlight_climate_content(text, prediction, highlight_color="yellow"):
-    highlighted_text = ""
-
-    for segment, pred in zip(text, prediction):
-        if pred == 1:
-            # Highlight text segment
-            highlighted_segment = (
-                f"<span style='background-color: {highlight_color};'>{segment}</span>"
-            )
-            highlighted_text += highlighted_segment + "<br><br>"
-        else:
-            # Add non-highlighted segment
-            highlighted_text += segment + "<br><br>"
-
-    # Wrap in basic HTML structure
-    html_content = f"<html><body>{highlighted_text}</body></html>"
-
-    # convert to docx
-
-    return html_content
-
-
-def save_file(filename, content):
-    with open(filename, "w") as f:
-        f.write(content)
-
-
 def create_contract_df(X, data, y_pred, labelled=True):
     X_df = pd.DataFrame({"text": X, "prediction": y_pred})
     combined_df = pd.concat([X_df, data], axis=1)
@@ -268,7 +239,6 @@ def create_contract_df(X, data, y_pred, labelled=True):
 
     else:
         contract_level_df = pd.DataFrame(contract_level_preds)
-        contract_level_df.reset_index(inplace=True)
 
     return contract_level_df
 
@@ -376,14 +346,20 @@ def process_single_contract(file_path, texts, contract_ids):
 
 
 def create_threshold_buckets(contract_df):
-    bucket_1 = contract_df[
-        (contract_df["prediction"] >= 1) & (contract_df["prediction"] < 3)
-    ]
-    bucket_2 = contract_df[
-        (contract_df["prediction"] >= 3) & (contract_df["prediction"] < 7)
-    ]
-    bucket_3 = contract_df[contract_df["prediction"] >= 7]
-    bucket_none = contract_df[contract_df["prediction"] < 1]
+    bucket_1 = []
+    bucket_2 = []
+    bucket_3 = []
+    bucket_none = []
+
+    for _, row in contract_df.iterrows():
+        if row["prediction"] >= 7:
+            bucket_3.append(row)
+        elif row["prediction"] >= 3:
+            bucket_2.append(row)
+        elif row["prediction"] >= 1:
+            bucket_1.append(row)
+        else:
+            bucket_none.append(row)
     return bucket_1, bucket_2, bucket_3, bucket_none
 
 
@@ -411,85 +387,26 @@ def print_percentages(
         }
 
 
-def list_all_txt_files(base_dir):
-    txt_files = []
-    for root, dirs, files in os.walk(base_dir):
-        for file in files:
-            if file.endswith(".txt"):
-                relative_path = os.path.relpath(os.path.join(root, file), base_dir)
-                txt_files.append(relative_path)
-    return txt_files
-
-
-def make_folders(likely, very_likely, extremely_likely, none, temp_dir, output_folder):
-    folders = {
-        "likely": os.path.join(output_folder, "likely"),
-        "very_likely": os.path.join(output_folder, "very_likely"),
-        "extremely_likely": os.path.join(output_folder, "extremely_likely"),
-        "none": os.path.join(output_folder, "none"),
-    }
-
-    for folder in folders.values():
-        os.makedirs(folder, exist_ok=True)
-
-    # Create a mapping of file names to their relative paths
-    uploaded_files = {
-        os.path.basename(file): file for file in list_all_txt_files(temp_dir)
-    }
-
-    categories = {
-        "likely": likely,
-        "very_likely": very_likely,
-        "extremely_likely": extremely_likely,
-        "none": none,
-    }
-
-    for category, contracts in categories.items():
-        for _, contract in contracts.iterrows():
-            contract_id = contract["contract_ids"]
-            if contract_id in uploaded_files:
-                source_path = os.path.join(temp_dir, uploaded_files[contract_id])
-                destination_path = os.path.join(folders[category], contract_id)
-                shutil.copy(source_path, destination_path)
-            else:
-                print(f"File not found: {contract_id}")
-
-    return (
-        folders["likely"],
-        folders["very_likely"],
-        folders["extremely_likely"],
-        folders["none"],
-    )
-
-
 def print_single(likely, very_likely, extremely_likely, none, return_result=False):
     result = ""
 
     if len(extremely_likely) != 0:
-        result = "EXTREMELY LIKELY"
-        output = "It is EXTREMELY LIKELY that this contract contains a clause."
+        result = "<div class='result-blk extremely-likely'><strong>It is extremely likely</strong> <span class='desc'>that this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
+        output = "<div class='result-blk extremely-likely'><strong>It is extremely likely</strong> <span class='desc'>that this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
     elif len(very_likely) != 0:
-        result = "VERY LIKELY"
-        output = "It is VERY LIKELY that this contract contains a clause."
+        result = "<div class='result-blk very-likely'><strong>It is very likely</strong> <span class='desc'>that this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
+        output = "<div class='result-blk very-likely'><strong>It is very likely</strong> <span class='desc'>that this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
     elif len(likely) != 0:
-        result = "LIKELY"
-        output = "It is LIKELY that this contract contains a clause."
+        result = "<div class='result-blk likely'><strong>It is likely</strong> <span class='desc'>that this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
+        output = "<div class='result-blk likely'<strong>>It is likely</strong> <span class='desc'>that this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
     elif len(none) != 0:
-        result = "NOT LIKELY"
-        output = "It is NOT LIKELY that this contract contains a clause."
+        result = "<div class='result-blk unlikely'><strong>It is unlikely</strong> <span class='desc'>that this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
+        output = "<div class='result-blk unlikely'><strong>It is unlikely</strong> <span class='desc'>that this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
     else:
-        result = "UNKNOWN"
-        output = "The likelihood of a clause in this contract is UNKNOWN."
+        result = "<div class='result-blk unknown'><strong>It is unknown</strong> <span class='desc'>if this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
+        output = "<div class='result-blk unknown'><strong>It is unknown</strong> <span class='desc'>if this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
 
     if return_result:
         return result
     else:
         print(output)
-
-
-def zip_folder(folder_path, zip_file_path):
-    with zipfile.ZipFile(zip_file_path, "w") as zipf:
-        for root, _, files in os.walk(folder_path):
-            for file in files:
-                file_path = os.path.join(root, file)
-                zipf.write(file_path, os.path.relpath(file_path, folder_path))
