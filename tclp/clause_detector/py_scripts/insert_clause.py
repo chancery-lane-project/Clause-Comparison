@@ -11,7 +11,7 @@ import argparse
 from tclp.clause_recommender.clause_matcher import LegalBERTMatcher
 
 matcher = LegalBERTMatcher()
-clauses_folder_path = "../../data/cleaned_clauses"
+clauses_folder_path = "../../data/cleaned_clauses_detect"
 generated_clause_folder_path = "../../data/cleaned_gen_clauses"
 modified_folder_path = "../../data/synth_data/modified_real"
 untouched_folder_path = "../../data/synth_data/untouched"

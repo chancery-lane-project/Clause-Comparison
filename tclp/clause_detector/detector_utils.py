@@ -7,6 +7,7 @@ import pandas as pd
 import random
 import pickle
 import shutil
+import zipfile
 
 
 def load_labeled_contracts(data_folder, modified=False):
@@ -386,6 +387,7 @@ def print_percentages(
             "extremely_likely": extremely_likely_percentage,
         }
 
+
 def list_all_txt_files(base_dir):
     txt_files = []
     for root, dirs, files in os.walk(base_dir):
@@ -394,6 +396,7 @@ def list_all_txt_files(base_dir):
                 relative_path = os.path.relpath(os.path.join(root, file), base_dir)
                 txt_files.append(relative_path)
     return txt_files
+
 
 def make_folders(likely, very_likely, extremely_likely, none, temp_dir, output_folder):
     folders = {
@@ -459,6 +462,7 @@ def print_single(likely, very_likely, extremely_likely, none, return_result=Fals
         return result
     else:
         print(output)
+
 
 def zip_folder(folder_path, zip_file_path):
     with zipfile.ZipFile(zip_file_path, "w") as zipf:

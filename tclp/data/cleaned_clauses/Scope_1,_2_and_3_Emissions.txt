@@ -1,7 +1,0 @@
-3 Scope 1, 2 and 3 Emissions means the three classifications of emissions in the GHG Protocol.
-
-Scope 1 Emissions means the direct Greenhouse Gas Emissions from sources directly owned or controlled by[the Company][, including on site fuel combustion and emissions from chemical production in owned or controlled process equipment, refrigerant losses and company vehicles.]Scope 2 Emissions means the indirect Greenhouse Gas Emissions associated with the generation of electricity[, steam, heat and cooling]purchased or acquired by the[Supplier].
-
-Scope 3 Emissions means all indirect Greenhouse Gas Emissions from sources which are not directly owned or controlled by[the Company], excluding Scope 2 Emissions, which occur both upstream and downstream in[the Company]’s supply or value chain[related to the[Product OR Services][, including business travel, procurement, waste and water].
-
-Total Emissions means the sum of[the Company]’s Scope 1, 2 and 3 Emissions, in each case arising out of the performance of its obligations under this[agreement], in a given[emissions reporting period].
