@@ -8,7 +8,7 @@ import random
 import pickle
 import shutil
 import zipfile
-
+from termcolor import colored
 
 def load_labeled_contracts(data_folder, modified=False):
     texts = []
@@ -222,6 +222,33 @@ def threshold_graphs(contract_df, thresholds=range(1, 7), metric_type="f1"):
     return values, thresholds
 
 
+def highlight_climate_content(text, prediction, highlight_color="yellow"):
+    highlighted_text = ""
+
+    for segment, pred in zip(text, prediction):
+        if pred == 1:
+            # Highlight text segment
+            highlighted_segment = (
+                f"<span style='background-color: {highlight_color};'>{segment}</span>"
+            )
+            highlighted_text += highlighted_segment + "<br><br>"
+        else:
+            # Add non-highlighted segment
+            highlighted_text += segment + "<br><br>"
+
+    # Wrap in basic HTML structure
+    html_content = f"<html><body>{highlighted_text}</body></html>"
+
+    # convert to docx
+
+    return html_content
+
+
+def save_file(filename, content):
+    with open(filename, "w") as f:
+        f.write(content)
+
+
 def create_contract_df(X, data, y_pred, labelled=True):
     X_df = pd.DataFrame({"text": X, "prediction": y_pred})
     combined_df = pd.concat([X_df, data], axis=1)
@@ -240,6 +267,7 @@ def create_contract_df(X, data, y_pred, labelled=True):
 
     else:
         contract_level_df = pd.DataFrame(contract_level_preds)
+        contract_level_df.reset_index(inplace=True)
 
     return contract_level_df
 
@@ -347,20 +375,14 @@ def process_single_contract(file_path, texts, contract_ids):
 
 
 def create_threshold_buckets(contract_df):
-    bucket_1 = []
-    bucket_2 = []
-    bucket_3 = []
-    bucket_none = []
-
-    for _, row in contract_df.iterrows():
-        if row["prediction"] >= 7:
-            bucket_3.append(row)
-        elif row["prediction"] >= 3:
-            bucket_2.append(row)
-        elif row["prediction"] >= 1:
-            bucket_1.append(row)
-        else:
-            bucket_none.append(row)
+    bucket_1 = contract_df[
+        (contract_df["prediction"] >= 1) & (contract_df["prediction"] < 3)
+    ]
+    bucket_2 = contract_df[
+        (contract_df["prediction"] >= 3) & (contract_df["prediction"] < 7)
+    ]
+    bucket_3 = contract_df[contract_df["prediction"] >= 7]
+    bucket_none = contract_df[contract_df["prediction"] < 1]
     return bucket_1, bucket_2, bucket_3, bucket_none
 
 
@@ -441,7 +463,6 @@ def make_folders(likely, very_likely, extremely_likely, none, temp_dir, output_f
 
 def print_single(likely, very_likely, extremely_likely, none, return_result=False):
     result = ""
-
     if len(extremely_likely) != 0:
         result = "<div class='result-blk extremely-likely'><strong>It is extremely likely</strong> <span class='desc'>that this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
         output = "<div class='result-blk extremely-likely'><strong>It is extremely likely</strong> <span class='desc'>that this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
@@ -457,7 +478,6 @@ def print_single(likely, very_likely, extremely_likely, none, return_result=Fals
     else:
         result = "<div class='result-blk unknown'><strong>It is unknown</strong> <span class='desc'>if this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
         output = "<div class='result-blk unknown'><strong>It is unknown</strong> <span class='desc'>if this contract contains climate aligned clauses.</span><a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>"
-
     if return_result:
         return result
     else:
