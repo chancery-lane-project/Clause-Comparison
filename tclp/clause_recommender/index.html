@@ -184,6 +184,13 @@
 		  border-radius: 5px;
 		  border: 1px solid #cecece;
 	  }
+	  .hidden {
+		display: none;
+	  }
+	  #results h2,
+	  .govuk-form-group h2 {
+		  margin-bottom: 0.5em;
+	  }
 	</style>
 
 </head>
@@ -196,91 +203,41 @@
 
 		<h1 class"size size--x-large">Find the right climate aligned clauses for your contract</h1>
 
-		<h2>Before you upload your contract</h2>
+		<div id="preResults">
+			<h2>Before you upload your contract</h2>
+				<ul>
+				  <li>Remove any personally identifiable information</li>
+				  <li>Save it as a TXT file</li>
+				</ul>
+	
+			<h2>How your contract is used</h2>
 			<ul>
-			  <li>Remove any personally identifiable information</li>
-			  <li>Save it as a TXT file</li>
+			  <li>The content in this contract is only used to identify which clauses work be suitable</li>
+			  <li>Only content from The Chancery Lane Project will be displayed.</li>
+			  <li>Your contract is deleted immediately after it is analysed. It is not stored or</li>
 			</ul>
-
-		<h2>How your contract is used</h2>
-		<ul>
-		  <li>The content in this contract is only used to identify which clauses work be suitable</li>
-		  <li>Only content from The Chancery Lane Project will be displayed.</li>
-		  <li>Your contract is deleted immediately after it is analysed. It is not stored or</li>
-		</ul>
-
-		<form id="uploadForm">
-			<div class="govuk-form-group">
-			  <label class="govuk-label" for="file-upload-1">
-				Upload a contract
-			  </label>
-			  <input class="govuk-file-upload" id="file" name="file" type="file" accept=".txt">
-			</div>
-
-		  <div style="display: none;">
-			<label for="method">Select Embedding Method:</label>
-			<select id="method" name="method">
-				<option value="cls">CLS</option>
-				<option value="mean">Mean</option>
-				<option value="max">Max</option>
-				<option value="concat">Concat</option>
-				<option value="specific">Specific</option>
-			</select><br><br>
-			</div>
-			<button type="submit" class="cfc-button">Continue</button>
-		</form>
-
-
-		<div class="border-section">
-		  <h2>Based on your contract, we identified 3 clauses you could use:</h2>
-
-		  <div class="clause-wrapper">
-			<span class="confidence-indicator"><span class="signal very-good"></span>Very good match</span>
-			<p class="childs-name">Edward and Elsie's Clause</p>
-			<h4>Align Construction Projects with Climate Targets</h4>
-			<p class="excerpt">This clause revises the standard of care for construction contracts to require Contractors and Service Providers to adhere to best industry practice to mitigate climate risk and ensure that a construction project meets its carbon or net-zero objectives.</p>
-			<p class="meta-data">
-			  <span class="cfc-leadin">Jurisdiction: </span>
-			  <span class="cfc-taxonomy">Australia</span>
-			</p>
-			<p class="meta-data">
-			  <span class="cfc-leadin">Updated: </span>
-			  <span class="cfc-taxonomy">10 September 2024</span>
-			</p>
-			<a href="#" class="hot-spot"></a>
-		  </div>
-
-		  <div class="clause-wrapper">
-			<span class="confidence-indicator"><span class="signal good"></span>Good match</span>
-			<p class="childs-name">Edward and Elsie's Clause</p>
-			<h4>Align Construction Projects with Climate Targets</h4>
-			<p class="excerpt">This clause revises the standard of care for construction contracts to require Contractors and Service Providers to adhere to best industry practice to mitigate climate risk and ensure that a construction project meets its carbon or net-zero objectives.</p>
-			<p class="meta-data">
-			  <span class="cfc-leadin">Jurisdiction: </span>
-			  <span class="cfc-taxonomy">Australia</span>
-			</p>
-			<p class="meta-data">
-			  <span class="cfc-leadin">Updated: </span>
-			  <span class="cfc-taxonomy">10 September 2024</span>
-			</p>
-			<a href="#" class="hot-spot"></a>
-		  </div>
-
-		  <div class="clause-wrapper">
-			<span class="confidence-indicator"><span class="signal acceptable"></span>Acceptable match</span>
-			<p class="childs-name">Edward and Elsie's Clause</p>
-			<h4>Align Construction Projects with Climate Targets</h4>
-			<p class="excerpt">This clause revises the standard of care for construction contracts to require Contractors and Service Providers to adhere to best industry practice to mitigate climate risk and ensure that a construction project meets its carbon or net-zero objectives.</p>
-			<p class="meta-data">
-			  <span class="cfc-leadin">Jurisdiction: </span>
-			  <span class="cfc-taxonomy">Australia</span>
-			</p>
-			<p class="meta-data">
-			  <span class="cfc-leadin">Updated: </span>
-			  <span class="cfc-taxonomy">10 September 2024</span>
-			</p>
-			<a href="#" class="hot-spot"></a>
-		  </div>
+	
+			<form id="uploadForm">
+				<div class="govuk-form-group">
+				  <h2 id="uploadLabel">Upload a single contract</h2>
+				  <label class="govuk-label" for="file-upload-1">
+					Upload a contract
+				  </label>
+				  <input class="govuk-file-upload" id="file" name="file" type="file" accept=".txt">
+				</div>
+	
+			  <div style="display: none;">
+				<label for="method">Select Embedding Method:</label>
+				<select id="method" name="method">
+					<option value="cls">CLS</option>
+					<option value="mean">Mean</option>
+					<option value="max">Max</option>
+					<option value="concat">Concat</option>
+					<option value="specific">Specific</option>
+				</select><br><br>
+				</div>
+				<button type="submit" class="cfc-button">Continue</button>
+			</form>
 		</div>
 
 		<div id="results"></div>
@@ -314,7 +271,12 @@
 
 					const result = await response.json();
 					const resultsDiv = document.getElementById("results");
-					resultsDiv.innerHTML = "<h2>Based on your contract, we identified 3 clauses you could use:</h2>";
+				   const preResults = document.getElementById("preResults");
+				   const statusExplainer = document.getElementById("statusExplainer");
+				  
+					resultsDiv.innerHTML = "<h2>Based on your contract, the 3 most relevant clauses for you are:</h2>";
+				   preResults.classList.add("hidden");
+				   statusExplainer.classList.remove("hidden");
 
 					result.matches.forEach((match, index) => {
 
@@ -343,7 +305,7 @@
 
 					// Display the clause text in the clauseDetails section
 					const clauseDiv = document.getElementById("clauseDetails");
-					clauseDiv.innerHTML = `<h2>${result.name}</h2><pre>${result.text}</pre>`;
+					clauseDiv.innerHTML = `${result.text}`;
 					clauseDiv.style.display = "block";
 				} catch (error) {
 					console.error("Error fetching clause:", error);
@@ -352,8 +314,8 @@
 			}
 		</script>
 
-		<div class="border-section">
-		  <h2>How matching works</h2>
+		<div id="statusExplainer" class="border-section hidden">
+		  <h2>What the scores mean</h2>
 		  <h3>What <span class="confidence-indicator"><span class="signal very-good"></span>Very good match</span> means</h3>
 		  <p>Ut placeat consectetur recusandae dolores ducimus provident itaque corrupti tempore voluptatem suscipit at exercitationem amet illo.</p>
 
