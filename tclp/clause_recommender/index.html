@@ -209,14 +209,14 @@
 				  <li>Remove any personally identifiable information</li>
 				  <li>Save it as a TXT file</li>
 				</ul>
-	
+
 			<h2>How your contract is used</h2>
 			<ul>
 			  <li>The content in this contract is only used to identify which clauses work be suitable</li>
 			  <li>Only content from The Chancery Lane Project will be displayed.</li>
 			  <li>Your contract is deleted immediately after it is analysed. It is not stored or</li>
 			</ul>
-	
+
 			<form id="uploadForm">
 				<div class="govuk-form-group">
 				  <h2 id="uploadLabel">Upload a single contract</h2>
@@ -225,7 +225,7 @@
 				  </label>
 				  <input class="govuk-file-upload" id="file" name="file" type="file" accept=".txt">
 				</div>
-	
+
 			  <div style="display: none;">
 				<label for="method">Select Embedding Method:</label>
 				<select id="method" name="method">
@@ -244,56 +244,76 @@
 		<div id="clauseDetails" style="display: none;"></div>
 
 		<script>
-			document.getElementById("uploadForm").addEventListener("submit", async (e) => {
-				e.preventDefault(); // Prevent form from reloading the page
+	document.getElementById("uploadForm").addEventListener("submit", async (e) => {
+			e.preventDefault(); // Prevent form from reloading the page
 
-				try {
-					const formData = new FormData();
-					const fileInput = document.getElementById("file");
-					const method = document.getElementById("method").value;
+			try {
+				const formData = new FormData();
+				const fileInput = document.getElementById("file");
+				const method = document.getElementById("method").value;
 
-					if (fileInput.files.length === 0) {
-						alert("Please upload a file.");
-						return;
-					}
-
-					formData.append("file", fileInput.files[0]);
-					formData.append("method", method);
-
-					const response = await fetch("http://127.0.0.1:8000/find_clauses/", {
-						method: "POST",
-						body: formData,
-					});
-
-					if (!response.ok) {
-						throw new Error(`HTTP error! status: ${response.status}`);
-					}
-
-					const result = await response.json();
-					const resultsDiv = document.getElementById("results");
-				   const preResults = document.getElementById("preResults");
-				   const statusExplainer = document.getElementById("statusExplainer");
-				  
-					resultsDiv.innerHTML = "<h2>Based on your contract, the 3 most relevant clauses for you are:</h2>";
-				   preResults.classList.add("hidden");
-				   statusExplainer.classList.remove("hidden");
-
-					result.matches.forEach((match, index) => {
-
-						const p = document.createElement("p");
-						const link = document.createElement("a");
-						link.href = "#";
-						link.textContent = `${index + 1}. ${match.name} (Score: ${match.score.toFixed(4)})`;
-						link.addEventListener("click", () => fetch_clause_text(match.name));
-						p.appendChild(link);
-						resultsDiv.appendChild(p);
-
-					});
-				} catch (error) {
-					console.error("Error during fetch:", error);
-					alert("An error occurred. Check the console for more details.");
+				if (fileInput.files.length === 0) {
+					alert("Please upload a file.");
+					return;
 				}
-			});
+
+				formData.append("file", fileInput.files[0]);
+				formData.append("method", method);
+
+				const response = await fetch("http://127.0.0.1:8000/find_clauses/", {
+					method: "POST",
+					body: formData,
+				});
+
+				if (!response.ok) {
+					throw new Error(`HTTP error! status: ${response.status}`);
+				}
+
+				const result = await response.json();
+				const resultsDiv = document.getElementById("results");
+				const preResults = document.getElementById("preResults");
+				const statusExplainer = document.getElementById("statusExplainer");
+
+				resultsDiv.innerHTML = "<h2>Based on your contract, the 3 most relevant clauses are:</h2>";
+				preResults.classList.add("hidden");
+				statusExplainer.classList.remove("hidden");
+
+				for (const match of result.matches) {
+					// Fetch and display each clause text immediately
+					const clauseText = await fetch_clause_text(match.name);
+
+					const clauseDiv = document.createElement("div");
+					clauseDiv.classList.add("clause-wrapper");
+
+					// Create the score box
+					const scoreBox = document.createElement("div");
+					scoreBox.textContent = `Score: ${match.score.toFixed(4)}`;
+					scoreBox.style.position = "absolute";
+					scoreBox.style.top = "10px";
+					scoreBox.style.right = "10px";
+					scoreBox.style.backgroundColor = "#d7288b"; // Standard pink
+					scoreBox.style.color = "white";
+					scoreBox.style.padding = "5px 10px";
+					scoreBox.style.borderRadius = "5px";
+					scoreBox.style.fontSize = "0.9em";
+					scoreBox.style.fontWeight = "bold";
+
+					// Add the clause text as rendered HTML
+					const text = document.createElement("div");
+					text.innerHTML = clauseText; // Use innerHTML to render HTML correctly
+
+					// Append score box and text to clause container
+					clauseDiv.appendChild(scoreBox);
+					clauseDiv.appendChild(text);
+
+					// Append the clause container to the results
+					resultsDiv.appendChild(clauseDiv);
+				}
+			} catch (error) {
+				console.error("Error during fetch:", error);
+				alert("An error occurred. Check the console for more details.");
+			}
+		});
 
 			async function fetch_clause_text(clauseName) {
 				try {
@@ -302,14 +322,11 @@
 						throw new Error(`HTTP error! status: ${response.status}`);
 					}
 					const result = await response.json();
-
-					// Display the clause text in the clauseDetails section
-					const clauseDiv = document.getElementById("clauseDetails");
-					clauseDiv.innerHTML = `${result.text}`;
-					clauseDiv.style.display = "block";
+					return result.text;
 				} catch (error) {
 					console.error("Error fetching clause:", error);
 					alert("An error occurred while fetching the clause text.");
+					return "Unable to fetch clause text.";
 				}
 			}
 		</script>
