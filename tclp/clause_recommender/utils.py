@@ -20,7 +20,11 @@ def load_clauses(folder_path):
 
     for filename in os.listdir(folder_path):
         file_path = os.path.join(folder_path, filename)
-        if os.path.isfile(file_path) and filename.endswith(".txt"):
+        if (
+            os.path.isfile(file_path)
+            and filename.endswith(".txt")
+            or filename.endswith(".html")
+        ):
             with open(file_path, "r", encoding="utf-8") as file:
                 documents.append(file.read())
                 file_names.append(filename)

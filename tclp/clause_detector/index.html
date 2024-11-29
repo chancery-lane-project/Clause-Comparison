@@ -600,47 +600,64 @@
 				}
 
 				//results for both folder and file uploads
+
+                //Al: Buckets is the name of a dictionary that contains the count and names of the document (count and documents as variable names)
 				if (isFolderUpload) {
 					const percentages = result.percentages;
 					const links = result.download_links;
-					
+                    const buckets = result.buckets;
+
 					uploadForm.classList.add("hidden");
 					resultDiv.classList.remove("hidden");
 					resultDiv.innerHTML = `
 						<h2>Result for multiple contracts</h2>
-						<div class="detection-result multiple">
+                        <div class="detection-result multiple">
 
-							<div class="result-blk extremely-likely">
-								<span class="percentage">${percentages.extremely_likely}%</span>
-							  <span class="desc">are <strong>extremely likely</strong> to be climate aligned</span>
-							  <a href="${links.extremely_likely_zip}" target="_blank">Download</a>
-								   </div>
+                            <div class="result-blk extremely-likely">
+                                <span class="percentage">${percentages.extremely_likely}%</span>
+                                <span class="desc">are <strong>extremely likely</strong> to be climate aligned</span>
+                                <span class="doc-count">${buckets.extremely_likely.count} documents</span>
+                                <ul>
+                                    ${buckets.extremely_likely.documents.map(doc => `<li>${doc}</li>`).join('')}
+                                </ul>
+                                <a href="${links.extremely_likely_zip}" target="_blank">Download</a>
+                            </div>
 
-							<div class="result-blk very-likely">
-							  <span class="percentage">${percentages.very_likely}%</span>
-							  <span class="desc">are <strong>very likely</strong> to be climate aligned</span>
-							  <a href="${links.very_likely_zip}" target="_blank">Download</a>
-								   </div>
+                            <div class="result-blk very-likely">
+                                <span class="percentage">${percentages.very_likely}%</span>
+                                <span class="desc">are <strong>very likely</strong> to be climate aligned</span>
+                                <span class="doc-count">${buckets.very_likely.count} documents</span>
+                                <ul>
+                                    ${buckets.very_likely.documents.map(doc => `<li>${doc}</li>`).join('')}
+                                </ul>
+                                <a href="${links.very_likely_zip}" target="_blank">Download</a>
+                            </div>
 
-							<div class="result-blk likely">
-							  <span class="percentage">${percentages.likely}%</span>
-							  <span class="desc">are <strong>likely</strong> to be climate aligned</span>
-							  <a data-fancybox data-src="#contract-listing-likely" href="#">View the 7 contracts</a>
-							  <a href="${links.likely_zip}" target="_blank">Download</a>						
-								   </div>
+                            <div class="result-blk likely">
+                                <span class="percentage">${percentages.likely}%</span>
+                                <span class="desc">are <strong>likely</strong> to be climate aligned</span>
+                                <span class="doc-count">${buckets.likely.count} documents</span>
+                                <ul>
+                                    ${buckets.likely.documents.map(doc => `<li>${doc}</li>`).join('')}
+                                </ul>
+                                <a href="${links.likely_zip}" target="_blank">Download</a>
+                            </div>
 
-							<div class="result-blk unlikely">
-							  <span class="percentage">${percentages.not_likely}%</span>
-							  <span class="desc">are <strong>not likely</strong> to be climate aligned</span>
-							  <a href="${links.none_zip}" target="_blank">Download</a>
-								   </div>
-
-						</div>
-					`;
-				} else {
+                            <div class="result-blk unlikely">
+                                <span class="percentage">${percentages.not_likely}%</span>
+                                <span class="desc">are <strong>not likely</strong> to be climate aligned</span>
+                                <span class="doc-count">${buckets.none.count} documents</span>
+                                <ul>
+                                    ${buckets.none.documents.map(doc => `<li>${doc}</li>`).join('')}
+                                </ul>
+                                <a href="${links.none_zip}" target="_blank">Download</a>
+                            </div>
+                        </div>
+                    `;
+                } else {
 					const classification = result.classification;
 					const highlight = result.highlighted_content;
-					
+
 					uploadForm.classList.add("hidden");
 					resultDiv.classList.remove("hidden");
 					resultDiv.innerHTML = `
