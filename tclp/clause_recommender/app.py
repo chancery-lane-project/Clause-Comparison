@@ -24,7 +24,7 @@ local_model_dir = "/app/tclp/legalbert/legalbert_model"
 embeddings_dir = "/app/tclp/legalbert/legalbert_embeddings"
 tokenizer = AutoTokenizer.from_pretrained(local_model_dir)
 model = AutoModel.from_pretrained(local_model_dir)
-documents, file_names = utils.load_clauses("/app/tclp/data/cleaned_clauses")
+documents, file_names = utils.load_clauses("/app/tclp/data/clause_boxes")
 
 embeddings = {}
 for method in ["cls", "mean", "max", "concat", "specific"]:

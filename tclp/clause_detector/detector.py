@@ -105,9 +105,11 @@ async def process_contract(files: list[UploadFile], is_folder: str = Form("false
         # Model predictions
         results = model.predict(processed_contracts["text"])
         if is_folder == "false":
-            highlighted_output = du.highlight_climate_content(processed_contracts["text"], results)
+            highlighted_output = du.highlight_climate_content(
+                processed_contracts["text"], results
+            )
             du.save_file("highlighted_output.html", highlighted_output)
-            
+
         contract_df = du.create_contract_df(
             processed_contracts["text"], processed_contracts, results, labelled=False
         )
@@ -115,6 +117,25 @@ async def process_contract(files: list[UploadFile], is_folder: str = Form("false
         likely, very_likely, extremely_likely, none = du.create_threshold_buckets(
             contract_df
         )
+
+        bucket_details = {
+            "likely": {
+                "count": len(likely),
+                "documents": likely["contract_ids"].tolist(),
+            },
+            "very_likely": {
+                "count": len(very_likely),
+                "documents": very_likely["contract_ids"].tolist(),
+            },
+            "extremely_likely": {
+                "count": len(extremely_likely),
+                "documents": extremely_likely["contract_ids"].tolist(),
+            },
+            "none": {
+                "count": len(none),
+                "documents": none["contract_ids"].tolist(),
+            },
+        }
 
         if is_folder == "true":
             percentages = du.print_percentages(
@@ -152,6 +173,7 @@ async def process_contract(files: list[UploadFile], is_folder: str = Form("false
             # Return download links
             response = {
                 "percentages": percentages,
+                "buckets": bucket_details,
                 "download_links": {
                     "likely_zip": "/output/likely.zip",
                     "very_likely_zip": "/output/very_likely.zip",
@@ -164,7 +186,10 @@ async def process_contract(files: list[UploadFile], is_folder: str = Form("false
             result = du.print_single(
                 likely, very_likely, extremely_likely, none, return_result=True
             )
-            response = {"classification": result, "highlighted_content": highlighted_output}
+            response = {
+                "classification": result,
+                "highlighted_content": highlighted_output,
+            }
 
         print(response)
 
