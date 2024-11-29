@@ -1,7 +1,14 @@
-Child's Name: Eddie's Recitals
-Long Name: Climate Recitals
-Excerpt: Recitals that confirm the intentions of the parties to perform the contract in a way that reduces their organisational greenhouse gas emissions and the emissions associated with the contract. These recitals make climate a key consideration for the contract parties. While non-binding, recitals that expressly refer to climate raise the prominence of climate in the contractual relationship and signal the importance of climate to the parties when performing the contract.
-Updated Date: 2024-09-10 10:34:46
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/climate-recitals/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Eddie's Recitals</p>
+	<h4>Climate Recitals</h4>
+	<p class="excerpt">Recitals that confirm the intentions of the parties to perform the contract in a way that reduces their organisational greenhouse gas emissions and the emissions associated with the contract. These recitals make climate a key consideration for the contract parties. While non-binding, recitals that expressly refer to climate raise the prominence of climate in the contractual relationship and signal the importance of climate to the parties when performing the contract.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:34:46</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/climate-recitals/" class="hot-spot"></a>
+</div>

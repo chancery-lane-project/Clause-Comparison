@@ -1,7 +1,14 @@
-Child's Name: Sebastian's Clause
-Long Name: Entire Business Net Zero Objectives
-Excerpt: A menu of climate-aligned practical steps organisations can require parties to take to transition to net zero such as, developing a net zero transition plan, reducing carbon emissions and providing sustainability training for employees. This clause enables a party with a net zero target and strategy to ensure that other parties are similarly aligned in terms of robust targets, implementation, governance and policies. Designed for use with parties who will accept going a step beyond those climate requirements associated with contract delivery.
-Updated Date: 2024-09-10 10:35:34
-Jurisdictions: ['England & Wales']
-URL: https://chancerylaneproject.org/clauses/entire-business-net-zero-objectives/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Sebastian's Clause</p>
+	<h4>Entire Business Net Zero Objectives</h4>
+	<p class="excerpt">A menu of climate-aligned practical steps organisations can require parties to take to transition to net zero such as, developing a net zero transition plan, reducing carbon emissions and providing sustainability training for employees. This clause enables a party with a net zero target and strategy to ensure that other parties are similarly aligned in terms of robust targets, implementation, governance and policies. Designed for use with parties who will accept going a step beyond those climate requirements associated with contract delivery.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:35:34</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/entire-business-net-zero-objectives/" class="hot-spot"></a>
+</div>

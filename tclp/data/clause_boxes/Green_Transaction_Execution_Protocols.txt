@@ -1,7 +1,14 @@
-Child's Name: Evan's Protocols
-Long Name: Green Transaction Execution Protocols
-Excerpt: Green execution protocols which parties can adopt at the start of a transaction to minimise the carbon footprint of deal execution. Brings climate aligned practices and sustainable behaviours to financial and corporate deals: for example, reducing paper use, increasing recycling and minimising travel wherever possible.
-Updated Date: 2024-09-10 10:40:42
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/green-transaction-execution-protocols/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Evan's Protocols</p>
+	<h4>Green Transaction Execution Protocols</h4>
+	<p class="excerpt">Green execution protocols which parties can adopt at the start of a transaction to minimise the carbon footprint of deal execution. Brings climate aligned practices and sustainable behaviours to financial and corporate deals: for example, reducing paper use, increasing recycling and minimising travel wherever possible.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:40:42</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/green-transaction-execution-protocols/" class="hot-spot"></a>
+</div>

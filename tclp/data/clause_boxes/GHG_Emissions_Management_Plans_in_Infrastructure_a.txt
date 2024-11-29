@@ -1,7 +1,14 @@
-Child's Name: Rose's Clause
-Long Name: GHG Emissions Management Plans in Infrastructure and Construction Project Finance
-Excerpt: This clause builds climate change mitigation into the environmental/ social standards in Development Finance Institution (DFI) or Export Credit Agency (ECA) finance transactions. By incorporating this clause to address climate change risks and incentivise whole life decarbonisation of assets, loan facilities will be more resilient in the medium to long term and are more likely to increase or retain an asset’s value, instead of the additional costs or capital that may otherwise be required.
-Updated Date: 2024-09-10 10:37:54
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/ghg-emissions-management-plans-in-infrastructure-and-construction-project-finance/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Rose's Clause</p>
+	<h4>GHG Emissions Management Plans in Infrastructure and Construction Project Finance</h4>
+	<p class="excerpt">This clause builds climate change mitigation into the environmental/ social standards in Development Finance Institution (DFI) or Export Credit Agency (ECA) finance transactions. By incorporating this clause to address climate change risks and incentivise whole life decarbonisation of assets, loan facilities will be more resilient in the medium to long term and are more likely to increase or retain an asset’s value, instead of the additional costs or capital that may otherwise be required.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:37:54</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/ghg-emissions-management-plans-in-infrastructure-and-construction-project-finance/" class="hot-spot"></a>
+</div>

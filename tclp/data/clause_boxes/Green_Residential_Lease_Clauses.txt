@@ -1,7 +1,14 @@
-Child's Name: Emma's Clause
-Long Name: Green Residential Lease Clauses
-Excerpt: Drafting for leasehold agreements that impose obligations on buyers and tenants to use the property in an environmentally conscious way. Obliges buyers and tenants to use the property in an environmentally conscious way. The covenants make flat owners and tenants aware of what is required to use a building efficiently and make such behaviour mainstream.
-Updated Date: 2024-09-10 10:40:46
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/green-residential-lease-clauses/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Emma's Clause</p>
+	<h4>Green Residential Lease Clauses</h4>
+	<p class="excerpt">Drafting for leasehold agreements that impose obligations on buyers and tenants to use the property in an environmentally conscious way. Obliges buyers and tenants to use the property in an environmentally conscious way. The covenants make flat owners and tenants aware of what is required to use a building efficiently and make such behaviour mainstream.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:40:46</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/green-residential-lease-clauses/" class="hot-spot"></a>
+</div>

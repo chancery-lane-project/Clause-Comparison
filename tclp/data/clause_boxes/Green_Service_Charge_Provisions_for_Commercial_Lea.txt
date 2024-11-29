@@ -1,7 +1,14 @@
-Child's Name: Hannah's Clause
-Long Name: Green Service Charge Provisions for Commercial Leases
-Excerpt: Allows landlords to include the costs of improving the environmental performance of leased buildings in the service charge costs (where such works are not otherwise required by statute). This clause helps landlords to: (i) address investor concerns about climate risk and compliance with environmental legislation (e.g. Energy Efficiency Regulations); (ii) respond to tenant demand for efficient, healthy and green buildings; (iii) enjoy increased profitability through higher property values and return on investment; (iv) pass cost savings to tenants; and (v) incentivise tenants to use the property efficiently.
-Updated Date: 2024-09-10 10:40:23
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/green-service-charge-provisions-for-commercial-leases/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Hannah's Clause</p>
+	<h4>Green Service Charge Provisions for Commercial Leases</h4>
+	<p class="excerpt">Allows landlords to include the costs of improving the environmental performance of leased buildings in the service charge costs (where such works are not otherwise required by statute). This clause helps landlords to: (i) address investor concerns about climate risk and compliance with environmental legislation (e.g. Energy Efficiency Regulations); (ii) respond to tenant demand for efficient, healthy and green buildings; (iii) enjoy increased profitability through higher property values and return on investment; (iv) pass cost savings to tenants; and (v) incentivise tenants to use the property efficiently.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:40:23</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/green-service-charge-provisions-for-commercial-leases/" class="hot-spot"></a>
+</div>

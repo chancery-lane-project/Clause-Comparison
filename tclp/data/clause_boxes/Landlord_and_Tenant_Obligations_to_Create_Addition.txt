@@ -1,7 +1,14 @@
-Child's Name: Oisín’s Clause
-Long Name: Landlord and Tenant Obligations to Create Additionality in Renewable Electricity Generation
-Excerpt: A series of stepped options for commercial leases that help corporate landlords and tenants generate additional 'green' electrons for the electricity grid where their leasehold property is located. This clause provides step-down options for the corporate landlord and tenant so that they have multiple pathways to and opportunities for adopting it. Where one party provides evidence to the other that the higher ambition option is impractical and/or cost-prohibitive, the other party is then required to act reasonably in permitting the step-down.
-Updated Date: 2024-09-10 10:38:25
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/landlord-and-tenant-obligations-to-create-additionality-in-renewable-electricity-generation/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Oisín’s Clause</p>
+	<h4>Landlord and Tenant Obligations to Create Additionality in Renewable Electricity Generation</h4>
+	<p class="excerpt">A series of stepped options for commercial leases that help corporate landlords and tenants generate additional 'green' electrons for the electricity grid where their leasehold property is located. This clause provides step-down options for the corporate landlord and tenant so that they have multiple pathways to and opportunities for adopting it. Where one party provides evidence to the other that the higher ambition option is impractical and/or cost-prohibitive, the other party is then required to act reasonably in permitting the step-down.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:38:25</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/landlord-and-tenant-obligations-to-create-additionality-in-renewable-electricity-generation/" class="hot-spot"></a>
+</div>

@@ -1,8 +1,14 @@
-Child's Name: Athena's Clause
-Long Name: Employee Climate Engagement Provisions
-Excerpt: A clause in employment contracts
-that empowers employees to participate and actively engage in the climate ambitions and net zero targets of their employer. Requires the employer to provide, and the employee to participate in, a range of climate education and awareness-raising interventions.
-Updated Date: 2024-09-10 10:41:45
-Jurisdictions: ['England & Wales']
-URL: https://chancerylaneproject.org/clauses/employee-climate-engagement-provisions/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Athena's Clause</p>
+	<h4>Employee Climate Engagement Provisions</h4>
+	<p class="excerpt">A clause in employment contracts  that empowers employees to participate and actively engage in the climate ambitions and net zero targets of their employer. Requires the employer to provide, and the employee to participate in, a range of climate education and awareness-raising interventions.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:41:45</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/employee-climate-engagement-provisions/" class="hot-spot"></a>
+</div>

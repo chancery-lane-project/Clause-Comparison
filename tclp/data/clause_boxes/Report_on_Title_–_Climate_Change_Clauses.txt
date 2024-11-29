@@ -1,8 +1,14 @@
-Child's Name: Marni's Clause
-Long Name: Report on Title – Climate Change Clauses
-Excerpt: This clause proposes additions to standard reports on title to reflect the results of a climate search for the property. Improves transparency and reporting about the physical, transition and future liability risks of climate change for properties in the UK
-This clause also helps solicitors fulfil their duty of care to advise clients as to the presence of climate change risks, as outlined in the Law Society (England and Wales) Guidance: The impact of climate change on solicitors.
-Updated Date: 2024-09-10 10:39:06
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/report-on-title-climate-change-clauses/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Marni's Clause</p>
+	<h4>Report on Title – Climate Change Clauses</h4>
+	<p class="excerpt">This clause proposes additions to standard reports on title to reflect the results of a climate search for the property. Improves transparency and reporting about the physical, transition and future liability risks of climate change for properties in the UK This clause also helps solicitors fulfil their duty of care to advise clients as to the presence of climate change risks, as outlined in the Law Society (England and Wales) Guidance: The impact of climate change on solicitors.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:39:06</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/report-on-title-climate-change-clauses/" class="hot-spot"></a>
+</div>

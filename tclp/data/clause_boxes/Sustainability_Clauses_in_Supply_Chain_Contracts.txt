@@ -1,7 +1,14 @@
-Child's Name: Austen's Clause
-Long Name: Sustainability Clauses in Supply Chain Contracts
-Excerpt: Using supply chain contracts to extend positive climate change measures adopted in one country to contracting parties in other countries that may have less of a legislative focus on climate. This clause assists in achieving multinational corporate carbon reduction targets and addressing the imbalance in climate regulatory activity between regions, with an option to extend obligations to subcontractors. A failure to comply with the sustainability policy or decarbonisation plan that is not remedied triggers the right to suspend or terminate.
-Updated Date: 2024-09-10 10:41:42
-Jurisdictions: ['England & Wales']
-URL: https://chancerylaneproject.org/clauses/sustainability-clauses-in-supply-chain-contracts/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Austen's Clause</p>
+	<h4>Sustainability Clauses in Supply Chain Contracts</h4>
+	<p class="excerpt">Using supply chain contracts to extend positive climate change measures adopted in one country to contracting parties in other countries that may have less of a legislative focus on climate. This clause assists in achieving multinational corporate carbon reduction targets and addressing the imbalance in climate regulatory activity between regions, with an option to extend obligations to subcontractors. A failure to comply with the sustainability policy or decarbonisation plan that is not remedied triggers the right to suspend or terminate.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:41:42</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/sustainability-clauses-in-supply-chain-contracts/" class="hot-spot"></a>
+</div>

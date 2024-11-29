@@ -1,7 +1,14 @@
-Child's Name: Edgar's Clause
-Long Name: Climate-Resilient Landscape Design Contracts
-Excerpt: Insert a clause into landscape architect appointments and/ or building contracts requiring the appointee to utilise the available open space in an environmentally efficient manner. This clause promotes nature based solutions and biodiversity in landscape architect appointments and/ or building contracts, on land that might otherwise be used in a carbon intensive or unsustainable way. To be fully effective, the use of this drafting should be aligned with the development of laws/ planning regulations around habitat ‘zoning’ to encourage habitat continuity and species corridors across the landscape.
-Updated Date: 2024-09-10 10:40:53
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/climate-resilient-landscape-design-contracts/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Edgar's Clause</p>
+	<h4>Climate-Resilient Landscape Design Contracts</h4>
+	<p class="excerpt">Insert a clause into landscape architect appointments and/ or building contracts requiring the appointee to utilise the available open space in an environmentally efficient manner. This clause promotes nature based solutions and biodiversity in landscape architect appointments and/ or building contracts, on land that might otherwise be used in a carbon intensive or unsustainable way. To be fully effective, the use of this drafting should be aligned with the development of laws/ planning regulations around habitat ‘zoning’ to encourage habitat continuity and species corridors across the landscape.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:40:53</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/climate-resilient-landscape-design-contracts/" class="hot-spot"></a>
+</div>

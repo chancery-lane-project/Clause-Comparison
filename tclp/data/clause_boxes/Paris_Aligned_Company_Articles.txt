@@ -1,7 +1,14 @@
-Child's Name: Pasfield's Clause
-Long Name: Paris Aligned Company Articles
-Excerpt: A net zero focused variation of Arlo’s Clause (ESG Aligned Company Articles) to include in a company’s articles of association, drafted by reference to TCLP’s net zero resources. This clause requires company directors to undertake that the company’s business and activities align with the specified high level climate ambition set out in the clause. This will require directors to keep that climate ambition at the fore in decision-making and corporate governance. Furthermore, publicising the company’s alignment with Paris Agreement goals will bolster the corporate brand, reputation and trust with clients and consumers.
-Updated Date: 2024-09-10 10:38:11
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/paris-aligned-company-articles/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Pasfield's Clause</p>
+	<h4>Paris Aligned Company Articles</h4>
+	<p class="excerpt">A net zero focused variation of Arlo’s Clause (ESG Aligned Company Articles) to include in a company’s articles of association, drafted by reference to TCLP’s net zero resources. This clause requires company directors to undertake that the company’s business and activities align with the specified high level climate ambition set out in the clause. This will require directors to keep that climate ambition at the fore in decision-making and corporate governance. Furthermore, publicising the company’s alignment with Paris Agreement goals will bolster the corporate brand, reputation and trust with clients and consumers.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:38:11</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/paris-aligned-company-articles/" class="hot-spot"></a>
+</div>

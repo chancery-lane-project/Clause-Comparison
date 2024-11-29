@@ -1,7 +1,14 @@
-Child's Name: Rowen's Clause
-Long Name: Supply Chain Sustainable Land Use Clause and Questionnaire
-Excerpt: A Self-Assessment Questionnaire for supply chain contracts to make businesses aware of adverse environmental impacts relating to land use within their supply chain. This clause and the associated Self-Assessment Questionnaire enable businesses and law firms to gain a better understanding of the underlying drivers of GHG emissions arising from land use across their supply chains, while protecting their businesses from potential reputational, economic and legal risks arising from suppliers’ unethical behaviour and non-compliance.
-Updated Date: 2024-10-02 14:16:28
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/supply-chain-sustainable-land-use-clause-and-questionnaire/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Rowen's Clause</p>
+	<h4>Supply Chain Sustainable Land Use Clause and Questionnaire</h4>
+	<p class="excerpt">A Self-Assessment Questionnaire for supply chain contracts to make businesses aware of adverse environmental impacts relating to land use within their supply chain. This clause and the associated Self-Assessment Questionnaire enable businesses and law firms to gain a better understanding of the underlying drivers of GHG emissions arising from land use across their supply chains, while protecting their businesses from potential reputational, economic and legal risks arising from suppliers’ unethical behaviour and non-compliance.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-10-02 14:16:28</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/supply-chain-sustainable-land-use-clause-and-questionnaire/" class="hot-spot"></a>
+</div>

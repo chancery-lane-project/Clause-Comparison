@@ -1,7 +1,14 @@
-Child's Name: Olivia's Clause
-Long Name: Net Zero Obligations in FIDIC Engineering, Procurement and Construction (EPC) Contracts
-Excerpt: Clauses to include in the International Federation of Consulting Engineers (FIDIC) form of Engineering, Procurement and Construction (EPC) contracts, obliging the contractor (and any subcontractors) to act sustainably in carrying out the works. The clause sets targets for contractors and subcontractors to reduce greenhouse gas emissions. Scope 3 emissions often account for the biggest chunk of an organisation’s total inventory.
-Updated Date: 2024-09-10 10:35:53
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/net-zero-obligations-in-fidic-engineering-procurement-and-construction-epc-contracts/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Olivia's Clause</p>
+	<h4>Net Zero Obligations in FIDIC Engineering, Procurement and Construction (EPC) Contracts</h4>
+	<p class="excerpt">Clauses to include in the International Federation of Consulting Engineers (FIDIC) form of Engineering, Procurement and Construction (EPC) contracts, obliging the contractor (and any subcontractors) to act sustainably in carrying out the works. The clause sets targets for contractors and subcontractors to reduce greenhouse gas emissions. Scope 3 emissions often account for the biggest chunk of an organisation’s total inventory.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:35:53</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/net-zero-obligations-in-fidic-engineering-procurement-and-construction-epc-contracts/" class="hot-spot"></a>
+</div>

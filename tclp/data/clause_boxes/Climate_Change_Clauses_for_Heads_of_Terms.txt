@@ -1,7 +1,14 @@
-Child's Name: Hanley's Clause
-Long Name: Climate Change Clauses for Heads of Terms
-Excerpt: Standard drafting for heads of terms that makes climate a key consideration for any deal team. These heads of terms are particularly relevant for parties with public decarbonisation or net-zero targets. Including climate in heads of terms raises the prominence and importance of climate at the outset of a commercial relationship. It allows the parties to design their relationship and frame their commercial dealings in ways that drive decarbonisation and help each party meet their organisational decarbonisation goals.
-Updated Date: 2024-09-10 10:36:09
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/climate-change-clauses-for-heads-of-terms/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Hanley's Clause</p>
+	<h4>Climate Change Clauses for Heads of Terms</h4>
+	<p class="excerpt">Standard drafting for heads of terms that makes climate a key consideration for any deal team. These heads of terms are particularly relevant for parties with public decarbonisation or net-zero targets. Including climate in heads of terms raises the prominence and importance of climate at the outset of a commercial relationship. It allows the parties to design their relationship and frame their commercial dealings in ways that drive decarbonisation and help each party meet their organisational decarbonisation goals.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:36:09</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/climate-change-clauses-for-heads-of-terms/" class="hot-spot"></a>
+</div>

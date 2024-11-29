@@ -1,7 +1,14 @@
-Child's Name: Callum and Theo's Clause
-Long Name: Climate Standard Transaction Terms
-Excerpt: Model climate terms and conditions that an impact investor financing private sector infrastructure in developing countries can incorporate into its standard documents. These clauses will support developing countries in which investments are made to transition to climate resilient and low carbon infrastructure in line with Paris Agreement commitments. This will in turn help the country of investment achieve its nationally determined contributions.
-Updated Date: 2024-09-10 10:41:04
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/climate-standard-transaction-terms/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Callum and Theo's Clause</p>
+	<h4>Climate Standard Transaction Terms</h4>
+	<p class="excerpt">Model climate terms and conditions that an impact investor financing private sector infrastructure in developing countries can incorporate into its standard documents. These clauses will support developing countries in which investments are made to transition to climate resilient and low carbon infrastructure in line with Paris Agreement commitments. This will in turn help the country of investment achieve its nationally determined contributions.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:41:04</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/climate-standard-transaction-terms/" class="hot-spot"></a>
+</div>

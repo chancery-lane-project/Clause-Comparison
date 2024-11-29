@@ -1,7 +1,14 @@
-Child's Name: Lauren's Clause
-Long Name: Green Shareholders’ Agreement
-Excerpt: Clauses for a shareholders' agreement which allow investors to hold the company to account on climate issues and incentivise shareholder support for the company's decarbonisation or net-zero transition plan. These clauses: mandate climate and sustainability goal setting for a company's board; shareholder approval of this; a climate-aligned share option scheme and dividend policy; obligations on shareholders to further the sustainability goals of the company; and climate-aligned shareholder pre-emption rights, permitted transfers and drag along.
-Updated Date: 2024-09-10 10:35:22
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/green-shareholders-agreement/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Lauren's Clause</p>
+	<h4>Green Shareholders’ Agreement</h4>
+	<p class="excerpt">Clauses for a shareholders' agreement which allow investors to hold the company to account on climate issues and incentivise shareholder support for the company's decarbonisation or net-zero transition plan. These clauses: mandate climate and sustainability goal setting for a company's board; shareholder approval of this; a climate-aligned share option scheme and dividend policy; obligations on shareholders to further the sustainability goals of the company; and climate-aligned shareholder pre-emption rights, permitted transfers and drag along.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:35:22</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/green-shareholders-agreement/" class="hot-spot"></a>
+</div>

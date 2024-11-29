@@ -1,7 +1,14 @@
-Child's Name: Elliot's Handbook
-Long Name: Net Zero Culture Employment Handbook
-Excerpt: Sustainability policies to include in employment handbooks so that these issues permeate all levels of the employment relationship and encourage development of a sustainable culture. This clause sets a standard for ambitious climate action involving every employee. It covers areas areas such as commuting, expenses, training and procurement.
-Updated Date: 2024-09-10 10:35:49
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/net-zero-culture-employment-handbook/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Elliot's Handbook</p>
+	<h4>Net Zero Culture Employment Handbook</h4>
+	<p class="excerpt">Sustainability policies to include in employment handbooks so that these issues permeate all levels of the employment relationship and encourage development of a sustainable culture. This clause sets a standard for ambitious climate action involving every employee. It covers areas areas such as commuting, expenses, training and procurement.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:35:49</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/net-zero-culture-employment-handbook/" class="hot-spot"></a>
+</div>

@@ -1,7 +1,14 @@
-Child's Name: Lola and Harry's DDQ
-Long Name: Climate Due Diligence Questionnaire for M&A Transactions
-Excerpt: A due diligence questionnaire which asks the target company to provide information regarding a wide range of climate change-related issues going far beyond the standard compliance-focused questions. Enables buyers to assess the target’s readiness to decarbonise or transition to net zero, its resilience and ability to adapt to future climate risks. Buyers can protect their risk and investment positions before purchase by seeking appropriate climate warranties and indemnities from the seller(s) and or negotiating on price.
-Updated Date: 2024-09-10 10:35:42
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/climate-due-diligence-questionnaire-for-ma-transactions/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Lola and Harry's DDQ</p>
+	<h4>Climate Due Diligence Questionnaire for M&A Transactions</h4>
+	<p class="excerpt">A due diligence questionnaire which asks the target company to provide information regarding a wide range of climate change-related issues going far beyond the standard compliance-focused questions. Enables buyers to assess the target’s readiness to decarbonise or transition to net zero, its resilience and ability to adapt to future climate risks. Buyers can protect their risk and investment positions before purchase by seeking appropriate climate warranties and indemnities from the seller(s) and or negotiating on price.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:35:42</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/climate-due-diligence-questionnaire-for-ma-transactions/" class="hot-spot"></a>
+</div>

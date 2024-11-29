@@ -1,7 +1,14 @@
-Child's Name: Benjamin's Licence
-Long Name: Intellectual Property: Free Licence for Climate Purposes
-Excerpt: Environmental, social and governance (ESG) commitments by an intellectual property rights (IPR) holder to make available certain IPR for the research and development of third party commercial solutions to minimise climate change. Licenses intellectual property rights for climate and environmental related purposes.
-Updated Date: 2024-09-10 10:44:11
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/intellectual-property-free-licence-for-climate-purposes/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Benjamin's Licence</p>
+	<h4>Intellectual Property: Free Licence for Climate Purposes</h4>
+	<p class="excerpt">Environmental, social and governance (ESG) commitments by an intellectual property rights (IPR) holder to make available certain IPR for the research and development of third party commercial solutions to minimise climate change. Licenses intellectual property rights for climate and environmental related purposes.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:44:11</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/intellectual-property-free-licence-for-climate-purposes/" class="hot-spot"></a>
+</div>

@@ -1,7 +1,14 @@
-Child's Name: Tilly's Clause
-Long Name: Climate Checklist for Prospectuses and Other Public Offering Documents
-Excerpt: Helps issuers of debt securities tasked with drafting risk factors for prospectuses to assess the financial impacts of climate-related risks and provide climate-related risk factor disclosure. A checklist that is consistent with Task Force on Climate-related Financial Disclosures (TCFD) recommendations and follows a recognised disclosure and reporting framework as regards climate-related financial disclosures which debt capital markets investors are likely to be familiar with.
-Updated Date: 2024-09-10 10:43:49
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/climate-checklist-for-prospectuses-and-other-public-offering-documents/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Tilly's Clause</p>
+	<h4>Climate Checklist for Prospectuses and Other Public Offering Documents</h4>
+	<p class="excerpt">Helps issuers of debt securities tasked with drafting risk factors for prospectuses to assess the financial impacts of climate-related risks and provide climate-related risk factor disclosure. A checklist that is consistent with Task Force on Climate-related Financial Disclosures (TCFD) recommendations and follows a recognised disclosure and reporting framework as regards climate-related financial disclosures which debt capital markets investors are likely to be familiar with.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:43:49</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/climate-checklist-for-prospectuses-and-other-public-offering-documents/" class="hot-spot"></a>
+</div>

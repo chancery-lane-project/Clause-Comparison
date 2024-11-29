@@ -1,7 +1,14 @@
-Child's Name: Mary's Clause
-Long Name: JCT Energy Efficiency and Environmental Obligations
-Excerpt: This clause amends the JCT’s standard Design and Build documents to make energy efficiency part of practical completion. Obliges the Contractor to achieve a specific standardised energy efficiency rating on practical completion of new build and renovation projects. This obligation will improve the energy efficiency, value and marketability of built assets and drive decarbonisation in the construction sector.
-Updated Date: 2024-09-10 10:39:02
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/jct-energy-efficiency-and-environmental-obligations/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Mary's Clause</p>
+	<h4>JCT Energy Efficiency and Environmental Obligations</h4>
+	<p class="excerpt">This clause amends the JCT’s standard Design and Build documents to make energy efficiency part of practical completion. Obliges the Contractor to achieve a specific standardised energy efficiency rating on practical completion of new build and renovation projects. This obligation will improve the energy efficiency, value and marketability of built assets and drive decarbonisation in the construction sector.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:39:02</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/jct-energy-efficiency-and-environmental-obligations/" class="hot-spot"></a>
+</div>

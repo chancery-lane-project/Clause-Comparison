@@ -1,7 +1,14 @@
-Child's Name: Bella's Clause
-Long Name: Management Equity Ratchet Terms
-Excerpt: A template clause for inclusion in investment documents to financially incentivise management teams to meet targets which are linked to climate change and environmental issues. To encourage management teams to take a more active interest in ensuring that their businesses meet climate change related targets.
-Updated Date: 2024-09-10 10:41:23
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/management-equity-ratchet-terms/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Bella's Clause</p>
+	<h4>Management Equity Ratchet Terms</h4>
+	<p class="excerpt">A template clause for inclusion in investment documents to financially incentivise management teams to meet targets which are linked to climate change and environmental issues. To encourage management teams to take a more active interest in ensuring that their businesses meet climate change related targets.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:41:23</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/management-equity-ratchet-terms/" class="hot-spot"></a>
+</div>

@@ -1,7 +1,14 @@
-Child's Name: Ashkan's Clause
-Long Name: Sustainable On Site Working Practices
-Excerpt: A clause (which is revenue neutral for the employer) requiring contractors and project delivery teams to use sustainable working practices on site in order to reduce the energy used in construction. Encourages construction site working practices that align with climate and sustainable practices.
-Updated Date: 2024-09-10 10:41:49
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/sustainable-on-site-working-practices/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Ashkan's Clause</p>
+	<h4>Sustainable On Site Working Practices</h4>
+	<p class="excerpt">A clause (which is revenue neutral for the employer) requiring contractors and project delivery teams to use sustainable working practices on site in order to reduce the energy used in construction. Encourages construction site working practices that align with climate and sustainable practices.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:41:49</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/sustainable-on-site-working-practices/" class="hot-spot"></a>
+</div>

@@ -1,7 +1,14 @@
-Child's Name: Evie's Clause
-Long Name: Debt Finance Clauses (and LMA Facility Amendments) Promoting Sustainable Water Usage
-Excerpt: Drafting for corporate finance documentation whereby interest payments are adjusted based on the borrower group’s performance measured against water sustainability key performance indicators (KPIs). Adaptable to a range of finance agreements, enables a lender to link interest payments to the borrower’s water usage measured against performance indicators, incentivising borrowers to implement water reduction strategies (and associated greenhouse gas emissions reduction) and release funds to other water-related initiatives without requiring separate financing.
-Updated Date: 2024-09-10 10:40:38
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/debt-finance-clauses-and-lma-facility-amendments-promoting-sustainable-water-usage/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Evie's Clause</p>
+	<h4>Debt Finance Clauses (and LMA Facility Amendments) Promoting Sustainable Water Usage</h4>
+	<p class="excerpt">Drafting for corporate finance documentation whereby interest payments are adjusted based on the borrower group’s performance measured against water sustainability key performance indicators (KPIs). Adaptable to a range of finance agreements, enables a lender to link interest payments to the borrower’s water usage measured against performance indicators, incentivising borrowers to implement water reduction strategies (and associated greenhouse gas emissions reduction) and release funds to other water-related initiatives without requiring separate financing.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:40:38</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/debt-finance-clauses-and-lma-facility-amendments-promoting-sustainable-water-usage/" class="hot-spot"></a>
+</div>

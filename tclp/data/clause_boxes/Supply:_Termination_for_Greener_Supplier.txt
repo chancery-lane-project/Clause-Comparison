@@ -1,7 +1,14 @@
-Child's Name: Agatha's Clause
-Long Name: Supply: Termination for Greener Supplier
-Excerpt: The clause gives customers a right to switch supplier if their existing supplier is unable to match a ‘greener’ offer made by an alternative supplier. This clause gives a customer the right to terminate an agreement with an existing supplier if it can get the goods or services with a lower carbon footprint from an alternative supplier.
-Updated Date: 2024-09-10 10:34:54
-Jurisdictions: ['England & Wales']
-URL: https://chancerylaneproject.org/clauses/supply-termination-for-greener-supplier/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Agatha's Clause</p>
+	<h4>Supply: Termination for Greener Supplier</h4>
+	<p class="excerpt">The clause gives customers a right to switch supplier if their existing supplier is unable to match a ‘greener’ offer made by an alternative supplier. This clause gives a customer the right to terminate an agreement with an existing supplier if it can get the goods or services with a lower carbon footprint from an alternative supplier.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:34:54</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/supply-termination-for-greener-supplier/" class="hot-spot"></a>
+</div>

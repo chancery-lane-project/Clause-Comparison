@@ -1,9 +1,14 @@
-Child's Name: David's Clause
-Long Name: SME’s Net Zero Objectives
-Excerpt: A clause for use by
-small and medium-sized enterprises (
-SMEs) in a variety of contracts which imposes mutual obligations on the parties to take steps towards net zero, with payment of a climate remediation fee for breach. This clause can be used to add net zero obligations to a variety of contracts. This will help SMEs to deliver their net zero targets. As the clause is designed to be ‘plug and play’ it requires little adaptation and will be quick and simple to use.
-Updated Date: 2024-09-10 10:36:23
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/smes-net-zero-objectives/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">David's Clause</p>
+	<h4>SME’s Net Zero Objectives</h4>
+	<p class="excerpt">A clause for use by  small and medium-sized enterprises ( SMEs) in a variety of contracts which imposes mutual obligations on the parties to take steps towards net zero, with payment of a climate remediation fee for breach. This clause can be used to add net zero obligations to a variety of contracts. This will help SMEs to deliver their net zero targets. As the clause is designed to be ‘plug and play’ it requires little adaptation and will be quick and simple to use.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:36:23</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/smes-net-zero-objectives/" class="hot-spot"></a>
+</div>

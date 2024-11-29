@@ -1,7 +1,14 @@
-Child's Name: Teddy's Clause
-Long Name: Supplier Environmental Threshold Obligations
-Excerpt: Insert at purchase warranties for environmental performance and continuous improvement obligations. This will build in long term environmental improvements and transparency into supply agreements. Incentivises the reduction of carbon emissions and creates legally enforceable standards in mainstream supply contracts.
-Updated Date: 2024-09-10 10:37:13
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/supplier-environmental-threshold-obligations/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Teddy's Clause</p>
+	<h4>Supplier Environmental Threshold Obligations</h4>
+	<p class="excerpt">Insert at purchase warranties for environmental performance and continuous improvement obligations. This will build in long term environmental improvements and transparency into supply agreements. Incentivises the reduction of carbon emissions and creates legally enforceable standards in mainstream supply contracts.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:37:13</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/supplier-environmental-threshold-obligations/" class="hot-spot"></a>
+</div>

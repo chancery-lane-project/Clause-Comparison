@@ -1,7 +1,14 @@
-Child's Name: Suki's Clause
-Long Name: Open Source Data Sharing: Enabling Sustainable Mobility for Cities
-Excerpt: Open-source data sharing agreement clauses, compliant with the general data protection regulation (GDPR), that can be used by cities to enable development of the sustainable mobility sector. Will secure long-term data flows and ensure that mobility providers feed mobility data to municipalities who need to enter such data into carefully drafted data sharing agreements. The drafting could be adopted by cities and organisations in public procurement agreements and data processing agreements.
-Updated Date: 2024-09-10 10:37:21
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/open-source-data-sharing-enabling-sustainable-mobility-for-cities/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Suki's Clause</p>
+	<h4>Open Source Data Sharing: Enabling Sustainable Mobility for Cities</h4>
+	<p class="excerpt">Open-source data sharing agreement clauses, compliant with the general data protection regulation (GDPR), that can be used by cities to enable development of the sustainable mobility sector. Will secure long-term data flows and ensure that mobility providers feed mobility data to municipalities who need to enter such data into carefully drafted data sharing agreements. The drafting could be adopted by cities and organisations in public procurement agreements and data processing agreements.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:37:21</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/open-source-data-sharing-enabling-sustainable-mobility-for-cities/" class="hot-spot"></a>
+</div>

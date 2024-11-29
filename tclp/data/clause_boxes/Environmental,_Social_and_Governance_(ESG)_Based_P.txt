@@ -1,7 +1,14 @@
-Child's Name: Scarlett's Performance Conditions
-Long Name: Environmental, Social and Governance (ESG) Based Performance Conditions for Employee Incentive Awards
-Excerpt: Conditions that incentivise performance by linking directors’ share-based remuneration awards to achieving climate targets. These provisions make remuneration awards conditional upon achieving ESG targets and so incentivise and reward long term decision-making that is required to deliver sustainable, climate-aligned action.
-Updated Date: 2024-09-10 10:35:30
-Jurisdictions: ['England & Wales']
-URL: https://chancerylaneproject.org/clauses/environmental-social-and-governance-esg-based-performance-conditions-for-employee-incentive-awards/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Scarlett's Performance Conditions</p>
+	<h4>Environmental, Social and Governance (ESG) Based Performance Conditions for Employee Incentive Awards</h4>
+	<p class="excerpt">Conditions that incentivise performance by linking directors’ share-based remuneration awards to achieving climate targets. These provisions make remuneration awards conditional upon achieving ESG targets and so incentivise and reward long term decision-making that is required to deliver sustainable, climate-aligned action.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:35:30</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/environmental-social-and-governance-esg-based-performance-conditions-for-employee-incentive-awards/" class="hot-spot"></a>
+</div>

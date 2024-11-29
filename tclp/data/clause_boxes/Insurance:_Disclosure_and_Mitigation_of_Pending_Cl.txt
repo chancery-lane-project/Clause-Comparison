@@ -1,7 +1,14 @@
-Child's Name: Cassie's Clause
-Long Name: Insurance: Disclosure and Mitigation of Pending Climate Change Litigation
-Excerpt: A clause ‘extending’ insurance policies to cover pending climate change litigation, on the condition that the policyholder discloses its net zero targets and climate risk exposure. This clause gives policyholders certainty over whether (and to what extent) climate change litigation related to past business activity will be covered/excluded from the scope of their policy(ies); reduces (re)insurers’ exposure to protracted involvement in litigation for which there may or may not be express policy cover; and strengthens the commercial relationship between (re)insurers and policyholders through collaborative working despite legal uncertainties impacting their contractual obligations (without necessarily relying on blanket exclusions of cover / risking early coverage denials).
-Updated Date: 2024-09-10 10:41:16
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/insurance-disclosure-and-mitigation-of-pending-climate-change-litigation/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Cassie's Clause</p>
+	<h4>Insurance: Disclosure and Mitigation of Pending Climate Change Litigation</h4>
+	<p class="excerpt">A clause ‘extending’ insurance policies to cover pending climate change litigation, on the condition that the policyholder discloses its net zero targets and climate risk exposure. This clause gives policyholders certainty over whether (and to what extent) climate change litigation related to past business activity will be covered/excluded from the scope of their policy(ies); reduces (re)insurers’ exposure to protracted involvement in litigation for which there may or may not be express policy cover; and strengthens the commercial relationship between (re)insurers and policyholders through collaborative working despite legal uncertainties impacting their contractual obligations (without necessarily relying on blanket exclusions of cover / risking early coverage denials).</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:41:16</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/insurance-disclosure-and-mitigation-of-pending-climate-change-litigation/" class="hot-spot"></a>
+</div>
