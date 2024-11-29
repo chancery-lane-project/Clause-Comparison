@@ -1,8 +1,14 @@
-Child's Name: Nozomi's Clause
-Long Name: Net Zero Convertible Loan Note
-Excerpt: Makes the qualifying criteria for receiving finance conditional on setting a net zero target and reflects this obligation in a convertible loan note instrument that incentivises net zero performance. Mobilises “green finance” and allows investment managers to demonstrate how they are cascading ESG strategies into deal paperwork. This
- clause is for a standard unsecured convertible loan note that is in advance of or a bridge to an equity investment round.
-Updated Date: 2024-09-10 10:38:33
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/net-zero-convertible-loan-note/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Nozomi's Clause</p>
+	<h4>Net Zero Convertible Loan Note</h4>
+	<p class="excerpt">Makes the qualifying criteria for receiving finance conditional on setting a net zero target and reflects this obligation in a convertible loan note instrument that incentivises net zero performance. Mobilises “green finance” and allows investment managers to demonstrate how they are cascading ESG strategies into deal paperwork. This  clause is for a standard unsecured convertible loan note that is in advance of or a bridge to an equity investment round.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:38:33</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/net-zero-convertible-loan-note/" class="hot-spot"></a>
+</div>

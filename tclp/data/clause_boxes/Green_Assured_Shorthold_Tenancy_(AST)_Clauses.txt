@@ -1,7 +1,14 @@
-Child's Name: Toryn's Clause
-Long Name: Green Assured Shorthold Tenancy (AST) Clauses
-Excerpt: Green AST clauses to give tenants a modest rental rebate for 'green' household management and give landlords the ability to invest in renewable energy installations while their rentals are occupied. Incentivises tenants to occupy a rental property in a sustainable way and allows landlords to install renewable energy solutions at the property while it is still occupied.
-Updated Date: 2024-09-10 10:36:58
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/green-assured-shorthold-tenancy-ast-clauses/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Toryn's Clause</p>
+	<h4>Green Assured Shorthold Tenancy (AST) Clauses</h4>
+	<p class="excerpt">Green AST clauses to give tenants a modest rental rebate for 'green' household management and give landlords the ability to invest in renewable energy installations while their rentals are occupied. Incentivises tenants to occupy a rental property in a sustainable way and allows landlords to install renewable energy solutions at the property while it is still occupied.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:36:58</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/green-assured-shorthold-tenancy-ast-clauses/" class="hot-spot"></a>
+</div>

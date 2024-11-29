@@ -1,7 +1,14 @@
-Child's Name: Kaia's Clause
-Long Name: Climate Purposed NDA Terms (Confidentiality Agreement)
-Excerpt: Provisions for standard non-disclosure or confidentiality agreements (NDAs) to ensure climate change and environmental issues are discussed at the outset of new commercial relationships. This clause enables parties to raise climate issues in NDAs affecting a variety of sectors across the economy. The drafting will be particularly relevant where one or both parties has a publicly stated net zero target.
-Updated Date: 2024-09-10 10:36:27
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/climate-purposed-nda-terms-confidentiality-agreement/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Kaia's Clause</p>
+	<h4>Climate Purposed NDA Terms (Confidentiality Agreement)</h4>
+	<p class="excerpt">Provisions for standard non-disclosure or confidentiality agreements (NDAs) to ensure climate change and environmental issues are discussed at the outset of new commercial relationships. This clause enables parties to raise climate issues in NDAs affecting a variety of sectors across the economy. The drafting will be particularly relevant where one or both parties has a publicly stated net zero target.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:36:27</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/climate-purposed-nda-terms-confidentiality-agreement/" class="hot-spot"></a>
+</div>

@@ -1,7 +1,14 @@
-Child's Name: Rosie's Clause
-Long Name: Commercial Lease: Alterations (improve environmental performance)
-Excerpt: This clause requires landlords to act reasonably when tenants propose alterations to their premises (and associated changes of use) or improvements to common areas, which have a positive climate impact. Helps tenants carry out environmental improvements knowing that landlords need to act reasonably in allowing these. The clause also encourages more efficient use of land and buildings and more collaboration between landlords and tenants to achieve climate goals.
-Updated Date: 2024-09-10 10:37:58
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/commercial-lease-alterations-improve-environmental-performance/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Rosie's Clause</p>
+	<h4>Commercial Lease: Alterations (improve environmental performance)</h4>
+	<p class="excerpt">This clause requires landlords to act reasonably when tenants propose alterations to their premises (and associated changes of use) or improvements to common areas, which have a positive climate impact. Helps tenants carry out environmental improvements knowing that landlords need to act reasonably in allowing these. The clause also encourages more efficient use of land and buildings and more collaboration between landlords and tenants to achieve climate goals.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:37:58</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/commercial-lease-alterations-improve-environmental-performance/" class="hot-spot"></a>
+</div>

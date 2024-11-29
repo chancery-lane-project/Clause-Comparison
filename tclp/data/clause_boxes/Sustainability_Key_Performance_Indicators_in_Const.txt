@@ -1,8 +1,14 @@
-Child's Name: Daniel's Clause
-Long Name: Sustainability Key Performance Indicators in Construction Works Task Orders
-Excerpt: This clause sets assessment criteria for sustainable practices in construction works task orders to drive improvement in environmental and sustainability performance during the contract term. Incentivises the contractor/ supply chain to embed climate change considerations within design, appraisal, and construction. 
-Existing legal and policy frameworks obligate compliance, rather than drive improved sustainable practice.
-Updated Date: 2024-09-10 10:41:12
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/sustainability-key-performance-indicators-in-construction-works-task-orders/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Daniel's Clause</p>
+	<h4>Sustainability Key Performance Indicators in Construction Works Task Orders</h4>
+	<p class="excerpt">This clause sets assessment criteria for sustainable practices in construction works task orders to drive improvement in environmental and sustainability performance during the contract term. Incentivises the contractor/ supply chain to embed climate change considerations within design, appraisal, and construction.  Existing legal and policy frameworks obligate compliance, rather than drive improved sustainable practice.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:41:12</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/sustainability-key-performance-indicators-in-construction-works-task-orders/" class="hot-spot"></a>
+</div>

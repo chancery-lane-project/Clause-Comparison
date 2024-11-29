@@ -1,7 +1,14 @@
-Child's Name: Larissa's Clause
-Long Name: Facility Agreement Clauses Promoting Sustainability-Linked Loans within the Cement Industry
-Excerpt: A set of sustainability-linked clauses to be incorporated into Facility Agreements: including covenants, representations and a ratcheted interest rate linked to emissions reduction performance. Sets sustainability targets in loans to actors in the high emitting cement industry to incentivise them to achieve dramatic reductions in emissions.
-Updated Date: 2024-09-10 10:39:51
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/facility-agreement-clauses-promoting-sustainability-linked-loans-within-the-cement-industry/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Larissa's Clause</p>
+	<h4>Facility Agreement Clauses Promoting Sustainability-Linked Loans within the Cement Industry</h4>
+	<p class="excerpt">A set of sustainability-linked clauses to be incorporated into Facility Agreements: including covenants, representations and a ratcheted interest rate linked to emissions reduction performance. Sets sustainability targets in loans to actors in the high emitting cement industry to incentivise them to achieve dramatic reductions in emissions.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:39:51</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/facility-agreement-clauses-promoting-sustainability-linked-loans-within-the-cement-industry/" class="hot-spot"></a>
+</div>

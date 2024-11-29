@@ -1,7 +1,14 @@
-Child's Name: Mia's Clause
-Long Name: Low Carbon Arbitrations
-Excerpt: Clauses encouraging parties to arbitration to create all documents in electronic form and conduct all hearings remotely/virtually, where possible. Drives sustainable practice in arbitration and reduces greenhouse gas emitting behaviours in proceedings.
-Updated Date: 2024-09-10 10:38:59
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/low-carbon-arbitrations/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Mia's Clause</p>
+	<h4>Low Carbon Arbitrations</h4>
+	<p class="excerpt">Clauses encouraging parties to arbitration to create all documents in electronic form and conduct all hearings remotely/virtually, where possible. Drives sustainable practice in arbitration and reduces greenhouse gas emitting behaviours in proceedings.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:38:59</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/low-carbon-arbitrations/" class="hot-spot"></a>
+</div>

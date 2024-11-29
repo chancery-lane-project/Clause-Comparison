@@ -1,8 +1,14 @@
-Child's Name: Laith and Irsa's Clause
-Long Name: Interest Ratchet Clause for Carbon Saving
-Excerpt: An interest ratchet mechanism for loan facility agreements that lowers the cost of capital for companies who (directly or indirectly) save carbon in their operations. Incentivises companies to reduce their GHG emissions by providing loan capital at a lower cost to those that are accelerating the transition to a decarbonised economy. 
-The clause is an incentive mechanism, so failing to meet carbon savings targets is not an event of default and does not incur a penalty (although parties can include a penalty clause to raise ambition).
-Updated Date: 2024-09-10 10:40:08
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/interest-ratchet-clause-for-carbon-saving/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Laith and Irsa's Clause</p>
+	<h4>Interest Ratchet Clause for Carbon Saving</h4>
+	<p class="excerpt">An interest ratchet mechanism for loan facility agreements that lowers the cost of capital for companies who (directly or indirectly) save carbon in their operations. Incentivises companies to reduce their GHG emissions by providing loan capital at a lower cost to those that are accelerating the transition to a decarbonised economy.  The clause is an incentive mechanism, so failing to meet carbon savings targets is not an event of default and does not incur a penalty (although parties can include a penalty clause to raise ambition).</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:40:08</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/interest-ratchet-clause-for-carbon-saving/" class="hot-spot"></a>
+</div>

@@ -1,7 +1,14 @@
-Child's Name: Emilio's Checklist
-Long Name: Climate Policy Footprint
-Excerpt: A checklist that requests one-off or repeated disclosure of a company’s climate-related lobbying, financing, sponsoring and climate leadership activities. Enables information to be obtained from a corporate counterparty to ensure that its activities are aligned with Paris Agreement goals.
-Updated Date: 2024-09-10 10:36:13
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/climate-policy-footprint/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Emilio's Checklist</p>
+	<h4>Climate Policy Footprint</h4>
+	<p class="excerpt">A checklist that requests one-off or repeated disclosure of a company’s climate-related lobbying, financing, sponsoring and climate leadership activities. Enables information to be obtained from a corporate counterparty to ensure that its activities are aligned with Paris Agreement goals.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:36:13</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/climate-policy-footprint/" class="hot-spot"></a>
+</div>

@@ -1,7 +1,14 @@
-Child's Name: Connor's Clause
-Long Name: Condition to Liability Cover for Climate-Related Claims (Commercial Insureds)
-Excerpt: A condition to insurance cover requiring the insured to put in place a robust net zero transition plan prior to the inception of cover for climate-related liability claims. This clause requires a commercial policyholder to have a robust net zero transition plan in place (including emissions reductions targets) at the inception of an insurance policy, before it can access insurance liability cover for climate-related claims. This will drive good behaviour, put the insured on a path to net zero and reduce the risk of climate-related claims being made against the insured, ensuring that the insurer’s business is sustainable.
-Updated Date: 2024-09-10 10:41:27
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/condition-to-liability-cover-for-climate-related-claims-commercial-insureds/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Connor's Clause</p>
+	<h4>Condition to Liability Cover for Climate-Related Claims (Commercial Insureds)</h4>
+	<p class="excerpt">A condition to insurance cover requiring the insured to put in place a robust net zero transition plan prior to the inception of cover for climate-related liability claims. This clause requires a commercial policyholder to have a robust net zero transition plan in place (including emissions reductions targets) at the inception of an insurance policy, before it can access insurance liability cover for climate-related claims. This will drive good behaviour, put the insured on a path to net zero and reduce the risk of climate-related claims being made against the insured, ensuring that the insurer’s business is sustainable.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:41:27</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/condition-to-liability-cover-for-climate-related-claims-commercial-insureds/" class="hot-spot"></a>
+</div>

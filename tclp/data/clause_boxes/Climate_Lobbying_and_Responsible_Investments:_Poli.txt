@@ -1,8 +1,14 @@
-Child's Name: Jack Hiraya’s Clause
-Long Name: Climate Lobbying and Responsible Investments: Policy Requirements
-Excerpt: Obligations that can be included in any corporate investment, finance, insurance or supply agreement, requiring counterparties to demonstrate responsible climate policy engagement and leadership. This clause prevents a counterparty (Party B) from engaging in activities that jeopardise Party A’s net zero goals, its Paris Agreement aligned business strategies or pose reputational risk to Party A.  
-There is a clear business case for responsible climate engagement. A party that has set a net zero target and aligned its business strategy with the goals of the Paris Agreement can ensure that counterparties are similarly aligned.
-Updated Date: 2024-09-10 10:39:54
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/climate-lobbying-and-responsible-investments-policy-requirements/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Jack Hiraya’s Clause</p>
+	<h4>Climate Lobbying and Responsible Investments: Policy Requirements</h4>
+	<p class="excerpt">Obligations that can be included in any corporate investment, finance, insurance or supply agreement, requiring counterparties to demonstrate responsible climate policy engagement and leadership. This clause prevents a counterparty (Party B) from engaging in activities that jeopardise Party A’s net zero goals, its Paris Agreement aligned business strategies or pose reputational risk to Party A.   There is a clear business case for responsible climate engagement. A party that has set a net zero target and aligned its business strategy with the goals of the Paris Agreement can ensure that counterparties are similarly aligned.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:39:54</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/climate-lobbying-and-responsible-investments-policy-requirements/" class="hot-spot"></a>
+</div>

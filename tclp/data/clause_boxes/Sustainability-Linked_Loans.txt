@@ -1,7 +1,14 @@
-Child's Name: Casper's Clause
-Long Name: Sustainability-Linked Loans
-Excerpt: Model clauses, as a set of optional riders divided into product categories and ESG goals, to incorporate SLPs into traditional financing documents, standard T&Cs and finance products. This clause incorporates the Loan Market Association’s (LMA’s) May 2020 Sustainability Linked Loan Principles into a standard (rather than green) loan agreement. In doing so, this clause mainstreams sustainability into lending, supporting lenders and borrowers to achieve their net zero targets and mobilising finance to support the transition to a decarbonised economy.
-Updated Date: 2024-09-25 17:31:19
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/sustainability-linked-loans/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Casper's Clause</p>
+	<h4>Sustainability-Linked Loans</h4>
+	<p class="excerpt">Model clauses, as a set of optional riders divided into product categories and ESG goals, to incorporate SLPs into traditional financing documents, standard T&Cs and finance products. This clause incorporates the Loan Market Association’s (LMA’s) May 2020 Sustainability Linked Loan Principles into a standard (rather than green) loan agreement. In doing so, this clause mainstreams sustainability into lending, supporting lenders and borrowers to achieve their net zero targets and mobilising finance to support the transition to a decarbonised economy.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-25 17:31:19</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/sustainability-linked-loans/" class="hot-spot"></a>
+</div>

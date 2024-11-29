@@ -1,7 +1,14 @@
-Child's Name: Anna's Clause
-Long Name: Climate-Related Disclosure in Loans
-Excerpt: A generic reporting/disclosure clause that can be included in the Loan Market Association (LMA) information and undertakings provisions of any corporate loan and is not limited to 'green' loans. Encourages borrowers to consider their climate-related risks, mitigation opportunities and impacts (and also to prompt borrowers’ corporate and social responsibility (CSR)/sustainability teams to interact more with their finance colleagues). The clause also encourages lenders to consider their own climate-related risks and impacts and comply with their reporting obligations.
-Updated Date: 2024-09-10 10:41:53
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/climate-related-disclosure-in-loans/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Anna's Clause</p>
+	<h4>Climate-Related Disclosure in Loans</h4>
+	<p class="excerpt">A generic reporting/disclosure clause that can be included in the Loan Market Association (LMA) information and undertakings provisions of any corporate loan and is not limited to 'green' loans. Encourages borrowers to consider their climate-related risks, mitigation opportunities and impacts (and also to prompt borrowers’ corporate and social responsibility (CSR)/sustainability teams to interact more with their finance colleagues). The clause also encourages lenders to consider their own climate-related risks and impacts and comply with their reporting obligations.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:41:53</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/climate-related-disclosure-in-loans/" class="hot-spot"></a>
+</div>

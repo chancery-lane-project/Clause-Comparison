@@ -1,7 +1,14 @@
-Child's Name: Helen's Clause
-Long Name: Promotion of Regenerative Farming Methods through Profit of Pasturage Agreements
-Excerpt: Clauses for a ‘Profit of Pasturage’ agreement - as an alternative to traditional farm business tenancy clauses - to promote regenerative farming methods controlled by the landowner. Helps owners to retain control of their land to safeguard its long term soil value whilst receiving an income from grazing rights. Grantees can access well maintained grazing land without the commitment of a full tenancy. Both parties can achieve their interests in a manner consistent with good environmental practice.
-Updated Date: 2024-09-10 10:43:23
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/promotion-of-regenerative-farming-methods-through-profit-of-pasturage-agreements/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Helen's Clause</p>
+	<h4>Promotion of Regenerative Farming Methods through Profit of Pasturage Agreements</h4>
+	<p class="excerpt">Clauses for a ‘Profit of Pasturage’ agreement - as an alternative to traditional farm business tenancy clauses - to promote regenerative farming methods controlled by the landowner. Helps owners to retain control of their land to safeguard its long term soil value whilst receiving an income from grazing rights. Grantees can access well maintained grazing land without the commitment of a full tenancy. Both parties can achieve their interests in a manner consistent with good environmental practice.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:43:23</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/promotion-of-regenerative-farming-methods-through-profit-of-pasturage-agreements/" class="hot-spot"></a>
+</div>

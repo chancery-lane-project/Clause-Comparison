@@ -1,7 +1,14 @@
-Child's Name: Arlo's Clause
-Long Name: ESG Aligned Company Articles
-Excerpt: A clause that builds ESG considerations into a company’s articles of association. To build ESG considerations into a company’s constitution which in turn acts as a trigger for ESG aligned corporate governance, decision making and company activities.
-Updated Date: 2024-09-10 10:43:15
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/esg-aligned-company-articles/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Arlo's Clause</p>
+	<h4>ESG Aligned Company Articles</h4>
+	<p class="excerpt">A clause that builds ESG considerations into a company’s articles of association. To build ESG considerations into a company’s constitution which in turn acts as a trigger for ESG aligned corporate governance, decision making and company activities.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:43:15</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/esg-aligned-company-articles/" class="hot-spot"></a>
+</div>

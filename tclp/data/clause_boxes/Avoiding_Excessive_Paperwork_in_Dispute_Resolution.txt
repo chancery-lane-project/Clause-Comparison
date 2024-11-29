@@ -1,7 +1,14 @@
-Child's Name: Toby's Clause
-Long Name: Avoiding Excessive Paperwork in Dispute Resolution
-Excerpt: A contractual obligation between the parties stating that, in the event of a dispute, parties agree to settle it in a ‘green’ manner. This clause can be used in any commercial agreement and provides certainty that any dispute must be handled in a manner that reduces the use of paper. The clause also includes a commitment by both parties to offset emissions arising from any dispute and to consider how such dispute may be handled in a way that minimises greenhouse gas emissions.
-Updated Date: 2024-09-10 10:37:06
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/avoiding-excessive-paperwork-in-dispute-resolution/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Toby's Clause</p>
+	<h4>Avoiding Excessive Paperwork in Dispute Resolution</h4>
+	<p class="excerpt">A contractual obligation between the parties stating that, in the event of a dispute, parties agree to settle it in a ‘green’ manner. This clause can be used in any commercial agreement and provides certainty that any dispute must be handled in a manner that reduces the use of paper. The clause also includes a commitment by both parties to offset emissions arising from any dispute and to consider how such dispute may be handled in a way that minimises greenhouse gas emissions.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:37:06</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/avoiding-excessive-paperwork-in-dispute-resolution/" class="hot-spot"></a>
+</div>

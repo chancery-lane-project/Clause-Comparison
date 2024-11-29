@@ -1,8 +1,14 @@
-Child's Name: Lotta's Clause
-Long Name: Lease: Renewable Energy Obligations
-Excerpt: ﻿The clause raises renewable energy at the outset of commercial relations and in lease negotiations between landlord and tenant. A low barrier to entry clause that delivers emissions reductions for landlords and tenants by ensuring that electricity supplied to a leasehold property is from renewable sources.
-As an operative provision of a lease, this clause delivers real impact by reducing the carbon footprint of the parties and the adverse environmental impact of leased buildings in landlord portfolios.
-Updated Date: 2024-09-10 10:39:39
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/lease-renewable-energy-obligations/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Lotta's Clause</p>
+	<h4>Lease: Renewable Energy Obligations</h4>
+	<p class="excerpt">﻿The clause raises renewable energy at the outset of commercial relations and in lease negotiations between landlord and tenant. A low barrier to entry clause that delivers emissions reductions for landlords and tenants by ensuring that electricity supplied to a leasehold property is from renewable sources.  As an operative provision of a lease, this clause delivers real impact by reducing the carbon footprint of the parties and the adverse environmental impact of leased buildings in landlord portfolios.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:39:39</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/lease-renewable-energy-obligations/" class="hot-spot"></a>
+</div>

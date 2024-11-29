@@ -1,7 +1,14 @@
-Child's Name: William's Clause
-Long Name: Heads of Terms for Landowner Collaboration on Environmental Schemes
-Excerpt: Heads of terms between two or more landowners for a comprehensive collaboration agreement in which they can designate land for entry into a publicly-funded environmental scheme, or a private project. Can help landowners explore collaboration, pooling of resources and the type of schemes or projects they could enter and may also create the conditions for the landowners accessing investment from corporate and institutional investors who wish to appropriately offset their environmental impact or emissions.
-Updated Date: 2024-10-02 14:15:57
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/heads-of-terms-for-landowner-collaboration-on-environmental-schemes/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">William's Clause</p>
+	<h4>Heads of Terms for Landowner Collaboration on Environmental Schemes</h4>
+	<p class="excerpt">Heads of terms between two or more landowners for a comprehensive collaboration agreement in which they can designate land for entry into a publicly-funded environmental scheme, or a private project. Can help landowners explore collaboration, pooling of resources and the type of schemes or projects they could enter and may also create the conditions for the landowners accessing investment from corporate and institutional investors who wish to appropriately offset their environmental impact or emissions.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-10-02 14:15:57</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/heads-of-terms-for-landowner-collaboration-on-environmental-schemes/" class="hot-spot"></a>
+</div>

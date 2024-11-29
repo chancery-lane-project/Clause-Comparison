@@ -1,7 +1,14 @@
-Child's Name: Jedda's Clause
-Long Name: Indigenous/ Local Knowledge in Board Director Appointments
-Excerpt: This clause is a comprehensive toolkit for appointing Indigenous Peoples/Person as a director of a company. The clause includes a suggested definition of the term Indigenous Peoples/ Person. Delivering genuine representation of Indigenous Peoples on company boards and embracing their voice and perspective in corporate decision-making.
-Updated Date: 2024-09-10 10:42:15
-Jurisdictions: ['England & Wales']
-URL: https://chancerylaneproject.org/clauses/indigenous-local-knowledge-in-board-director-appointments/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Jedda's Clause</p>
+	<h4>Indigenous/ Local Knowledge in Board Director Appointments</h4>
+	<p class="excerpt">This clause is a comprehensive toolkit for appointing Indigenous Peoples/Person as a director of a company. The clause includes a suggested definition of the term Indigenous Peoples/ Person. Delivering genuine representation of Indigenous Peoples on company boards and embracing their voice and perspective in corporate decision-making.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:42:15</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/indigenous-local-knowledge-in-board-director-appointments/" class="hot-spot"></a>
+</div>

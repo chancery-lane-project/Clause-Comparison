@@ -1,7 +1,14 @@
-Child's Name: Francis' Clause
-Long Name: Climate Aligned Construction Waste Management
-Excerpt: Contractual obligations in respect of the usage of materials and waste management to ensure consequential GHGs are minimised. Imports climate-aligned waste management practices into traditional and design and build construction contracts.
-Updated Date: 2024-09-10 10:40:31
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/climate-aligned-construction-waste-management/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Francis' Clause</p>
+	<h4>Climate Aligned Construction Waste Management</h4>
+	<p class="excerpt">Contractual obligations in respect of the usage of materials and waste management to ensure consequential GHGs are minimised. Imports climate-aligned waste management practices into traditional and design and build construction contracts.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:40:31</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/climate-aligned-construction-waste-management/" class="hot-spot"></a>
+</div>

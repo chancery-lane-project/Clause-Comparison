@@ -1,9 +1,14 @@
-Child's Name: Lara's Clause
-Long Name: ESG-Linked Pricing Adjustment for Derivatives Transactions
-Excerpt: A generic guide and checklist to introduce sustainability-linked principles into derivatives documents where the ESG-related performance criteria is not linked to any other underlying loan documents. The proposed clause is a starting point for counterparties to introduce sustainability-based principles that can then be tailored to bespoke derivative products based on the different ESG requirements of the counterparties. 
-The clause will incentivise counterparties by introducing a corresponding increase or decrease in derivatives pricing depending on whether such targets are met.
-Derivatives play an essential role in advancing the sustainable finance agenda and in mobilising large amounts of capital needed for sustainable investments over the next decade.
-Updated Date: 2024-09-10 10:35:02
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/esg-linked-pricing-adjustment-for-derivatives-transactions/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Lara's Clause</p>
+	<h4>ESG-Linked Pricing Adjustment for Derivatives Transactions</h4>
+	<p class="excerpt">A generic guide and checklist to introduce sustainability-linked principles into derivatives documents where the ESG-related performance criteria is not linked to any other underlying loan documents. The proposed clause is a starting point for counterparties to introduce sustainability-based principles that can then be tailored to bespoke derivative products based on the different ESG requirements of the counterparties.  The clause will incentivise counterparties by introducing a corresponding increase or decrease in derivatives pricing depending on whether such targets are met. Derivatives play an essential role in advancing the sustainable finance agenda and in mobilising large amounts of capital needed for sustainable investments over the next decade.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:35:02</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/esg-linked-pricing-adjustment-for-derivatives-transactions/" class="hot-spot"></a>
+</div>

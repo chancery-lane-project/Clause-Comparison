@@ -1,7 +1,14 @@
-Child's Name: Tessa's Clause
-Long Name: Sustainability Enterprise Delivery Measures within Construction Works Task Orders
-Excerpt: This clause adds wording to construction works tasks orders explicitly addressing climate change-related temperature increase and deconstruction for reuse in their appraisal and design. Facilitates and encourages contractors/ suppliers to work in ways that improve resilience and respond to the climate emergency through appraisal and design. It does this by establishing metrics (Enterprise Delivery Measures (EDMs)) that incentivise improvement in environmental and sustainability outcomes.
-Updated Date: 2024-09-10 10:37:09
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/sustainability-enterprise-delivery-measures-within-construction-works-task-orders/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Tessa's Clause</p>
+	<h4>Sustainability Enterprise Delivery Measures within Construction Works Task Orders</h4>
+	<p class="excerpt">This clause adds wording to construction works tasks orders explicitly addressing climate change-related temperature increase and deconstruction for reuse in their appraisal and design. Facilitates and encourages contractors/ suppliers to work in ways that improve resilience and respond to the climate emergency through appraisal and design. It does this by establishing metrics (Enterprise Delivery Measures (EDMs)) that incentivise improvement in environmental and sustainability outcomes.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:37:09</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/sustainability-enterprise-delivery-measures-within-construction-works-task-orders/" class="hot-spot"></a>
+</div>

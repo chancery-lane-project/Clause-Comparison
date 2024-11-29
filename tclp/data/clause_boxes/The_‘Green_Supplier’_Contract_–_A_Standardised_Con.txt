@@ -1,7 +1,14 @@
-Child's Name: Luke's Clause
-Long Name: The ‘Green Supplier’ Contract – A Standardised Contractual Pricing Model
-Excerpt: A standardised green supplier schedule that helps purchasers to reduce Scope 3 emissions by incentivising their supply chain to adopt environmental targets. This schedule introduces an incentive-based model into supply agreements to ensure that sustainability objectives agreed between supplier and purchaser are adhered to and maintained.
-Updated Date: 2024-09-10 10:35:08
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/the-green-supplier-contract-a-standardised-contractual-pricing-model/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Luke's Clause</p>
+	<h4>The ‘Green Supplier’ Contract – A Standardised Contractual Pricing Model</h4>
+	<p class="excerpt">A standardised green supplier schedule that helps purchasers to reduce Scope 3 emissions by incentivising their supply chain to adopt environmental targets. This schedule introduces an incentive-based model into supply agreements to ensure that sustainability objectives agreed between supplier and purchaser are adhered to and maintained.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:35:08</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/the-green-supplier-contract-a-standardised-contractual-pricing-model/" class="hot-spot"></a>
+</div>

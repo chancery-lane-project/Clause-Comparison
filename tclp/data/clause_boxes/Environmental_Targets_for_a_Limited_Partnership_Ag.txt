@@ -1,9 +1,14 @@
-Child's Name: Stella and Flora's Clause
-Long Name: Environmental Targets for a Limited Partnership Agreement
-Excerpt: Amendments and additions to the
- 
-Institutional Limited Partners Association (ILPA) standard form Limited Partnership Agreement allowing environment, social and governance (ESG) issues to be investigated, raised and incorporated in investment and pricing decisions. By bringing best practice United Nations Environment Programme (UNEP) prinicples of responsible investment (PRI) wording out of side letters and into the main agreement, this clause puts asset managers (including those less informed on ESG) on an equal footing, enabling informed investment decisions that assist in minimising exposure to environmental risk and achieving net zero targets.
-Updated Date: 2024-09-10 10:37:28
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/environmental-targets-for-a-limited-partnership-agreement/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Stella and Flora's Clause</p>
+	<h4>Environmental Targets for a Limited Partnership Agreement</h4>
+	<p class="excerpt">Amendments and additions to the   Institutional Limited Partners Association (ILPA) standard form Limited Partnership Agreement allowing environment, social and governance (ESG) issues to be investigated, raised and incorporated in investment and pricing decisions. By bringing best practice United Nations Environment Programme (UNEP) prinicples of responsible investment (PRI) wording out of side letters and into the main agreement, this clause puts asset managers (including those less informed on ESG) on an equal footing, enabling informed investment decisions that assist in minimising exposure to environmental risk and achieving net zero targets.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:37:28</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/environmental-targets-for-a-limited-partnership-agreement/" class="hot-spot"></a>
+</div>

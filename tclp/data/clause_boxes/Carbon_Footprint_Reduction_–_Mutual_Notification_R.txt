@@ -1,7 +1,14 @@
-Child's Name: Zain's Clause
-Long Name: Carbon Footprint Reduction – Mutual Notification Right (Carbon Footprint Reduction Notice)
-Excerpt: A clause containing mutual obligations to allow all parties to either perform their own obligations in a way that reduces their carbon footprint and/ or require other parties to do so. These provisions are generally applicable and can be used in many types of agreements but will be particularly relevant in supply chains. Because they specify a mutual right, it may be easier to include in agreements and will support parties to achieve their net zero targets.
-Updated Date: 2024-09-10 10:36:31
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/carbon-footprint-reduction-mutual-notification-right-carbon-footprint-reduction-notice/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Zain's Clause</p>
+	<h4>Carbon Footprint Reduction – Mutual Notification Right (Carbon Footprint Reduction Notice)</h4>
+	<p class="excerpt">A clause containing mutual obligations to allow all parties to either perform their own obligations in a way that reduces their carbon footprint and/ or require other parties to do so. These provisions are generally applicable and can be used in many types of agreements but will be particularly relevant in supply chains. Because they specify a mutual right, it may be easier to include in agreements and will support parties to achieve their net zero targets.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:36:31</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/carbon-footprint-reduction-mutual-notification-right-carbon-footprint-reduction-notice/" class="hot-spot"></a>
+</div>

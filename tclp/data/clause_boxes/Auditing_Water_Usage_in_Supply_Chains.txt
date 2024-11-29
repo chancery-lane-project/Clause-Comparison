@@ -1,8 +1,14 @@
-Child's Name: Lagatha's Clause
-Long Name: Auditing Water Usage in Supply Chains
-Excerpt: A clause aimed at reducing the use and wastage of water throughout a company's supply chain by requiring suppliers to provide audit results to the company. Requires suppliers to provide results of a water audit, which may be used to set performance targets and mitigate the environmental impact of water treatment and supply. 
-Lack of visibility regarding water usage in a company’s supply chain can hinder achievement of its environmental and net zero targets.
-Updated Date: 2024-10-02 14:17:05
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/auditing-water-usage-in-supply-chains/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Lagatha's Clause</p>
+	<h4>Auditing Water Usage in Supply Chains</h4>
+	<p class="excerpt">A clause aimed at reducing the use and wastage of water throughout a company's supply chain by requiring suppliers to provide audit results to the company. Requires suppliers to provide results of a water audit, which may be used to set performance targets and mitigate the environmental impact of water treatment and supply.  Lack of visibility regarding water usage in a company’s supply chain can hinder achievement of its environmental and net zero targets.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-10-02 14:17:05</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/auditing-water-usage-in-supply-chains/" class="hot-spot"></a>
+</div>

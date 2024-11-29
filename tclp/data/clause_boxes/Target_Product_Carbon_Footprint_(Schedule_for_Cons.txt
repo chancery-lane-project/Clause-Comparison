@@ -1,7 +1,14 @@
-Child's Name: Ming's Clause
-Long Name: Target Product Carbon Footprint (Schedule for Consumer Goods Contracts)
-Excerpt: A Target Product Carbon Footprint budget (which reduces over time) for each product manufactured and supplied pursuant to the contract. Enables reduction of Scope 3 emissions from the supply chain by incentivising parties to meet emissions targets through a selection of alternative payment adjustments, to be tailored to requirements. While the continuous emissions reduction is consistent with a 1.5℃ pathway the parties may temporarily pause the reductions if they are unable to meet this pace.
-Updated Date: 2024-09-10 10:38:51
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/target-product-carbon-footprint-schedule-for-consumer-goods-contracts/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Ming's Clause</p>
+	<h4>Target Product Carbon Footprint (Schedule for Consumer Goods Contracts)</h4>
+	<p class="excerpt">A Target Product Carbon Footprint budget (which reduces over time) for each product manufactured and supplied pursuant to the contract. Enables reduction of Scope 3 emissions from the supply chain by incentivising parties to meet emissions targets through a selection of alternative payment adjustments, to be tailored to requirements. While the continuous emissions reduction is consistent with a 1.5℃ pathway the parties may temporarily pause the reductions if they are unable to meet this pace.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:38:51</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/target-product-carbon-footprint-schedule-for-consumer-goods-contracts/" class="hot-spot"></a>
+</div>

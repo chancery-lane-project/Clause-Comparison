@@ -1,7 +1,14 @@
-Child's Name: Sienna's Clause
-Long Name: Green Acquisition Obligations
-Excerpt: A share purchase/ asset purchase agreement clause requiring the purchaser to maintain/ improve the target company's green credentials post acquisition, linked to payment from escrow if successful. Sellers can ensure that the purchaser maintains and continues the progress the seller has invested in towards achieving net zero and climate targets. The purchaser is incentivised by earning back a payment held in an escrow account and by gaining a company that maintains a robust net zero transition plan.
-Updated Date: 2024-09-10 10:43:41
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/green-acquisition-obligations/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Sienna's Clause</p>
+	<h4>Green Acquisition Obligations</h4>
+	<p class="excerpt">A share purchase/ asset purchase agreement clause requiring the purchaser to maintain/ improve the target company's green credentials post acquisition, linked to payment from escrow if successful. Sellers can ensure that the purchaser maintains and continues the progress the seller has invested in towards achieving net zero and climate targets. The purchaser is incentivised by earning back a payment held in an escrow account and by gaining a company that maintains a robust net zero transition plan.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:43:41</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/green-acquisition-obligations/" class="hot-spot"></a>
+</div>

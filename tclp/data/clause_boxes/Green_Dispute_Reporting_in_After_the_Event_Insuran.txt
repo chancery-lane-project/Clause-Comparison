@@ -1,7 +1,14 @@
-Child's Name: Charlotte's Clause
-Long Name: Green Dispute Reporting in After the Event Insurance Policies
-Excerpt: A clause for insurance policies covering dispute costs and expenses (such as After The Event (ATE) Insurance policies) that requires the insured to conduct disputes in an environmentally friendly way. This clause gives an insurer greater visibility over how a dispute is being conducted, and may ultimately reduce the legal costs and expenses involved in a dispute. The flexibility to negotiate which ‘Environmental Best Practices’ should be listed makes the clause commercially attractive.
-Updated Date: 2024-09-10 10:43:38
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/green-dispute-reporting-in-after-the-event-insurance-policies/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Charlotte's Clause</p>
+	<h4>Green Dispute Reporting in After the Event Insurance Policies</h4>
+	<p class="excerpt">A clause for insurance policies covering dispute costs and expenses (such as After The Event (ATE) Insurance policies) that requires the insured to conduct disputes in an environmentally friendly way. This clause gives an insurer greater visibility over how a dispute is being conducted, and may ultimately reduce the legal costs and expenses involved in a dispute. The flexibility to negotiate which ‘Environmental Best Practices’ should be listed makes the clause commercially attractive.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:43:38</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/green-dispute-reporting-in-after-the-event-insurance-policies/" class="hot-spot"></a>
+</div>

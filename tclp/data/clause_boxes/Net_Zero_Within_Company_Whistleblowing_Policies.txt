@@ -1,7 +1,14 @@
-Child's Name: Sasha's Clause
-Long Name: Net Zero Within Company Whistleblowing Policies
-Excerpt: Guidelines to incorporate wider environmental protections into companies’ whistleblowing regimes in line with their adopted policies on net zero. Introduces provisions to cover climate-related whistleblowing.. Many companies operate in the EU and are implementing the EU Whistleblowing Directive and re-evaluating their procedures. Therefore, it is timely to consider what environmental protections should be included in a company’s whistleblowing regime. By doing so, companies are demonstrating to their employees and other stakeholders that they are serious about their net zero commitments.
-Updated Date: 2024-09-10 10:37:39
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/net-zero-within-company-whistleblowing-policies/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Sasha's Clause</p>
+	<h4>Net Zero Within Company Whistleblowing Policies</h4>
+	<p class="excerpt">Guidelines to incorporate wider environmental protections into companies’ whistleblowing regimes in line with their adopted policies on net zero. Introduces provisions to cover climate-related whistleblowing.. Many companies operate in the EU and are implementing the EU Whistleblowing Directive and re-evaluating their procedures. Therefore, it is timely to consider what environmental protections should be included in a company’s whistleblowing regime. By doing so, companies are demonstrating to their employees and other stakeholders that they are serious about their net zero commitments.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:37:39</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/net-zero-within-company-whistleblowing-policies/" class="hot-spot"></a>
+</div>

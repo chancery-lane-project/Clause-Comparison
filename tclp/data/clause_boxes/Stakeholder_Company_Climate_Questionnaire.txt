@@ -1,7 +1,14 @@
-Child's Name: Javier's Clause
-Long Name: Stakeholder Company Climate Questionnaire
-Excerpt: A questionnaire for a third party to put to a company or other organisation to find out more about its taking decarbonisation or net-zero transition plan. A questionnaire for third parties (for example, buyers, suppliers and employees) to elicit information from a company or other organisation about its climate ambition, decarbonisation or net-zero transition plan.
-Updated Date: 2024-09-10 10:35:26
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/stakeholder-company-climate-questionnaire/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Javier's Clause</p>
+	<h4>Stakeholder Company Climate Questionnaire</h4>
+	<p class="excerpt">A questionnaire for a third party to put to a company or other organisation to find out more about its taking decarbonisation or net-zero transition plan. A questionnaire for third parties (for example, buyers, suppliers and employees) to elicit information from a company or other organisation about its climate ambition, decarbonisation or net-zero transition plan.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-09-10 10:35:26</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/stakeholder-company-climate-questionnaire/" class="hot-spot"></a>
+</div>

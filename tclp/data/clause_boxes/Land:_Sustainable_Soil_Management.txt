@@ -1,7 +1,14 @@
-Child's Name: Soren's Clause
-Long Name: Land: Sustainable Soil Management
-Excerpt: A set of sustainable soil management obligations allowing businesses to manage their reliance on soil, its functions and related ecosystem services. Brings sustainable soil management to the fore as a material ESG consideration for business operations and commercial transactions generally. It helps businesses limit the risk of actual or possible adverse environmental, economic and social impacts relating to soil management within estates, operations, supply chains and investments. The clause enhances the parties’ ESG performance and reputation, and supports sound investment decision-making.
-Updated Date: 2024-10-02 14:16:08
-Jurisdictions: ['England & Wales']
-URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/land-sustainable-soil-management/
-========================================
+<div class="clause-wrapper">
+	<p class="childs-name">Soren's Clause</p>
+	<h4>Land: Sustainable Soil Management</h4>
+	<p class="excerpt">A set of sustainable soil management obligations allowing businesses to manage their reliance on soil, its functions and related ecosystem services. Brings sustainable soil management to the fore as a material ESG consideration for business operations and commercial transactions generally. It helps businesses limit the risk of actual or possible adverse environmental, economic and social impacts relating to soil management within estates, operations, supply chains and investments. The clause enhances the parties’ ESG performance and reputation, and supports sound investment decision-making.</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Jurisdiction: </span>
+		<span class="cfc-taxonomy">England & Wales</span>
+	</p>
+	<p class="meta-data">
+	    <span class="cfc-leadin">Updated: </span>
+	    <span class="cfc-taxonomy">2024-10-02 14:16:08</span>
+	</p>
+	<a href="https://chancerylaneproject.org/clauses/land-sustainable-soil-management/" class="hot-spot"></a>
+</div>
