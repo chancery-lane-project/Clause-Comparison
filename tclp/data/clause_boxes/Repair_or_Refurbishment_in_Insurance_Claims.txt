@@ -1,0 +1,8 @@
+Child's Name: Paolo's Clause
+Long Name: Repair or Refurbishment in Insurance Claims
+Excerpt: A clause granting insurers the right to repair damaged goods or replace these with a refurbished alternative, removing the legal barriers that insurance policies typically place against this. Allows repairing rather than replacing goods which can be considerably cheaper for the insurer, especially if they can create a system of upcycling to benefit from economies of scale. The clause allows insurers to provide cover with lower premiums which is more appealing to customers. 
+Beyond helping the environment, this clause is cost-effective.
+Updated Date: 2024-09-10 10:38:14
+Jurisdictions: ['England & Wales']
+URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/repair-or-refurbishment-in-insurance-claims/
+========================================

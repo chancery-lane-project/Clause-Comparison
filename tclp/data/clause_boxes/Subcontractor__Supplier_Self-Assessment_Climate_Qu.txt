@@ -1,0 +1,7 @@
+Child's Name: Robyn's Questionnaire
+Long Name: Subcontractor/ Supplier Self-Assessment Climate Questionnaire (Construction)
+Excerpt: A questionnaire which identifies the climate change risk expectations of an organisation and asks subcontractors/ suppliers to self assess across these criteria. This questionnaire promotes positive change to achieve climate ambitions across supply chains and in procurement. It will enable organisations to set and publish expectations of their subcontractors/ suppliers, which will also help investors and other relevant stakeholders to understand the organisation’s stance on climate change issues.
+Updated Date: 2024-09-10 10:43:52
+Jurisdictions: ['England & Wales']
+URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/subcontractor-supplier-self-assessment-climate-questionnaire-construction/
+========================================

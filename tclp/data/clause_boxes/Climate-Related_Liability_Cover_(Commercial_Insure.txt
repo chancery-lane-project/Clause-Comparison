@@ -1,0 +1,7 @@
+Child's Name: Seb and Abby's Clause
+Long Name: Climate-Related Liability Cover (Commercial Insureds)
+Excerpt: This clause provides cover for climate-related injury and/or property damage in commercial insurance policies. Fills a gap in the UK insurance market, where there is currently no specific insurance cover for climate-related liability property damage or personal injury claims - i.e. climate-related injury or property damage caused/ contributed to by the policyholder's business.
+Updated Date: 2024-09-10 10:37:36
+Jurisdictions: ['England & Wales']
+URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/climate-related-liability-cover-commercial-insureds/
+========================================

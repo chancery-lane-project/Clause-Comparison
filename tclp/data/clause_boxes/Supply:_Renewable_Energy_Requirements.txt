@@ -1,0 +1,7 @@
+Child's Name: Viola's Clause
+Long Name: Supply: Renewable Energy Requirements
+Excerpt: A precedent clause for a supply agreement requiring the supplier/ contractor to procure energy from renewable sources. Future proofs contracts, avoid costly reprocurement (as the global mix of energy supply swings towards renewable sources), meets funder, customer or government procurement requirements (as the use of renewable energy becomes standard market practice) and helps achieve net zero targets.
+Updated Date: 2024-09-10 10:36:46
+Jurisdictions: ['England & Wales']
+URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/supply-renewable-energy-requirements/
+========================================

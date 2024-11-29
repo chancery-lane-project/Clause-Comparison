@@ -1,0 +1,7 @@
+Child's Name: Gordon's DDQ
+Long Name: Capital Markets ESG Due Diligence Questionnaire
+Excerpt: A capital markets due diligence questionnaire (DDQ) that requires a company to provide information on its climate impact, decarbonisation or net-zero transition planning and climate risk management. This DDQ is written for market participants at the due diligence stage of a capital markets transaction. It helps financial institutions understand and evaluate a company’s approach to integrating material environmental factors into its business and where responsibility for doing so lies within its wider business structure.
+Updated Date: 2024-09-10 10:35:57
+Jurisdictions: ['England & Wales']
+URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/capital-markets-esg-due-diligence-questionnaire/
+========================================

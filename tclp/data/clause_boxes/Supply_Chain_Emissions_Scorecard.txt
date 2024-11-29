@@ -1,0 +1,7 @@
+Child's Name: Maria's Scorecard
+Long Name: Supply Chain Emissions Scorecard
+Excerpt: A pro forma scorecard to be incorporated into commercial agreements as a schedule, allowing supply chain sustainability to be viewed through the lens of risk to business continuity. Positions sustainability performance as a collaborative effort between the parties, increases the transparency of a supplier’s climate action through a robust reporting framework and gives contracting parties the opportunity to precisely quantify where they are in meeting their sustainability requirements.
+Updated Date: 2024-09-10 10:39:10
+Jurisdictions: ['England & Wales']
+URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/supply-chain-emissions-scorecard/
+========================================

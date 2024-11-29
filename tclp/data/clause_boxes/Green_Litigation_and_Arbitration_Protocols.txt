@@ -1,0 +1,7 @@
+Child's Name: Emilia's Protocols
+Long Name: Green Litigation and Arbitration Protocols
+Excerpt: Two similar protocols (litigation and arbitration) with modules which parties can opt into at the start of a dispute to make it lower carbon and greener. Provides practical ways for parties to litigation or arbitration to conduct disputes in more sustainable, climate-aligned ways.
+Updated Date: 2024-09-10 10:42:57
+Jurisdictions: ['England & Wales']
+URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/green-litigation-and-arbitration-protocols/
+========================================

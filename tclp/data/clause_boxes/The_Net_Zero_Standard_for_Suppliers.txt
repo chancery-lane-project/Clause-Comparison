@@ -1,0 +1,7 @@
+Child's Name: Matilda's Annex
+Long Name: The Net Zero Standard for Suppliers
+Excerpt: A simplified and consolidated version of TCLP’s existing supply chain clauses which includes responsibilities for meeting decarbonisation targets and reporting together with cascading obligations and price adjustment mechanism. This clause can be annexed to any supply agreement to cascade greenhouse gas (GHG) reporting and reduction obligations throughout the supply chain, to enable parties to meet their decarbonisation targets and reduce their scope 3 emissions.
+Updated Date: 2024-09-10 10:36:20
+Jurisdictions: ['England & Wales']
+URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/the-net-zero-standard-for-suppliers/
+========================================

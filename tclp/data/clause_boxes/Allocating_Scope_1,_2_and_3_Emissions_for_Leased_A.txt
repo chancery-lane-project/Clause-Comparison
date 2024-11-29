@@ -1,0 +1,8 @@
+Child's Name: Sarah's Clause
+Long Name: Allocating Scope 1, 2 and 3 Emissions for Leased Assets
+Excerpt: This clause allocates responsibility for measuring and reporting the scope 1, 2 and 3 emissions of leased assets between the Lessor and Lessee. By contractually obliging the parties to take responsibility for measuring and reporting emissions from leased assets, this clause reduces the possibility of missing, duplicating or inaccurately reporting emissions associated with the lease. 
+In turn, this gives both Lessor and Lessee an accurate basis from which to improve the climate impact of the relevant assets.
+Updated Date: 2024-09-10 10:37:43
+Jurisdictions: ['England & Wales']
+URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/allocating-scope-1-2-and-3-emissions-for-leased-assets/
+========================================

@@ -1,0 +1,7 @@
+Child's Name: Jess and Rory's Clause
+Long Name: Gain-Share Incentive for Reducing GHG Emissions
+Excerpt: This clause incentivises a counterparty to reduce greenhouse gas emissions in exchange for a gain-share payment calculated by reference to the value of the goods or services it provides. This clause introduces a gain-share payment into a contract. Receiving a gain-share payment in exchange for reducing greenhouse gas emissions during the contract term is a powerful incentive for a party to decarbonise – especially in sectors that operate on narrow margins (like construction) or commercial environments undergoing aggressive cost savings.
+Updated Date: 2024-09-10 10:35:11
+Jurisdictions: ['England & Wales']
+URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/gain-share-incentive-for-reducing-ghg-emissions/
+========================================

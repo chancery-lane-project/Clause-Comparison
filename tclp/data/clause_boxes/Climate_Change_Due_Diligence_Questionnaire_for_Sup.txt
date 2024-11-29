@@ -1,0 +1,7 @@
+Child's Name: Raphael’s Procurement DDQ
+Long Name: Climate Change Due Diligence Questionnaire for Suppliers
+Excerpt: A due diligence questionnaire (DDQ) that asks potential suppliers to provide information regarding a wide range of climate change-related issues going beyond the standard questions. This DDQ provides climate-related questions which will enable procurement teams to appraise supplier approaches to climate-related risks and impacts (if at all) and how well they align with the customer’s own climate strategy and targets.
+Updated Date: 2024-09-10 10:36:16
+Jurisdictions: ['England & Wales']
+URL: https://chancerylaneproject.org/clauses/climate-change-due-diligence-questionnaire-for-suppliers/
+========================================

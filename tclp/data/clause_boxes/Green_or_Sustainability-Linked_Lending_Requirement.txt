@@ -1,0 +1,8 @@
+Child's Name: Noah's Clause
+Long Name: Green or Sustainability-Linked Lending Requirement
+Excerpt: Rider clauses (for LMA facilities agreements) that require each Lender to confirm that a percentage of its lending is sustainable or 'green' finance. This clause ensures that Lenders are aligned with the Borrower’s net zero values and promotes greater transparency within the banking sector.  
+Borrowers should set sustainability-linked lending thresholds for Lenders to meet to: (i) participate in the loan; and (ii) receive the full Margin payment (or other pre-selected consequences).
+Updated Date: 2024-09-10 10:38:36
+Jurisdictions: ['England & Wales']
+URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/green-or-sustainability-linked-lending-requirement/
+========================================

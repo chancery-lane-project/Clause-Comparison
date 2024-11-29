@@ -1,0 +1,8 @@
+Child's Name: Izzy's Clause
+Long Name: Benchmarking of Project Greenhouse Gas Emissions
+Excerpt: A mechanism that benchmarks a contractor's carbon footprint against the market. Enables buyers/ principals to benchmark contractors against competitors in the market by their greenhouse gas (GHG) emissions. It envisages that a competitive tender process will incentivise the contractor to consider its offering to ensure that its emissions scorecard yields low GHG emissions, which will ultimately set a low baseline that must be either met, or beaten, throughout the project. 
+A benchmarking mechanism is used in supply agreements to test the price in a market after the date of a contract. This mechanism may enable the price to be automatically adjusted into the contract to match the market price. This same concept can be transferred to other commercial agreements, such as construction, with respect to benchmarking a contractor's GHG emissions against its competitor's GHG emissions.
+Updated Date: 2024-09-10 10:34:34
+Jurisdictions: ['England & Wales']
+URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/benchmarking-of-project-greenhouse-gas-emissions/
+========================================

@@ -1,5 +1,6 @@
 *.txt
 !tclp/data/cleaned_clauses/*.txt
+!tclp/data/clause_boxes/*.txt
 *.npy
 *.xml
 tclp/legalbert/

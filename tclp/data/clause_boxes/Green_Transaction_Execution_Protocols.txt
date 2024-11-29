@@ -1,0 +1,7 @@
+Child's Name: Evan's Protocols
+Long Name: Green Transaction Execution Protocols
+Excerpt: Green execution protocols which parties can adopt at the start of a transaction to minimise the carbon footprint of deal execution. Brings climate aligned practices and sustainable behaviours to financial and corporate deals: for example, reducing paper use, increasing recycling and minimising travel wherever possible.
+Updated Date: 2024-09-10 10:40:42
+Jurisdictions: ['England & Wales']
+URL: https://the-chancery-lane-project-staging.onyx-sites.io/clauses/green-transaction-execution-protocols/
+========================================
