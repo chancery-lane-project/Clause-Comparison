@@ -362,6 +362,16 @@
 		border-radius: 100% !important;
 		position: fixed !important;
 	}
+	.hidden {
+		display: none;
+	}
+	.toggle-arrow {
+		display: inline-block;
+		margin-right: 5px;
+		cursor: pointer;
+		transform-origin: center;
+		transition: transform 0.2s ease;
+	}
 	</style>
 
 	<style>
@@ -517,7 +527,46 @@
 			errorBanner.classList.add("hidden");
 		}
 
+		function toggleDocumentList(listId) {
+			const list = document.getElementById(listId);
+			const docCount = document.querySelector(`[onclick="toggleDocumentList('${listId}')"]`);
+			const arrow = docCount.querySelector(".toggle-arrow");
 
+			if (list.classList.contains('hidden')) {
+				list.classList.remove('hidden');
+				arrow.textContent = '▼'; // Expanded state
+			} else {
+				list.classList.add('hidden');
+				arrow.textContent = '▶'; // Collapsed state
+			}
+		}
+		function renderBucket(bucketKey, bucketLabel, bucket, percentage, downloadLink) {
+			if (bucket.count === 0) {
+				return `
+					<div class="result-blk ${bucketKey}">
+						<span class="percentage">${percentage}%</span>
+						<span class="desc">are <strong>${bucketLabel}</strong> to be climate aligned</span>
+						<span class="doc-count">${bucket.count} document(s)</span>
+					</div>
+				`;
+			} else {
+				return `
+					<div class="result-blk ${bucketKey}">
+						<span class="percentage">${percentage}%</span>
+						<span class="desc">are <strong>${bucketLabel}</strong> to be climate aligned</span>
+						<span class="doc-count" onclick="toggleDocumentList('${bucketKey}-list')">
+							${bucket.count} document(s) <span class="toggle-arrow">▶</span>
+						</span>
+						<div id="${bucketKey}-list" class="doc-list hidden">
+							<ul>
+								${bucket.documents.map(doc => `<li>${doc}</li>`).join('')}
+							</ul>
+						</div>
+						<a href="${downloadLink}" target="_blank">Download</a>
+					</div>
+				`;
+			}
+		}
 
 		//handle "Upload File" selection
 		selectFileButton.addEventListener("click", () => {
@@ -613,74 +662,65 @@
 				if (isFolderUpload) {
 					const percentages = result.percentages;
 					const links = result.download_links;
-                    const buckets = result.buckets;
+					const buckets = result.buckets;
 
 					uploadForm.classList.add("hidden");
 					resultDiv.classList.remove("hidden");
+
 					resultDiv.innerHTML = `
 						<h2>Result for multiple contracts</h2>
-                        <div class="detection-result multiple">
+						<div class="detection-result multiple">
 
-                            <div class="result-blk extremely-likely">
-                                <span class="percentage">${percentages.extremely_likely}%</span>
-                                <span class="desc">are <strong>extremely likely</strong> to be climate aligned</span>
-                                <span class="doc-count">${buckets.extremely_likely.count} documents</span>
-                                <ul>
-                                    ${buckets.extremely_likely.documents.map(doc => `<li>${doc}</li>`).join('')}
-                                </ul>
-                                <a href="${links.extremely_likely_zip}" target="_blank">Download</a>
-                            </div>
+							${renderBucket('extremely-likely', 'extremely likely', buckets.extremely_likely, percentages.extremely_likely, links.extremely_likely_zip)}
+							${renderBucket('very-likely', 'very likely', buckets.very_likely, percentages.very_likely, links.very_likely_zip)}
+							${renderBucket('likely', 'likely', buckets.likely, percentages.likely, links.likely_zip)}
+							${renderBucket('unlikely', 'not likely', buckets.none, percentages.not_likely, links.none_zip)}
 
-                            <div class="result-blk very-likely">
-                                <span class="percentage">${percentages.very_likely}%</span>
-                                <span class="desc">are <strong>very likely</strong> to be climate aligned</span>
-                                <span class="doc-count">${buckets.very_likely.count} documents</span>
-                                <ul>
-                                    ${buckets.very_likely.documents.map(doc => `<li>${doc}</li>`).join('')}
-                                </ul>
-                                <a href="${links.very_likely_zip}" target="_blank">Download</a>
-                            </div>
-
-                            <div class="result-blk likely">
-                                <span class="percentage">${percentages.likely}%</span>
-                                <span class="desc">are <strong>likely</strong> to be climate aligned</span>
-                                <span class="doc-count">${buckets.likely.count} documents</span>
-                                <ul>
-                                    ${buckets.likely.documents.map(doc => `<li>${doc}</li>`).join('')}
-                                </ul>
-                                <a href="${links.likely_zip}" target="_blank">Download</a>
-                            </div>
-
-                            <div class="result-blk unlikely">
-                                <span class="percentage">${percentages.not_likely}%</span>
-                                <span class="desc">are <strong>not likely</strong> to be climate aligned</span>
-                                <span class="doc-count">${buckets.none.count} documents</span>
-                                <ul>
-                                    ${buckets.none.documents.map(doc => `<li>${doc}</li>`).join('')}
-                                </ul>
-                                <a href="${links.none_zip}" target="_blank">Download</a>
-                            </div>
-                        </div>
-                    `;
-                } else {
+						</div>
+					`;
+				} else {
 					const classification = result.classification;
 					const highlight = result.highlighted_content;
 
 					uploadForm.classList.add("hidden");
 					resultDiv.classList.remove("hidden");
-					resultDiv.innerHTML = `
-						<h2>Result for the single contract</h2>
-						<div class="detection-result single">
-							<div class='result-blk extremely-likely'><strong>It is ${classification}</strong> <span class='desc'>that this contract contains climate aligned clauses.</span>
-							<a data-fancybox data-src='#contract-text-hightlight' href='#'>View the text identified</a></div>
-						</div>
-						<div id="contract-text-hightlight" class="contract-listing hidden">
-						  <h1>Text that looks climate aligned</h1>
-						  <a class='cfc-button' href='#first-highlight'>Skip to highlighted text</a><br /><br />
-						  ${highlight}
-						  <button data-fancybox-close type="submit" class="cfc-button">Close</button>
-						</div>
-					  `;
+
+					if (classification === "unlikely") {
+						// Render result for "unlikely" classification
+						resultDiv.innerHTML = `
+							<h2>Result for the single contract</h2>
+							<div class="detection-result single">
+								<div class='result-blk unlikely'>
+									<strong>It is ${classification}</strong>
+									<span class='desc'>that this contract contains climate aligned clauses.</span>
+									<a data-fancybox data-src='#contract-text-original' href='#'>View the original text</a>
+								</div>
+							</div>
+							<div id="contract-text-original" class="contract-listing hidden">
+								<h1>Original Contract Text</h1>
+								${highlight}
+								<button data-fancybox-close type="submit" class="cfc-button">Close</button>
+							</div>
+						`;
+					} else {
+						// Render result for other classifications
+						resultDiv.innerHTML = `
+							<h2>Result for the single contract</h2>
+							<div class="detection-result single">
+								<div class='result-blk extremely-likely'>
+									<strong>It is ${classification}</strong>
+									<span class='desc'>that this contract contains climate aligned clauses.</span>
+									<a data-fancybox data-src='#contract-text-highlight' href='#'>View the text identified</a>
+								</div>
+							</div>
+							<div id="contract-text-highlight" class="contract-listing hidden">
+								<h1>Text that looks climate aligned</h1>
+								<a class='cfc-button' href='#first-highlight'>Skip to highlighted text</a><br /><br />
+								${highlight}
+								<button data-fancybox-close type="submit" class="cfc-button">Close</button>
+							</div>
+						`;
+					}
 				}
 			} catch (error) {
 				console.error(error);
