@@ -568,6 +568,15 @@
 			}
 		}
 
+		function scrollToHighlightedText(event, highlightId) {
+			event.preventDefault();
+			const highlightElement = document.getElementById(highlightId);
+
+			if (highlightElement) {
+				highlightElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+			}
+		}
+
 		//handle "Upload File" selection
 		selectFileButton.addEventListener("click", () => {
 			isFolderUpload = false;
@@ -715,7 +724,7 @@
 							</div>
 							<div id="contract-text-highlight" class="contract-listing hidden">
 								<h1>Text that looks climate aligned</h1>
-								<a class='cfc-button' href='#first-highlight'>Skip to highlighted text</a><br /><br />
+								<a class='cfc-button' href='#' onclick="scrollToHighlightedText(event, 'first-highlight')">Skip to highlighted text</a>
 								${highlight}
 								<button data-fancybox-close type="submit" class="cfc-button">Close</button>
 							</div>
