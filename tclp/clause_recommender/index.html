@@ -11,10 +11,10 @@
 
 	<link rel="icon" href="https://chancerylaneproject.org/wp-content/themes/contracts-for-change/dist/images/fav/favicon.svg" type="image/svg+xml">
 	<style class='wp-fonts-local'>
-	@font-face{font-family:public-sans;font-style:normal;font-weight:400;font-display:fallback;src:url('https://the-chancery-lane-project-staging.onyx-sites.io/wp-content/themes/contracts-for-change/dist/fonts/public-sans/PublicSans-Regular.woff2') format('woff2');font-stretch:normal;}
-	@font-face{font-family:public-sans;font-style:italic;font-weight:400;font-display:fallback;src:url('https://the-chancery-lane-project-staging.onyx-sites.io/wp-content/themes/contracts-for-change/dist/fonts/public-sans/PublicSans-Italic.woff2') format('woff2');font-stretch:normal;}
-	@font-face{font-family:public-sans;font-style:normal;font-weight:700;font-display:fallback;src:url('https://the-chancery-lane-project-staging.onyx-sites.io/wp-content/themes/contracts-for-change/dist/fonts/public-sans/PublicSans-Bold.woff2') format('woff2');font-stretch:normal;}
-	@font-face{font-family:public-sans;font-style:italic;font-weight:700;font-display:fallback;src:url('https://the-chancery-lane-project-staging.onyx-sites.io/wp-content/themes/contracts-for-change/dist/fonts/public-sans/PublicSans-BoldItalic.woff2') format('woff2');font-stretch:normal;}
+	@font-face{font-family:public-sans;font-style:normal;font-weight:400;font-display:fallback;src:url('https://chancerylaneproject.org/wp-content/themes/contracts-for-change/dist/fonts/public-sans/PublicSans-Regular.woff2') format('woff2');font-stretch:normal;}
+	@font-face{font-family:public-sans;font-style:italic;font-weight:400;font-display:fallback;src:url('https://chancerylaneproject.org/wp-content/themes/contracts-for-change/dist/fonts/public-sans/PublicSans-Italic.woff2') format('woff2');font-stretch:normal;}
+	@font-face{font-family:public-sans;font-style:normal;font-weight:700;font-display:fallback;src:url('https://chancerylaneproject.org/wp-content/themes/contracts-for-change/dist/fonts/public-sans/PublicSans-Bold.woff2') format('woff2');font-stretch:normal;}
+	@font-face{font-family:public-sans;font-style:italic;font-weight:700;font-display:fallback;src:url('https://chancerylaneproject.org/wp-content/themes/contracts-for-change/dist/fonts/public-sans/PublicSans-BoldItalic.woff2') format('woff2');font-stretch:normal;}
 	</style>
 
 	<style id='wp-block-library-theme-inline-css'>
@@ -138,6 +138,22 @@
 		top: 0;
 		left: 0;
 	  }
+	  .clause-pseudo-wrapper:nth-of-type(2) .clause-wrapper::after {
+		content: "Popular";
+		position: absolute;
+		background-color: purple;
+		color: #FFF;
+		font-weight: bold;
+		font-size: 10px;
+		padding: 5px 7px 5px 22px;
+		bottom: 0;
+		right: 10px;
+		background-image: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 11L14.207 9.207L10 13.414L7 10.414L4.707 12.707L3.293 11.293L7 7.586L10 10.586L12.793 7.793L11 6H16V11ZM10 0C4.478 0 0 4.478 0 10C0 15.522 4.478 20 10 20C15.522 20 20 15.522 20 10C20 4.478 15.522 0 10 0Z" fill="white"/></svg>');
+		border-radius: 9px 4px 0 0;
+		background-size: 13px;
+		background-repeat: no-repeat;
+		background-position: 5px 4px;
+	  }
 	  .confidence-indicator {
 		position: absolute;
 		display: inline-block;
@@ -147,6 +163,7 @@
 		right: 10px;
 		top: 21px;
 		font-size: 12px;
+		z-index: 100;
 	  }
 	  .clause-wrapper:hover .confidence-indicator {
 		background: #FFF;
@@ -190,6 +207,22 @@
 	  #results h2,
 	  .govuk-form-group h2 {
 		  margin-bottom: 0.5em;
+	  }
+	  .clause-pseudo-wrapper {
+		position: relative;
+	  }
+	  .grid-count--2 {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.5em;
+		margin-top: 1.5em;
+	  }
+	  .grid-count--2 .cfc-card__type {
+		color: #d7288b;
+		font-size: 15px;
+	  }
+	  .grid-count--2 .cfc-card__description {
+		font-size: 15px;
+		line-height: 20px;
 	  }
 	</style>
 
@@ -273,30 +306,27 @@
 				const resultsDiv = document.getElementById("results");
 				const preResults = document.getElementById("preResults");
 				const statusExplainer = document.getElementById("statusExplainer");
-
+				const guideReccomendations = document.getElementById("guideReccomendations");
+			  
 				resultsDiv.innerHTML = "<h2>Based on your contract, the 3 most relevant clauses are:</h2>";
 				preResults.classList.add("hidden");
 				statusExplainer.classList.remove("hidden");
+			   guideReccomendations.classList.remove("hidden");
 
 				for (const match of result.matches) {
 					// Fetch and display each clause text immediately
 					const clauseText = await fetch_clause_text(match.name);
 
 					const clauseDiv = document.createElement("div");
-					clauseDiv.classList.add("clause-wrapper");
+					clauseDiv.classList.add("clause-pseudo-wrapper");
 
 					// Create the score box
-					const scoreBox = document.createElement("div");
-					scoreBox.textContent = `Score: ${match.score.toFixed(4)}`;
-					scoreBox.style.position = "absolute";
-					scoreBox.style.top = "10px";
-					scoreBox.style.right = "10px";
-					scoreBox.style.backgroundColor = "#d7288b"; // Standard pink
-					scoreBox.style.color = "white";
-					scoreBox.style.padding = "5px 10px";
-					scoreBox.style.borderRadius = "5px";
-					scoreBox.style.fontSize = "0.9em";
-					scoreBox.style.fontWeight = "bold";
+					const scoreBox = document.createElement("span");
+				   scoreBox.classList.add("confidence-indicator");
+					scoreBox.innerHTML = `
+					<span class='signal very-good'></span>Very good match (${match.score.toFixed(4)})
+					`;
+					
 
 					// Add the clause text as rendered HTML
 					const text = document.createElement("div");
@@ -308,6 +338,7 @@
 
 					// Append the clause container to the results
 					resultsDiv.appendChild(clauseDiv);
+				  
 				}
 			} catch (error) {
 				console.error("Error during fetch:", error);
@@ -331,6 +362,14 @@
 			}
 		</script>
 
+		<div id="guideReccomendations" class="border-section hidden">
+		  <h2>Learn how to prepare for, and implement these clauses</h2>
+		  <div class="cfc-cards-grid grid-count--2 grid-size--large cards-type--guide-summary-card-large grid-columns--2">
+			<div class="card-1 cfc-card has-post-thumbnail"><div class=cfc-card__inner><div class=cfc-card__content><span class=cfc-card__type>Guide</span><h3 class=cfc-card__heading><a class=cfc-card__link href=https://chancerylaneproject.org/guides/introduce-climate-provisions-to-contract-parties/ >Introduce climate provisions to contract parties</a></h3><div class=cfc-card__description>Create the right conditions for using contracts to reduce emissions from the very beginning</div></div><figure class=cfc-card__image><picture><img alt=""decoding=async loading=lazy src=https://chancerylaneproject.org/wp-content/uploads/2024/04/Introduce-climate-provisions-to-contract-parties-640x384.png></picture></figure></div></div>
+			<div class="card-2 cfc-card has-post-thumbnail"><div class=cfc-card__inner><div class=cfc-card__content><span class=cfc-card__type>Guide</span><h3 class=cfc-card__heading><a class=cfc-card__link href=https://chancerylaneproject.org/guides/integrate-climate-obligations-into-contracts/ >Integrate climate obligations into contracts</a></h3><div class=cfc-card__description>Impose legally binding and enforceable obligations to help meet emissions-reduction targets</div></div><figure class=cfc-card__image><picture><img alt=""decoding=async loading=lazy src=https://chancerylaneproject.org/wp-content/uploads/2024/04/Integrate-climate-obligations-into-contracts-640x384.png></picture></figure></div></div>
+		  </div>
+		</div>
+
 		<div id="statusExplainer" class="border-section hidden">
 		  <h2>What the scores mean</h2>
 		  <h3>What <span class="confidence-indicator"><span class="signal very-good"></span>Very good match</span> means</h3>
@@ -342,7 +381,8 @@
 		  <h3>What <span class="confidence-indicator"><span class="signal acceptable"></span>Acceptable match</span> means</h3>
 		  <p>Ut placeat consectetur recusandae dolores ducimus provident itaque corrupti tempore voluptatem suscipit at exercitationem amet illo.</p>
 		</div>
-
+	  
+	  
 	  </div>
 	</div>
 
