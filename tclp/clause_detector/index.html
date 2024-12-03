@@ -11,10 +11,10 @@
 
 	<link rel="icon" href="https://chancerylaneproject.org/wp-content/themes/contracts-for-change/dist/images/fav/favicon.svg" type="image/svg+xml">
 	<style class='wp-fonts-local'>
-	@font-face{font-family:public-sans;font-style:normal;font-weight:400;font-display:fallback;src:url('https://the-chancery-lane-project-staging.onyx-sites.io/wp-content/themes/contracts-for-change/dist/fonts/public-sans/PublicSans-Regular.woff2') format('woff2');font-stretch:normal;}
-	@font-face{font-family:public-sans;font-style:italic;font-weight:400;font-display:fallback;src:url('https://the-chancery-lane-project-staging.onyx-sites.io/wp-content/themes/contracts-for-change/dist/fonts/public-sans/PublicSans-Italic.woff2') format('woff2');font-stretch:normal;}
-	@font-face{font-family:public-sans;font-style:normal;font-weight:700;font-display:fallback;src:url('https://the-chancery-lane-project-staging.onyx-sites.io/wp-content/themes/contracts-for-change/dist/fonts/public-sans/PublicSans-Bold.woff2') format('woff2');font-stretch:normal;}
-	@font-face{font-family:public-sans;font-style:italic;font-weight:700;font-display:fallback;src:url('https://the-chancery-lane-project-staging.onyx-sites.io/wp-content/themes/contracts-for-change/dist/fonts/public-sans/PublicSans-BoldItalic.woff2') format('woff2');font-stretch:normal;}
+	@font-face{font-family:public-sans;font-style:normal;font-weight:400;font-display:fallback;src:url('https://chancerylaneproject.org/wp-content/themes/contracts-for-change/dist/fonts/public-sans/PublicSans-Regular.woff2') format('woff2');font-stretch:normal;}
+	@font-face{font-family:public-sans;font-style:italic;font-weight:400;font-display:fallback;src:url('https://chancerylaneproject.org/wp-content/themes/contracts-for-change/dist/fonts/public-sans/PublicSans-Italic.woff2') format('woff2');font-stretch:normal;}
+	@font-face{font-family:public-sans;font-style:normal;font-weight:700;font-display:fallback;src:url('https://chancerylaneproject.org/wp-content/themes/contracts-for-change/dist/fonts/public-sans/PublicSans-Bold.woff2') format('woff2');font-stretch:normal;}
+	@font-face{font-family:public-sans;font-style:italic;font-weight:700;font-display:fallback;src:url('https://chancerylaneproject.org/wp-content/themes/contracts-for-change/dist/fonts/public-sans/PublicSans-BoldItalic.woff2') format('woff2');font-stretch:normal;}
 	</style>
 
   <style id='wp-block-library-theme-inline-css'>
@@ -94,8 +94,9 @@
 	  }
 	  .border-section {
 		margin-top: 40px;
-		padding: 40px 0 0;
-		border-top: 1px solid #CCC;
+		padding: 10px 0 0;
+		float: left;
+		clear: both;
 	  }
 	  #clauseDetails {
 
@@ -237,8 +238,8 @@
 	  color: #1C2B58;
 	}
 	.detection-result.single strong {
-	  font-size: 1.3em;
 	  display: block;
+	font-size: 1.3em;
 	}
 	.detection-result.multiple {
 	  display: block;
@@ -247,22 +248,19 @@
 	}
 	.detection-result.multiple .result-blk {
 	  display: block;
-	  margin: 0 0 25px 0;
+	  margin: 0 0 15px 0;
 	  float: left;
 	  width: 100%;
 	  border-radius: 3px;
 	  border: 1px solid rgb(211, 213, 227);
 	}
 	.detection-result.multiple .result-blk span {
-	  display: block;
-	  clear: both;
 	}
 	.detection-result.multiple .result-blk span.desc {
 		color: #0B183F;
 		margin-bottom: 5px;
 	}
 	.detection-result.multiple .result-blk span.percentage {
-	  font-size: 2em;
 	font-weight: bold;
 	}
 	.detection-result .result-blk a {
@@ -270,8 +268,8 @@
 	  font-size: 15px;
 	}
 	.detection-result.single .result-blk a {
-	  display: block;
-		  margin-top: 5px;
+		  display: block;
+	margin: 10px 0 0;
 	}
 	.detection-result .result-blk.extremely-likely {
 	  border-left: 6px solid #0b9216;
@@ -282,8 +280,8 @@
 	  color: #7bae0c;
 	}
 	.detection-result .result-blk.likely {
-	  border-left: 6px solid #b5b00b;
-	  color: #b5b00b;
+	  border-left: 6px solid #ac8500;
+	  color: #ac8500;
 	}
 	.detection-result .result-blk.unlikely {
 	  border-left: 6px solid #d05c15;
@@ -322,21 +320,21 @@
 	  font-weight: bold;
 	}
    .contract-listing ul li {
-	border: 1px solid #e4e4e4;
-	padding: 10px;
-	font-size: 15px;
-	margin-bottom: 11px;
-	background: #f9f8f8;
-	border-radius: 5px;
+	  border: 1px solid #e4e4e4;
+	  padding: 10px;
+	  font-size: 15px;
+	  margin-bottom: 11px;
+	  background: #f9f8f8;
+	  border-radius: 5px;
    }
 	.contract-listing ul li a {
-		  font-size: 15px;
-	float: right;
-	font-weight: normal;
+	  font-size: 15px;
+	  float: right;
+	  font-weight: normal;
 	}
 	.fancybox__backdrop {
 	  background: #0c17379c;
-	backdrop-filter: blur(10px);
+	  backdrop-filter: blur(10px);
 	}
 	.fancybox__content h3 {
 		margin-top: 0;
@@ -345,32 +343,128 @@
 	  margin-top: 10px;
 	}
 	.contact-text-preview {
-	display: block;
-	background: #f4f4f4;
-	font-family: monospace;
-	padding: 25px;
-	margin: 0 0 25px;
+	  display: block;
+	  background: #f4f4f4;
+	  font-family: monospace;
+	  padding: 25px;
+	  margin: 0 0 25px;
 	}
 	.contact-text-preview p {
-		margin-bottom: 1em;
+	  margin-bottom: 1em;
 	}
 	.f-button.is-close-btn {
-		top: 30px !important;
-		right: calc(50% - 295px);
-		background: #121f43 !important;
-		opacity: 1 !important;
-		border-radius: 100% !important;
-		position: fixed !important;
+	  top: 30px !important;
+	  right: calc(50% - 295px);
+	  background: #121f43 !important;
+	  opacity: 1 !important;
+	  border-radius: 100% !important;
+	  position: fixed !important;
 	}
 	.hidden {
 		display: none;
 	}
 	.toggle-arrow {
-		display: inline-block;
-		margin-right: 5px;
-		cursor: pointer;
-		transform-origin: center;
-		transition: transform 0.2s ease;
+	  display: inline-block;
+	  margin-right: 5px;
+	  cursor: pointer;
+	  transform-origin: center;
+	  transition: transform 0.2s ease;
+	  font-size: 13px;
+	}
+	.highlighted-text-wrapper {
+	  padding: 1.5em;
+	  background: #EFEFEF;
+	  font-family: monospace;
+	  font-size: 13px;
+	  max-height: 310px;
+	  overflow: scroll;
+	  margin: 15px 0;
+	  border-radius: 5px;
+	  box-shadow: inset 0px 3px 3px #00000024;
+	}
+	.fancybox__content .cfc-button {
+	  margin: 0;
+	  padding: 10px 15px;
+	  font-size: 14px;
+	}
+	.fancybox__content .cfc-button--secondary {
+	  background-color: white !important;
+	  border: 2px solid #121f43;
+	  color: #121f43 !important;
+	}
+	.fancybox__content .cfc-button--secondary:hover {
+	  background: #121f43 !important;
+	  color: #FFF !important;
+	}
+	.toggle-link {
+	  display: block;
+	  cursor: pointer;
+	  margin: 10px 0;
+	}
+	.doc-list {
+	  border-left: 4px solid darkgrey;
+	  color: #1c2b58;
+	  margin: 10px 6px;
+	  padding-left: 15px;
+	}
+	.doc-list ul {
+	  margin-bottom: 0;
+	  line-height: 1;
+	  padding-left: 13px;
+	  font-size: 15px;
+	}
+	.doc-list ul li {
+	  margin: 0;
+	  padding: 5px 0;
+	}
+	.report-findings {
+	  display: block;
+	  width: 100%;
+	  float: left;
+	  margin: 20px 0 0;
+	  background: #EFF2F6;
+	  border: 1px solid #DEE5EC;
+	  border-radius: 10px;
+	  padding: 15px 20px;
+	}
+	.report-findings .report-findings-inner {
+	  border: 1px solid #DEE5EC;
+	  width: calc(100% + 80px);
+	  padding: 30px 30px 30px 50%;
+	  background: #FFF url(https://chancerylaneproject.org/wp-content/uploads/2024/12/tool-vis.png) no-repeat left top;
+	  background-size: contain;
+	  border-radius: 10px;
+	  margin-left: -40px;
+	  box-shadow: 0px 3px 0px -1px #0000000f;
+	}
+	.report-findings .report-findings-inner h3 {
+	  margin: 0 0 10px;
+	}
+	.report-findings .report-findings-inner a.cfc-button {
+	  margin: 12px 0 0;
+	  display: inline-block;
+	  padding: 10px 15px;
+	  font-size: 13px;
+	}
+	.report-findings .report-findings-inner p {
+	  font-size: 15px;
+	  line-height: 1.4;
+	}
+	.grid-count--2 {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1.5em;
+		margin-top: 1.5em;
+	  }
+	  .grid-count--2 .cfc-card__type {
+		color: #d7288b;
+		font-size: 15px;
+	  }
+	  .grid-count--2 .cfc-card__description {
+		font-size: 15px;
+		line-height: 20px;
+	  }
+	#guideReccomendations {
+	  margin-top: 20px;
 	}
 	</style>
 
@@ -517,6 +611,7 @@
 		const progressBar = document.getElementById("progressBar");
 		const errorBanner = document.getElementById("errorBanner");
 		const errorMessage = document.getElementById("errorMessage");
+		
 
 
 
@@ -544,25 +639,24 @@
 			if (bucket.count === 0) {
 				return `
 					<div class="result-blk ${bucketKey}">
-						<span class="percentage">${percentage}%</span>
-						<span class="desc">are <strong>${bucketLabel}</strong> to be climate aligned</span>
-						<span class="doc-count">${bucket.count} document(s)</span>
+						<span class="percentage">${bucket.count} contracts (${percentage}%) </span>
+						<span class="desc">are <strong>${bucketLabel}</strong> to contain climate aligned clauses</span>
 					</div>
 				`;
 			} else {
 				return `
 					<div class="result-blk ${bucketKey}">
-						<span class="percentage">${percentage}%</span>
-						<span class="desc">are <strong>${bucketLabel}</strong> to be climate aligned</span>
-						<span class="doc-count" onclick="toggleDocumentList('${bucketKey}-list')">
-							${bucket.count} document(s) <span class="toggle-arrow">▶</span>
-						</span>
+						<span class="percentage">${bucket.count} contracts (${percentage}%) </span>
+						<span class="desc">are <strong>${bucketLabel}</strong> to contain climate aligned clauses</span>
+						<a class="toggle-link" onclick="toggleDocumentList('${bucketKey}-list')">
+						  <span class="toggle-arrow">▶</span>View the contracts
+						</a>
 						<div id="${bucketKey}-list" class="doc-list hidden">
 							<ul>
 								${bucket.documents.map(doc => `<li>${doc}</li>`).join('')}
 							</ul>
 						</div>
-						<a href="${downloadLink}" target="_blank">Download</a>
+						<a href="${downloadLink}" target="_blank">Download as a zip file</a>
 					</div>
 				`;
 			}
@@ -667,7 +761,7 @@
 
 				//results for both folder and file uploads
 
-                //Al: Buckets is the name of a dictionary that contains the count and names of the document (count and documents as variable names)
+				//Al: Buckets is the name of a dictionary that contains the count and names of the document (count and documents as variable names)
 				if (isFolderUpload) {
 					const percentages = result.percentages;
 					const links = result.download_links;
@@ -686,6 +780,14 @@
 							${renderBucket('unlikely', 'not likely', buckets.none, percentages.not_likely, links.none_zip)}
 
 						</div>
+
+					   <div class='report-findings'>
+						  <div class='report-findings-inner'>
+							<h3>See how your results compare across the sectors</h3>
+							<p>Similique est fuga et cumque. Voluptas voluptatem voluptas voluptatum placeat natus consequatur quas sed dolorum.</p>
+							<a href='#' class='cfc-button'>Report anonymised results</a>
+						  </div>
+					   </div>
 					`;
 				} else {
 					const classification = result.classification;
@@ -725,8 +827,18 @@
 							<div id="contract-text-highlight" class="contract-listing hidden">
 								<h1>Text that looks climate aligned</h1>
 								<a class='cfc-button' href='#' onclick="scrollToHighlightedText(event, 'first-highlight')">Skip to highlighted text</a>
+							   <div class='highlighted-text-wrapper'>
 								${highlight}
-								<button data-fancybox-close type="submit" class="cfc-button">Close</button>
+							   </div>
+								<button data-fancybox-close type="submit" class="cfc-button cfc-button--secondary">Close</button>
+							</div>
+
+							<div id='guideReccomendations' class='border-section'>
+							  <h2>Improve the result for this contract</h2>
+							  <div class='cfc-cards-grid grid-count--2 grid-size--small cards-type--guide-summary-card-small '>
+								<div class='card-1 cfc-card has-post-thumbnail'><div class='cfc-card__inner'><div class='cfc-card__content'><span class='cfc-card__type'>Guide</span><h3 class='cfc-card__heading'><a class='cfc-card__link' href='https://chancerylaneproject.org/guides/get-information-on-contract-emission'>Get information on contract emissions</a></h3><div class='cfc-card__description'>Gather data on emissions related to contracts to help measure, manage and report on them</div></div><figure class='cfc-card__image'><picture><img alt='' decoding='async' loading='lazy' src='https://chancerylaneproject.org/wp-content/uploads/2024/04/Get-information-on-contract-emissions-640x384.png'></picture></figure></div></div>
+								<div class='card-2 cfc-card has-post-thumbnail'><div class='cfc-card__inner'><div class='cfc-card__content'><span class='cfc-card__type'>Guide</span><h3 class='cfc-card__heading'><a class='cfc-card__link' href='https://chancerylaneproject.org/guides/request-climate-information-in-due-diligence-questionnaires/'>Request climate information in due diligence questionnaires</a></h3><div class='cfc-card__description'>Assess the climate performance of other organisations and how they will impact your transition plan</div></div><figure class='cfc-card__image'><picture><img alt='' decoding='async' loading='lazy' src='https://chancerylaneproject.org/wp-content/uploads/2024/04/Request-climate-information-in-due-diligence-questionnaires-640x384.png'></picture></figure></div></div>
+							  </div>
 							</div>
 						`;
 					}
