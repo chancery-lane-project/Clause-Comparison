@@ -186,6 +186,9 @@
 	  .confidence-indicator .signal.acceptable {
 		background: orange;
 	  }
+	  .signal.could-consider {
+		background: red;
+	}
 	  h3 {
 		position: relative;
 		margin-top: 1.5em;
@@ -307,26 +310,42 @@
 				const preResults = document.getElementById("preResults");
 				const statusExplainer = document.getElementById("statusExplainer");
 				const guideReccomendations = document.getElementById("guideReccomendations");
-			  
+
 				resultsDiv.innerHTML = "<h2>Based on your contract, the 3 most relevant clauses are:</h2>";
 				preResults.classList.add("hidden");
 				statusExplainer.classList.remove("hidden");
 			   guideReccomendations.classList.remove("hidden");
 
-				for (const match of result.matches) {
+			   for (const match of result.matches) {
 					// Fetch and display each clause text immediately
 					const clauseText = await fetch_clause_text(match.name);
 
 					const clauseDiv = document.createElement("div");
 					clauseDiv.classList.add("clause-pseudo-wrapper");
 
+					// Determine the match level based on the score
+					let matchLevel = "";
+					let signalClass = "";
+					if (match.score > 0.91) {
+						matchLevel = "Very good match";
+						signalClass = "very-good";
+					} else if (match.score > 0.89) {
+						matchLevel = "Good match";
+						signalClass = "good";
+					} else if (match.score > 0.82) {
+						matchLevel = "Acceptable match";
+						signalClass = "acceptable";
+					} else {
+						matchLevel = "Could Consider";
+						signalClass = "could-consider";
+					}
+
 					// Create the score box
 					const scoreBox = document.createElement("span");
-				   scoreBox.classList.add("confidence-indicator");
+					scoreBox.classList.add("confidence-indicator");
 					scoreBox.innerHTML = `
-					<span class='signal very-good'></span>Very good match (${match.score.toFixed(4)})
+						<span class='signal ${signalClass}'></span>${matchLevel} (${match.score.toFixed(4)})
 					`;
-					
 
 					// Add the clause text as rendered HTML
 					const text = document.createElement("div");
@@ -338,7 +357,6 @@
 
 					// Append the clause container to the results
 					resultsDiv.appendChild(clauseDiv);
-				  
 				}
 			} catch (error) {
 				console.error("Error during fetch:", error);
@@ -373,16 +391,18 @@
 		<div id="statusExplainer" class="border-section hidden">
 		  <h2>What the scores mean</h2>
 		  <h3>What <span class="confidence-indicator"><span class="signal very-good"></span>Very good match</span> means</h3>
-		  <p>Ut placeat consectetur recusandae dolores ducimus provident itaque corrupti tempore voluptatem suscipit at exercitationem amet illo.</p>
+		  <p>A 'very good' classification means that out of a grouping of top three matches, this match is in the 75th percentile of similarity. So, even among other good matches, this is a particularly good match.</p>
 
 		  <h3>What <span class="confidence-indicator"><span class="signal good"></span>Good match</span> means</h3>
-		  <p>Ut placeat consectetur recusandae dolores ducimus provident itaque corrupti tempore voluptatem suscipit at exercitationem amet illo.</p>
+		  <p>As with the 'very good' match, a 'good' match means the score falls between the 50th and 75th percentile when considered against other top 3 matches in a grouping of 1000 documents.</p>
 
 		  <h3>What <span class="confidence-indicator"><span class="signal acceptable"></span>Acceptable match</span> means</h3>
-		  <p>Ut placeat consectetur recusandae dolores ducimus provident itaque corrupti tempore voluptatem suscipit at exercitationem amet illo.</p>
+		  <p>An 'acceptable' match falls between the 25th and 50th percentile, using the same methods as 'very good' and 'good'.</p>
+
+		  <h3>What <span class="confidence-indicator"><span class="signal could-consider"></span>Could Consider</span> means</h3>
+		  <p>A 'Could Consider' flag means there was no particularly good match for your upload. The application has given you something that you could look into further, if you wished. You might be more well served checking out one of our guides!</p>
 		</div>
-	  
-	  
+
 	  </div>
 	</div>
 
