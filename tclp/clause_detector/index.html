@@ -481,23 +481,25 @@
 			margin: 10px 0;
 		}
 		.loading {
-			margin-top: 20px;
-			padding: 10px;
-			border: 1px solid #ccc;
-			background-color: #f9f9f9;
+		  margin-top: 20px;
+		  padding: 20px;
+		  border: 1px solid #ccc;
+		  background-color: #f9f9f9;
+		  border-radius: 10px;
+		  font-weight: bold;
 		}
 		.progress-bar {
 			width: 100%;
-			background-color: #f3f3f3;
+			background-color: #e0e0e0;
 			border-radius: 5px;
 			overflow: hidden;
-			margin: 10px 0;
+			margin: 10px 0 0;
 		}
 		.progress-bar-inner {
-			height: 20px;
-			background-color: #007BFF;
-			width: 0%;
-			transition: width 0.5s;
+		  height: 15px;
+		  background-color: #d7298a;
+		  width: 30%;
+		  transition: width 0.5s;
 		}
 		.hidden {
 			display: none;
@@ -592,7 +594,7 @@
 		</form>
 
 		<div id="loading" class="loading hidden">
-			<p>Loading results, please wait</p>
+			<p>Loading your results</p>
 			<div class="progress-bar">
 				<div id="progressBar" class="progress-bar-inner"></div>
 			</div>
@@ -705,6 +707,8 @@
 			resultDiv.classList.add("hidden");
 			errorBanner.classList.add("hidden");
 			loadingDiv.classList.remove("hidden");
+		   selectionStep.classList.add("hidden");
+		   uploadForm.classList.add("hidden");
 			progressBar.style.width = "0%";
 
 			if (!uploadInput.files.length) {
@@ -783,7 +787,7 @@
 
 					   <div class='report-findings'>
 						  <div class='report-findings-inner'>
-							<h3>See how your results compare across the sectors</h3>
+							<h3>See how your results compare to other [sectors / industries / etc]</h3>
 							<p>Similique est fuga et cumque. Voluptas voluptatem voluptas voluptatum placeat natus consequatur quas sed dolorum.</p>
 							<a href='#' class='cfc-button'>Report anonymised results</a>
 						  </div>
@@ -807,10 +811,21 @@
 									<a data-fancybox data-src='#contract-text-original' href='#'>View the original text</a>
 								</div>
 							</div>
-							<div id="contract-text-original" class="contract-listing hidden">
-								<h1>Original Contract Text</h1>
+							
+						  <div id="contract-text-original" class="contract-listing hidden">
+								<h1>Original contract text</h1>
+							   <div class='highlighted-text-wrapper'>
 								${highlight}
-								<button data-fancybox-close type="submit" class="cfc-button">Close</button>
+							   </div>
+								<button data-fancybox-close type="submit" class="cfc-button cfc-button--secondary">Close</button>
+							</div>
+
+						  <div id='guideReccomendations' class='border-section'>
+							  <h2>Improve the result for this contract</h2>
+							  <div class='cfc-cards-grid grid-count--2 grid-size--small cards-type--guide-summary-card-small '>
+								<div class='card-1 cfc-card has-post-thumbnail'><div class='cfc-card__inner'><div class='cfc-card__content'><span class='cfc-card__type'>Guide</span><h3 class='cfc-card__heading'><a class='cfc-card__link' href='https://chancerylaneproject.org/guides/get-information-on-contract-emission'>Get information on contract emissions</a></h3><div class='cfc-card__description'>Gather data on emissions related to contracts to help measure, manage and report on them</div></div><figure class='cfc-card__image'><picture><img alt='' decoding='async' loading='lazy' src='https://chancerylaneproject.org/wp-content/uploads/2024/04/Get-information-on-contract-emissions-640x384.png'></picture></figure></div></div>
+								<div class='card-2 cfc-card has-post-thumbnail'><div class='cfc-card__inner'><div class='cfc-card__content'><span class='cfc-card__type'>Guide</span><h3 class='cfc-card__heading'><a class='cfc-card__link' href='https://chancerylaneproject.org/guides/request-climate-information-in-due-diligence-questionnaires/'>Request climate information in due diligence questionnaires</a></h3><div class='cfc-card__description'>Assess the climate performance of other organisations and how they will impact your transition plan</div></div><figure class='cfc-card__image'><picture><img alt='' decoding='async' loading='lazy' src='https://chancerylaneproject.org/wp-content/uploads/2024/04/Request-climate-information-in-due-diligence-questionnaires-640x384.png'></picture></figure></div></div>
+							  </div>
 							</div>
 						`;
 					} else {
@@ -825,8 +840,8 @@
 								</div>
 							</div>
 							<div id="contract-text-highlight" class="contract-listing hidden">
-								<h1>Text that looks climate aligned</h1>
-								<a class='cfc-button' href='#' onclick="scrollToHighlightedText(event, 'first-highlight')">Skip to highlighted text</a>
+								<h1>Original contract text</h1>
+								<a class='cfc-button' href='#' onclick="scrollToHighlightedText(event, 'first-highlight')">Skip to climate aligned text</a>
 							   <div class='highlighted-text-wrapper'>
 								${highlight}
 							   </div>
