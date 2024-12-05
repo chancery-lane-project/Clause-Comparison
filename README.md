@@ -1,4 +1,6 @@
-# Clause-Comparison
+# TCLP x Faculty AI Fellowship December 20204 
+## Detecting climate-aligned content in contracts and recommending TCLP content for contracts that are not already climate-aligned
+![Alt text](readme_image.png)
 
 ## Description of Content
 
