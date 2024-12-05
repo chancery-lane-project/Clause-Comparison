@@ -67,6 +67,22 @@ Download this and place it in Clause-Comparison/tclp/data
 Download this and place it in Clause-Comparison/tclp/legalbert
 
 ## Usage
-If you are interested in using the frontend applications, those will immediately be launched on a local server once you build the docker. They are designed to have a simple user inteface, easily intuited by non-technical and technical users alike. 
+If you are **interested in using the frontend applications**, those will immediately be launched on a local server once you build the docker. They are designed to have a **simple user inteface**, easily intuited by non-technical and technical users alike. 
 
 If you wish to explore the code in more depth and desire further ideas about exploration, please refer to the in-depth tour of the repo just below. 
+
+## Repo Tour 
+If you are more technically inclined, and want to understand the backend of these applications and the repository structure, this section is for you. 
+
+### Landing Page
+
+- **[`tclp/`](tclp)**: This is the main folder where most of the project code and data are located. Any downloaded models or embeddings should be placed in this directory for the project to function correctly. Think of it like an src file in other projects.
+- **[`.dockerignore`](.dockerignore) and [`.gitignore`](.gitignore)**: These files define which files or folders should be excluded from Docker images and Git commits, respectively. These are important for discluding large stores of data from this repo. 
+- **[`Dockerfile`](Dockerfile)**: Contains the instructions to build the Docker container for the project.
+- **[`docker-compose.yaml`](docker-compose.yaml)**: Simplifies the setup of Docker services. It ensures the application and its dependencies are properly configured and running.
+- **[`poetry.lock`](poetry.lock) and [`pyproject.toml`](pyproject.toml)**: Used for managing Python dependencies via Poetry. These files ensure consistent dependency versions and mean the user can easily install the required environment. 
+- **[`README.md`](README.md)**: This document! 
+- **[`readme_image.png`](readme_image.png)**: The opening image of this document.
+
+### tclp 
+
