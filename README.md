@@ -44,7 +44,7 @@ Open your terminal and run:
 Make sure you have a Personal Access Token set-up; instructions [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
 #### Download and Prepare the Model
-Download the model and embeddings from [this link](https://drive.google.com/file/d/1sTpo9iOjhoCZ1qteLqry8jjezWTanSl_/view?usp=drive_link), unzip it, and place the files into the `Clause-Comparison/tclp/legalbert` folder to ensure the paths are correctly configured. If you are interested in having testing data or running some of the training notebooks, you can download the data from [this link](https://drive.google.com/drive/folders/1UJqd7kyTgziS1sDf67KQWfdg80hduY6w?usp=drive_link)
+Download the model and embeddings from [this link](https://drive.google.com/file/d/1sTpo9iOjhoCZ1qteLqry8jjezWTanSl_/view?usp=drive_link), unzip it, and place the files into the `Clause-Comparison/tclp/legalbert` folder to ensure the paths are correctly configured. If you are interested in having testing data or running some of the training notebooks, you can download the data from [this link](https://drive.google.com/drive/folders/1UJqd7kyTgziS1sDf67KQWfdg80hduY6w?usp=drive_link). Place those files in 'Clause-Comparison/tclp/data.' The baseline data (including the clauses themselves) is already included for you in this repo, so it will be installed locally when you clone. 
 
 #### Run the Project with Docker
 From the root directory of the project (`Clause-Comparison`), within your terminal:
