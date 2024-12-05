@@ -94,12 +94,12 @@ Inside this source document there are further files and sub-folders.
      
 - **[`clause_detector/`](tclp/clause_detector)**: The logic, scripts, and exploratory notebooks for identifying whether a document contains TCLP-inspired or climate-aligned clauses.
    - **[`notebooks/`](tclp/clause_detector/notebooks)**: Jupyter notebooks for training the model and decting clauses.
-      - **`clause_detector.ipynb`**: A notebook that provides an interactive environment for testing and debugging the clause detection pipeline. Includes functionality for running detection on sample inputs and inspecting outputs.
-      - **`highlighted_output.html`**: An HTML file used to visualize the detection results, highlighting identified clauses directly within the document.
-      - **`training_model.ipynb`**: This notebook is used for training or fine-tuning the clause detection model. It  includes steps for preparing data, defining the model, and evaluating its performance.
+      - **[`clause_detector.ipynb`](tclp/clause_detector/notebooks/clause_detector.ipynb)**: A notebook that provides an interactive environment for testing and debugging the clause detection pipeline. Includes functionality for running detection on sample inputs and inspecting outputs.
+      - **[`highlighted_output.html`](tclp/clause_detector/notebooks/highlighted_output.html)**: An HTML file used to visualize the detection results, highlighting identified clauses directly within the document.
+      - **[`training_model.ipynb`](tclp/clause_detector/notebooks/training_model.ipynb)**: This notebook is used for training or fine-tuning the clause detection model. It  includes steps for preparing data, defining the model, and evaluating its performance.
    - **[`py_scripts/`](tclp/clause_detector/py_scripts)**: Simpler python scripts for running the model and inserting a clause to generate the synthetic database.
-      - **`clause_detector.py`**: A simplified version of the main Python script that interacts within the frontend, implementing the clause detection logic and using the pre-trained model.
-      - **`insert_clause.py`**: A script designed to insert clauses into legal documents, creating the synthetic database used in the rest of clause_detector.
+      - **[`clause_detector.py`](tclp/clause_detector/py_scripts/clause_detector.py)**: A simplified version of the main Python script that interacts within the frontend, implementing the clause detection logic and using the pre-trained model.
+      - **[`insert_clause.py`](tclp/clause_detector/py_scripts/insert_clause.py)**: A script designed to insert clauses into legal documents, creating the synthetic database used in the rest of clause_detector.
    - **[`clause_identifier_model.pkl`](tclp/clause_detector/clause_identifier_model.pkl)**: A pre-trained machine learning model that powers the clause detection process.
    - **[`detector.py`](tclp/clause_detector/detector.py)**: The main script that contains the core logic for identifying clauses in documents.
    - **[`detector_utils.py`](tclp/clause_detector/detector_utils.py)**: Contains helper functions, such as preprocessing and result formatting, used by the main detector.
@@ -109,18 +109,18 @@ Inside this source document there are further files and sub-folders.
    - **[`GUIs/`](tclp/clause_recommender/GUIs)**: Contains resources and components for building graphical interfaces for the recommender. These interfaces allow users to interact with the application in a user-friendly manner. GUIs exist for different methods tested. The chosen method (legalbert) is better accessed through Docker.
       - **[`bowGUI.py`](tclp/clause_recommender/GUIs/bowGUI.py)**: A graphical interface to interact with the Bag-of-Words (BoW) model for clause recommendation. Useful for exploring results using a traditional, word-count-based approach.
       - **[`doc2vecGUI.py`](tclp/clause_recommender/GUIs/doc2vecGUI.py)**: Provides a GUI for interacting with the Doc2Vec model, a vector-based representation of documents for more context-aware clause recommendation.
-      - **`[legalBERTGUI.py](tclp/clause_recommender/GUIs/legalBERTGUI.py)`**: The graphical interface for the LegalBERT model, which leverages transformer-based language modeling tailored for legal documents. This model is better accessed through the Docker frontend. 
+      - **[`legalBERTGUI.py`](tclp/clause_recommender/GUIs/legalBERTGUI.py)**: The graphical interface for the LegalBERT model, which leverages transformer-based language modeling tailored for legal documents. This model is better accessed through the Docker frontend. 
    - **[`app.py`](tclp/clause_recommender/app.py)**: The main script that powers the Clause Recommender application. It allows the user to call the legalbert model and associated embeddings for recommendation of the best clause. 
    - **[`clause_matcher.py`](tclp/clause_recommender/clause_matcher.py)**: This script provides the LegalBERTMatcher class, which uses a pre-trained LegalBERT model to find the best matching clauses for a given query text.
    - **[`index.html`](tclp/clause_recommender/index.html)**: Provides the structure and layout for the clause recommender's frontend interface.
    - **[`utils.py`](tclp/clause_recommender/utils.py)**: A utility script containing helper functions that support the core logic, such as preprocessing and formatting.
    
 - **[`data/`](tclp/data/)**: A directory including clauses for running the existing models. If you wish to run all the content of this repo, you will need to populate this with the google drive link above.
-   - **`clause_boxes/`**: Contains files for representing clauses in an organized, user-friendly way for frontend, HTML format.
-   - **`cleaned_clauses/`**: Includes cleaned and preprocessed clauses, glossary terms, and guides used for LLM training and clause_detector training. 
-   - **`cleaned_clauses_detect/`**: A specialized subset that only includes clauses tailored for clause recommending tasks. The user will only get a clause of the england/wales jurisdiction. 
-   - **`synth_data/`**: Empty folder for the user to replace with synthetic data, either generated by the LLM locally or downloeaded from google drive. 
-   - **`test_contracts/`**: Empty folder to be populated by the user in training their own version of this model or pulled from the google drive.
+   - **[`clause_boxes/`](tclp/data/clause_boxes)**: Contains files for representing clauses in an organized, user-friendly way for frontend, HTML format.
+   - **[`cleaned_clauses_detect/`](tclp/data/cleaned_clauses_detect)**: Includes cleaned and preprocessed clauses, glossary terms, and guides used for LLM training and clause_detector training.
+   - **[`cleaned_clauses/`](tclp/data/cleaned_clauses)**: A specialized subset that only includes clauses tailored for clause recommending tasks. The user will only get a clause of the England/Wales jurisdiction.  
+   - **[`synth_data/`](tclp/data/synth_data)**: Empty folder for the user to replace with synthetic data, either generated by the LLM locally or downloeaded from google drive. 
+   - **[`test_contracts/`](tclp/data/test_contracts)**: Empty folder to be populated by the user in training their own version of this model or pulled from the google drive.
      
 - **[`xml_parse.py`](tclp/xml_parse.py)**: A script to extract relevant contnent from the TCLP website. To run, you will need to have an xml file of the entire website. 
 - **`__pycache__/`**: A Python-generated folder that caches compiled files for faster execution.
