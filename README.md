@@ -66,4 +66,7 @@ Download this and place it in Clause-Comparison/tclp/data
 [Google drive folder](https://drive.google.com/file/d/1sTpo9iOjhoCZ1qteLqry8jjezWTanSl_/view?usp=drive_link)
 Download this and place it in Clause-Comparison/tclp/legalbert
 
+## Usage
+If you are interested in using the frontend applications, those will immediately be launched on a local server once you build the docker. They are designed to have a simple user inteface, easily intuited by non-technical and technical users alike. 
 
+If you wish to explore the code in more depth and desire further ideas about exploration, please refer to the in-depth tour of the repo just below. 
