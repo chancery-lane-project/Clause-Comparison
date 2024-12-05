@@ -85,4 +85,16 @@ If you are more technically inclined, and want to understand the backend of thes
 - **[`readme_image.png`](readme_image.png)**: The opening image of this document.
 
 ### tclp 
+Inside this source document there are further files and sub-folders. 
+
+- **[`LLMs/`](tclp/LLMs)**: Contains pre-trained or fine-tuned language models used in the project, like LegalBERT or other custom models.
+- **[`clause_detector/`](tclp/clause_detector)**: The logic and scripts for identifying whether a document contains TCLP-inspired or climate-aligned clauses.
+- **[`clause_recommender/`](tclp/clause_recommender)**: Code responsible for suggesting the most relevant TCLP clauses for a given legal document.
+- **[`data/`](tclp/data/)**: A directory for datasets or inputs required for testing, training, or running the project.
+- **[`xml_parse.py`](tclp/xml_parse.py)**: This script likely handles XML-based contracts or clauses, helping preprocess or extract necessary information.
+- **`__pycache__/`**: A Python-generated folder that caches compiled files for faster execution.
+- **`.DS_Store`**: A macOS-specific file that stores folder metadata. This can be ignored or deleted as it serves no purpose for the project.
+- **`__init__.py`**: Allows Python to treat this folder as a package, enabling imports from this directory in other scripts.
+
+This structure organizes the project into distinct components for clause detection, recommendation, and general utilities, making it easy to navigate and extend the project.
 
