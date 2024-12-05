@@ -35,16 +35,19 @@ Make sure you have the following installed:
 
 ### Setup Instructions
 
-1. Clone the Repository: Open your terminal and run
+#### Clone the Repository
+Open your terminal and run:
 ```
 `git clone https://github.com/chancery-lane-project/Clause-Comparison.git`
 `cd Clause-Comparison`
 ```
-Make sure you have a Personal Access Token set-up; instructions [here]([url](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)).
+Make sure you have a Personal Access Token set-up; instructions [here](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
-3. Download and Prepare the Model: Download the model and embeddings from [this link](https://drive.google.com/file/d/1sTpo9iOjhoCZ1qteLqry8jjezWTanSl_/view?usp=drive_link), unzip it, and place the files into the `Clause-Comparison/tclp/legalbert` folder to ensure the paths are correctly configured. If you are interested in having testing data or running some of the training notebooks, you can download the data from [this link](https://drive.google.com/drive/folders/1UJqd7kyTgziS1sDf67KQWfdg80hduY6w?usp=drive_link)
+#### Download and Prepare the Model
+Download the model and embeddings from [this link](https://drive.google.com/file/d/1sTpo9iOjhoCZ1qteLqry8jjezWTanSl_/view?usp=drive_link), unzip it, and place the files into the `Clause-Comparison/tclp/legalbert` folder to ensure the paths are correctly configured. If you are interested in having testing data or running some of the training notebooks, you can download the data from [this link](https://drive.google.com/drive/folders/1UJqd7kyTgziS1sDf67KQWfdg80hduY6w?usp=drive_link)
 
-4. Run the Project with Docker: From the root directory of the project (`Clause-Comparison`), within your terminal:
+#### Run the Project with Docker
+From the root directory of the project (`Clause-Comparison`), within your terminal:
 ```
 `docker-compose up --build`
 ```
