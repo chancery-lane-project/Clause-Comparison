@@ -2,7 +2,7 @@
 ## Detecting climate-aligned content in contracts and recommending TCLP content for contracts that are not already climate-aligned
 ![Alt text](readme_image.png)
 
-### About the Project
+## About the Project
 The Chancery Lane Project was interested in exploring how AI could be used to increase organizational impact. This project included three sub-tasks: 
 1. #### **Clause Recommender**  
    A **LegalBERT model**, paired with cosine similarity, analyzes contracts or legal documents to recommend the most relevant TCLP clauses.  
@@ -23,17 +23,17 @@ The Chancery Lane Project was interested in exploring how AI could be used to in
    - Achieved **94% accuracy** on the test set.  
    - Enables efficient and precise metrics for TCLP to measure impact.
 
-### Getting Started 
+## Getting Started 
 
 Follow these steps to set up the project and run it locally:
 
-#### Prerequisites
+### Prerequisites
 
 Make sure you have the following installed:
 - [Docker Desktop](https://www.docker.com/products/docker-desktop) (installed and running)
 - Git (to clone the repository)
 
-#### Setup Instructions
+### Setup Instructions
 
 1. Clone the Repository: Open your terminal and run
 ```
