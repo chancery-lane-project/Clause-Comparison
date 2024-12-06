@@ -740,7 +740,9 @@
 				}
 			}, 500);
 
-			const response = await fetch("http://127.0.0.1:8080/process/", {
+			const baseUrl = `${window.location.protocol}//${window.location.host}`;
+
+			const response = await fetch(`${baseUrl}/process/`, {
 				method: "POST",
 				body: formData,
 			});

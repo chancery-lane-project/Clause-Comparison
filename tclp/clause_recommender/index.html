@@ -296,7 +296,9 @@
 				formData.append("file", fileInput.files[0]);
 				formData.append("method", method);
 
-				const response = await fetch("http://127.0.0.1:8000/find_clauses/", {
+				const baseUrl = `${window.location.protocol}//${window.location.host}`;
+
+				const response = await fetch(`${baseUrl}/find_clauses/`, {
 					method: "POST",
 					body: formData,
 				});
@@ -366,7 +368,9 @@
 
 			async function fetch_clause_text(clauseName) {
 				try {
-					const response = await fetch(`http://127.0.0.1:8000/clause/${clauseName}`);
+					const baseUrl = `${window.location.protocol}//${window.location.host}`;
+
+					const response = await fetch(`${baseUrl}/clause/${clauseName}`);
 					if (!response.ok) {
 						throw new Error(`HTTP error! status: ${response.status}`);
 					}
