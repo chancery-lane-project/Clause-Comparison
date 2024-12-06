@@ -128,7 +128,7 @@ Inside this source document there are further files and sub-folders.
 - **`__init__.py`**: Allows Python to treat this folder as a package, enabling imports from this directory in other scripts.
 
 ## License
-//Fill in by Al 
+This project is licensed under MIT licensure; the full text can be found [here](License.txt)
 
 ## Contact 
 Any questions about this repo? Feel free to reach out to **Georgia Ray (99gray@gmail.com)**.
