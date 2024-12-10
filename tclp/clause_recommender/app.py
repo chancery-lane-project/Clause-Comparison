@@ -7,7 +7,6 @@ import numpy as np
 import os
 from fastapi import HTTPException
 from fastapi.responses import FileResponse
-from starlette.status import HTTP_401_UNAUTHORIZED
 from typing import List
 
 app = FastAPI()
@@ -21,12 +20,14 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+# Basic authentication
 security = HTTPBasic()
 
 # Dummy credentials for demonstration purposes
 USERNAME = "user"
 PASSWORD = "password"
 
+# Verify credentials
 def verify_credentials(credentials: HTTPBasicCredentials = Depends(security)):
     correct_username = credentials.username == USERNAME
     correct_password = credentials.password == PASSWORD
