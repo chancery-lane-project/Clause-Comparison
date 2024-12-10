@@ -79,7 +79,7 @@ async def find_clauses(file: UploadFile):
 
 # allow the user to see the clause
 @app.get("/clause/{clause_name}")
-def get_clause(clause_name: str, credentials: HTTPBasicCredentials = Depends(verify_credentials)):
+def get_clause(clause_name: str):
     try:
         clause_filename = f"{clause_name}.txt"
         if clause_filename in file_names:

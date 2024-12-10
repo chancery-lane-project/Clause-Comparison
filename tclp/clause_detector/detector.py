@@ -7,7 +7,6 @@ from tclp.clause_detector import detector_utils as du
 import os
 import shutil
 from fastapi import HTTPException
-from starlette.status import HTTP_401_UNAUTHORIZED
 
 app = FastAPI()
 MAX_FILE_LIMIT = 1000
@@ -53,7 +52,7 @@ model = du.load_model(model_name)
 
 
 @app.post("/process/")
-async def process_contract(files: list[UploadFile], is_folder: str = Form("false"), credentials: HTTPBasicCredentials = Depends(verify_credentials)):
+async def process_contract(files: list[UploadFile], is_folder: str = Form("false")):
     """
     Endpoint to process a contract file or folder.
     """
@@ -227,7 +226,7 @@ def read_root(credentials: HTTPBasicCredentials = Depends(verify_credentials)):
 
 
 @app.get("/test-file")
-async def test_file(credentials: HTTPBasicCredentials = Depends(verify_credentials)):
+async def test_file():
     test_path = os.path.join(output_dir, "test.txt")
     if not os.path.exists(test_path):
         with open(test_path, "w") as f:
