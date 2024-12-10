@@ -1,11 +1,14 @@
-from fastapi import FastAPI, UploadFile, Form
+from fastapi import FastAPI, UploadFile, Form, Depends
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.security import HTTPBasic, HTTPBasicCredentials
 from transformers import AutoTokenizer, AutoModel
 from tclp.clause_recommender import utils
 import numpy as np
 import os
 from fastapi import HTTPException
 from fastapi.responses import FileResponse
+from starlette.status import HTTP_401_UNAUTHORIZED
+from typing import List
 
 app = FastAPI()
 
@@ -17,6 +20,22 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+security = HTTPBasic()
+
+# Dummy credentials for demonstration purposes
+USERNAME = "user"
+PASSWORD = "password"
+
+def verify_credentials(credentials: HTTPBasicCredentials = Depends(security)):
+    correct_username = credentials.username == USERNAME
+    correct_password = credentials.password == PASSWORD
+    if not (correct_username and correct_password):
+        raise HTTPException(
+            status_code=HTTP_401_UNAUTHORIZED,
+            detail="Incorrect username or password",
+            headers={"WWW-Authenticate": "Basic"},
+        )
 
 # Load model and embeddings
 # NOTE: This still requires the user to have some things stored locally including the utils file
@@ -57,10 +76,9 @@ async def find_clauses(file: UploadFile):
         ]
     }
 
-
 # allow the user to see the clause
 @app.get("/clause/{clause_name}")
-def get_clause(clause_name: str):
+def get_clause(clause_name: str, credentials: HTTPBasicCredentials = Depends(verify_credentials)):
     try:
         clause_filename = f"{clause_name}.txt"
         if clause_filename in file_names:
@@ -72,11 +90,9 @@ def get_clause(clause_name: str):
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
 
-
 @app.get("/")
-def read_root():
+def read_root(credentials: HTTPBasicCredentials = Depends(verify_credentials)):
     return FileResponse("/app/tclp/clause_recommender/index.html")
-
 
 if __name__ == "__main__":
     import uvicorn

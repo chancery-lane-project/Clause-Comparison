@@ -1,12 +1,13 @@
-from fastapi import FastAPI, UploadFile, Form
-from fastapi.responses import JSONResponse, FileResponse
+from fastapi import FastAPI, UploadFile, Form, Depends
 from fastapi.responses import JSONResponse, FileResponse
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
-from fastapi.staticfiles import StaticFiles
+from fastapi.security import HTTPBasic, HTTPBasicCredentials
 from tclp.clause_detector import detector_utils as du
 import os
 import shutil
+from fastapi import HTTPException
+from starlette.status import HTTP_401_UNAUTHORIZED
 
 app = FastAPI()
 MAX_FILE_LIMIT = 1000
@@ -19,6 +20,22 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+security = HTTPBasic()
+
+# Dummy credentials for demonstration purposes
+USERNAME = "user"
+PASSWORD = "password"
+
+def verify_credentials(credentials: HTTPBasicCredentials = Depends(security)):
+    correct_username = credentials.username == USERNAME
+    correct_password = credentials.password == PASSWORD
+    if not (correct_username and correct_password):
+        raise HTTPException(
+            status_code=HTTP_401_UNAUTHORIZED,
+            detail="Incorrect username or password",
+            headers={"WWW-Authenticate": "Basic"},
+        )
 
 # Absolute paths for directories
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -36,7 +53,7 @@ model = du.load_model(model_name)
 
 
 @app.post("/process/")
-async def process_contract(files: list[UploadFile], is_folder: str = Form("false")):
+async def process_contract(files: list[UploadFile], is_folder: str = Form("false"), credentials: HTTPBasicCredentials = Depends(verify_credentials)):
     """
     Endpoint to process a contract file or folder.
     """
@@ -53,7 +70,6 @@ async def process_contract(files: list[UploadFile], is_folder: str = Form("false
         if os.path.exists(temp_dir):
             shutil.rmtree(temp_dir)
         os.makedirs(temp_dir, exist_ok=True)
-        os.makedirs(output_dir, exist_ok=True)
         os.makedirs(output_dir, exist_ok=True)
 
         if is_folder == "true":
@@ -85,7 +101,6 @@ async def process_contract(files: list[UploadFile], is_folder: str = Form("false
         else:
             print("Processing single file upload...")
 
-            # Handle single file upload
             # Handle single file upload
             file = files[0]
             if not file.filename.endswith(".txt"):
@@ -207,12 +222,12 @@ async def process_contract(files: list[UploadFile], is_folder: str = Form("false
 
 
 @app.get("/")
-def read_root():
+def read_root(credentials: HTTPBasicCredentials = Depends(verify_credentials)):
     return FileResponse(os.path.join(BASE_DIR, "/app/tclp/clause_detector/index.html"))
 
 
 @app.get("/test-file")
-async def test_file():
+async def test_file(credentials: HTTPBasicCredentials = Depends(verify_credentials)):
     test_path = os.path.join(output_dir, "test.txt")
     if not os.path.exists(test_path):
         with open(test_path, "w") as f:
