@@ -1,6 +1,8 @@
 from fastapi import FastAPI, UploadFile, Form, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
+from starlette.status import HTTP_401_UNAUTHORIZED  # Import the status code
+
 from transformers import AutoTokenizer, AutoModel
 from tclp.clause_recommender import utils
 import numpy as np
