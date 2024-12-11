@@ -24,8 +24,8 @@ app.add_middleware(
 security = HTTPBasic()
 
 # Dummy credentials for demonstration purposes
-USERNAME = "user"
-PASSWORD = "password"
+USERNAME = "father"
+PASSWORD = "christmas"
 
 # Verify credentials
 def verify_credentials(credentials: HTTPBasicCredentials = Depends(security)):
