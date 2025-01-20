@@ -5,14 +5,14 @@ FROM python:3.10.15
 WORKDIR /app
 
 # Copy the pyproject.toml and poetry.lock to the working directory
-COPY pyproject.toml poetry.lock /app/
+COPY pyproject.toml poetry.lock README.md /app/
 
 # Install Poetry (for dependency management)
 RUN pip install poetry
 
 # Install dependencies
 RUN poetry config virtualenvs.create false \
-    && poetry install --no-dev
+    && poetry install --without dev --no-root
 
 # Copy the application code
 COPY tclp/ /app/tclp/

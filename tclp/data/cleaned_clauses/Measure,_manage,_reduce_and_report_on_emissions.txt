@@ -1,0 +1,51 @@
+This guide enables organisations to:commit to measure, manage and report on their greenhouse gas emissions set legally binding and enforceable emissions-reduction targets consider and comply with reporting and disclosure requirements, especially on scope 3 emissions commit to a plan to transition their business to align with Paris Agreement goals .
+
+Choose the appropriate documents This guide is for any organisation.
+
+The example wording in this guide is written for a board resolution of a company but it can be just as easily used in corporate constitutional documents and by organisations that are not companies.
+
+It can be more difficult to amend constitutional documents, but including climate wording in them will have more impact.
+
+It will be harder to remove and will affect corporate governance frameworks and directors’ duties.
+
+Commit to measure, manage and report on emissions at board level Ideally, an organisation will measure:its own greenhouse gas emissions(scope 1 and 2)emissions from its value chain(scope 3).
+
+Agree a reporting standard or a common supplier to calculate the company’s emissions.
+
+Domestic law might mandate a reporting standard.
+
+Where there is no legal requirement, use internationally recognised standards(for example, the Greenhouse Gas Protocol:A Corporate Accounting and Reporting Standard or the International Financial Reporting Standards(IFRS).
+
+Measuring, managing and reporting on emissions should be approved by the board or most senior leadership team with ultimate responsibility for overseeing operations.
+
+Read our guide Factor climate considerations into board decisions .
+
+Example wording[The Company]confirms that it measures, manages and reports its greenhouse gas emissions in accordance with[The Greenhouse Gas Protocol:A Corporate Accounting and Reporting Standard, Revised Edition 2015, as amended periodically].
+
+The directors of[the Company]nominate[name of director]to be responsible for ensuring that[the Company]measures, manages and reports on its greenhouse gas emissions.
+
+Set emissions-reduction targets and timeframe Ideally, the emissions-reduction targets will:define the scope of emissions covered by the target.
+
+Best practice is to set targets relating to an organisation’s own emissions(scope 1 and 2)and emissions from its value chain(scope 3)as classified by The Greenhouse Gas Protocol:A Corporate Accounting and Reporting Standard include short-(annual)and medium-term(2 to 5 years)interim targets be validated by the Science Based Targets initiative or other international standard align with the Paris Agreement goals and latest Intergovernmental Panel on Climate Change findings.
+
+To affirm commitment to decarbonisation, organisations could also:align their emissions-reduction targets with another internationally recognised standard for setting targets join the United Nations Framework Convention of Climate Change’s Race to Zero campaign.
+
+Example wording[The Company]confirms that it will:reduce its scope 1 and 2[and 3]emissions by[●]percent by[short- or medium-term year]from a[year]base year set public annual emissions-reduction targets[that are validated by the Science Based Targets initiative]join[Race to Zero]within[●]months of entering into this[agreement or resolution].
+
+Develop a transition plan An organisation's transition plan must contain concrete and measurable steps so that its decarbonisation strategy can be implemented and its emissions-reduction targets met within the agreed timeframe.
+
+Check the latest guidance for your jurisdiction and international recommendations to ensure that your transition plan delivers credible and meaningful decarbonisation.
+
+A best-practice transition plan should include:interim greenhouse gas emissions -reduction targets that align with the Science Based Targets initiative’s Corporate Net-Zero Standard or other international standard short-, medium- and long-term actions to achieve the emissions-reduction targets a plan for how meeting targets will be financed if verified credits from a recognised offset provider may be used to offset any residual emissions governance and accountability mechanisms to support the transition plan, including reporting, and linking executive remuneration to achieving interim targets measures to mitigate risks to employees, stakeholders(for example suppliers, communities and customers)and the environment measures to maximise opportunities for employees, stakeholders and the environment promotion of a just transition to a low-carbon economy.
+
+Publish decarbonisation objectives and report on progress Ideally, an organisation will publish publicly an annual report on its progress to reduce emissions.
+
+As part of the organisation's commitment to reduce emissions, outline the minimum requirements of what the report must include.
+
+Check the latest guidance for your jurisdiction and international recommendations to ensure the organisation complies with reporting and disclosure requirements and standards.
+
+Example wording[The Company]confirms that it will report on its emissions-reductions progress annually and publicly.
+
+The report must include:industry best practice on managing and reducing scope[1 and 2][and 3]emissions used by[the Company]during the reporting period total scope[1 and 2][and 3]emissions measured during the reporting period any reduction in the total scope[1 and 2][and 3]emissions for the reporting period measured against the total scope[1 and 2][and 3]emissions in the year preceding the reporting period the difference(if any)between the total scope[1 and 2][and 3]emissions for the reporting period and the emissions-reduction targets.
+
+Case studies using the contractual solutions in this guide Clauses using the contractual solutions in this guide Glossary definitions used in this guide Related guide.

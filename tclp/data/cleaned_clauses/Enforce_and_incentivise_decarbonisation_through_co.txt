@@ -1,0 +1,143 @@
+This guide enables organisations to:incentivise suppliers to meet contractual climate obligations incentivise suppliers to support the organisation’s climate targets impose consequences when obligations and targets are not met.
+
+Price mechanisms Use the price paid for goods or services to incentivise suppliers to comply with obligations to meet climate targets.
+
+This is a powerful tool, but may require a high level of internal sign-off, and managing supplier expectations pre-contract, so it could prolong negotiations.
+
+Price increase Reward a supplier that meets or beats its contractual climate objectives with a price increase for the goods and services the organisation buys from the supplier.
+
+Agree the contractual climate objectives with the supplier, including emissions-reduction targets.
+
+See[Daniel's Clause]Sustainability Key Performance Indicators in Construction Works Task Orders for an example of objectives.
+
+Best-practice objectives on emissions require a reduction of the supplier’s scope 1, 2 and 3 emissions .
+
+Trigger the price increase if the supplier meets or beats its objectives.
+
+Require the supplier to integrate the contractual climate objectives and, where relevant, the price mechanism into its own supply chain contracts.
+
+Example wording If[Party B]meets the climate objectives in clause[● on climate objectives]during[a calendar year of the contractual term], [Party A]shall pay[Party B]an increase in the price of[●]percent in the next calendar year by[date].
+
+If[Party B]exceeds the climate objectives in clause[● on climate objectives]during[a calendar year of the contractual term]by up to[●]percent, [Party A]shall pay[Party B]an increase in the price of[●]percent in the next calendar year[subject to a cap of ● percent]by[date].[Party B]shall[use best endeavours to]ensure that clauses[● on price uplift]are added to any and all of its[commercial]contracts that relate to its obligations under this agreement.
+
+Gain-share payment Incentivise a supplier to meet or exceed its contractual climate objectives in exchange for a gain-share payment.
+
+The payment can be calculated by reference to the value of the goods or services provided under the contract.
+
+Example wording If[Party B]reduces[contract-related]scope 1 and 2[and 3]emissions by more than[●]percent each year when compared to the previous year, as required by clause[●(Agreed Reduction)], the following gain-share mechanism shall apply:Total Reduction = the absolute reduction in carbon footprint between[year]and[the following year]Additional Reduction = Total Reduction less the Agreed Reduction Gain-share Payment = Additional Reduction x market rate to offset 1 tonne of carbon dioxide equivalent x 50 percent.
+
+The maximum cumulative value of any Gain-share Payment(s)due to[Party B]in any year of the contract shall be equal to[●]percent of the value of the[goods or services]provided by[Party B]to[Party A]in respect of that same year.
+
+The carbon footprint is measured in tonnes of carbon dioxide equivalent .
+
+Price reduction Reduce the price the organisation pays for goods and services if the supplier fails to meet contractual climate obligations.
+
+Example wording[Party B]shall reduce the scope 1 and 2[and 3]emissions related to the performance of this agreement according to the emissions-reduction targets in schedule[●].
+
+1. No variation in price The price does not change if[Party B]’s[contract-related]scope 1 and 2[and 3]emissions are:less than equal to within[●]percent of the emissions-reduction targets in schedule[●].
+
+2. Simple discount If[Party B]’s[contract-related]scope 1 and 2[and 3]emissions, as calculated in accordance with schedule[●], are more than the emissions-reduction targets in schedule[●]by[●]percent, the price paid by[Party A]is reduced by[●]percent.
+
+3. Matching discount If[Party B]’s[contract-related]scope 1 and 2[and 3]emissions are more than the emissions-reduction targets in schedule[●]by[●]percent, the price reduces by the same percentage amount by which the emissions exceed the emissions-reduction targets[up to a cap of[●]percent].
+
+This price adjustment takes effect on[date]and will last until the end of the agreement unless superseded by this clause.
+
+Rebate Give the supplier a rebate on the price of goods or services the organisation buys under a contract if the supplier meets or beats its contractual climate obligations.
+
+Example wording[Party B]shall meet the emissions-reduction targets in schedule[●].
+
+The price for[goods or services]will change relative to[Party B]’s performance against the emissions-reduction targets in schedule[●]according to this clause[●].
+
+1. No variation If[Party B]’s scope 1 and 2[and 3]emissions are:less than equal to within[●]percent of the emissions-reduction targets in schedule[●], the price will not change.
+
+2. Simple rebate If[Party B]has reduced its scope 1 and 2[and 3]emissions by more than the emissions-reduction targets in schedule[●]by at least[●]percent, the price paid to[Party B]increases by[●]percent.
+
+3. Matching rebate If[Party B]’s scope 1 and 2[and 3]emissions are less than the emissions-reduction targets in schedule[●]by at least[●]percent, the price increases by the same percentage amount[up to a cap of[●]percent].
+
+This price adjustment takes effect on[date].
+
+Step-in rights If a supplier fails to meet contractual climate obligations, use a step-in right for the organisation to perform the work, or appoint a third party to perform the work at the supplier’s expense.
+
+Step-in rights are a common feature of services contracts and can include climate-related requirements.
+
+Suppliers will want to avoid triggering a step-in clause because of the cost, disruption and potential loss of competitive advantage.
+
+For example, if the third party appointed to take over the work is a competitor.
+
+This incentivises the supplier to meet the obligation.
+
+Audit rights If a supplier fails to meet its climate obligations, use the right to request a full audit of the supplier’s climate performance(or even overall performance)under the contract.
+
+If an independent auditor confirms that the supplier failed to achieve its contractual climate obligations, consider making the supplier liable for the cost of the audit.
+
+The management time and financial costs of audits are onerous and a powerful incentive for the supplier to meet climate obligations.
+
+Remedy a breach Require the supplier to report breaches of its contractual climate obligations, and propose a remedy for the breach within a fixed period.
+
+If the breach cannot be remedied, or is not remedied satisfactorily, the organisation can choose to:terminate the contract trigger step-in rights recover losses through other damages provisions.
+
+Example wording If[Party B]breaches clause[● on climate obligations], [Party B]shall, within[●]business days of becoming aware of the breach, submit a report to[Party A](a Breach Report).
+
+A Breach Report shall set out all of the following:the nature, severity and duration of the breach the cause(s)of the breach steps taken to mitigate the causes the plan for remedying the breach(the Remedial Plan).
+
+The Remedial Plan must explain how[Party B]will further investigate, mitigate and remedy the breach and provide evidence of mitigation and remediation.
+
+The Remedial Plan must also include the timescales by which the remediation will be completed.
+
+The Remedial Plan must be approved by[Party A].
+
+Approval will not be unreasonably withheld or delayed.[Party A]may also:comment on the Remedial Plan provide reasonable suggestions for investigating and remedying the reported breach require that[Party B]remedies the reported breach within[a reasonable period of time].[Party B]shall provide[Party A]with an updated Remedial Plan[every ● time period]calculated by reference to the date of the Breach Report.
+
+Each updated Remedial Plan shall detail[Party B]’s progress in remedying the breach since the most recent Remedial Plan.
+
+Impose climate-specific liquidated damages Impose liquidated damages if the supplier fails to meet its contracted emissions-reduction target.
+
+Calculate the amount as the cost of buying high-quality carbon offsets to make up the difference between the supplier’s target and its actual emissions.
+
+Example wording[Party B]shall meet the contract emissions-reduction targets in schedule[●].
+
+If[Party A acting reasonably or an independent auditor]determines that[Party B]has failed to meet[any of]the emissions-reduction targets in schedule[●]:[Party B]will pay[Party A]a sum equal to the cost of buying High-quality Carbon Credits to offset the amount of emissions by which[Party B]missed the emissions-reduction target[s], [Party A]shall use the sum to buy the High-quality Carbon Credits.
+
+High-quality Carbon Credits means carbon credits bought from a project:that has been verified by[insert name of voluntary standard]or the United Nations Framework Convention on Climate Change clean development mechanism[or successor UNFCCC mechanism]where the emissions avoided, reduced or removed by the project are additional that prioritises removing emissions from the atmosphere rather than avoiding or reducing third party emissions that uses storage methods with a low risk of reversal over millennia for removing emissions that takes account of a just transition and addresses wider social and environmental goals.
+
+Alternatively, pay the liquidated damages to a climate adaptation and resilience fund.
+
+Example wording[Party B]shall pay to[Party A]a sum equal to the cost of buying High-quality Carbon Credits to offset the amount of emissions by which[Party B]missed the emissions-reduction target(s)[Party A]shall donate the sum to[insert climate adaptation and resilience fund].
+
+Terminate for a greener alternative Include the right to terminate the contract in favour of a third party that can fulfil the contract with lower associated greenhouse gas emissions .
+
+This incentivises suppliers to continuously improve their performance on climate to retain the contract.
+
+Example wording[Party A]may serve written notice on[Party B](the Green Improvement Notice)that it has identified a third party who can provide[the goods or services]with reduced associated greenhouse gas emissions when compared to[Party B](the Green Improvement).
+
+Within[●]days of being served with the Green Improvement Notice, [Party B]shall notify[Party A]if it can match or exceed the Green Improvement.
+
+If[Party B]can demonstrate to[Party A]’s reasonable satisfaction that it can match or exceed the Green Improvement, the parties shall use all reasonable endeavours acting in good faith to agree the amended terms on which[Party B]shall provide the[goods or services]incorporating the Green Improvement or greater.
+
+The amended terms to include the price where relevant.[Party A]may terminate this agreement by giving[Party B]at least[● months’]notice, if[Party B]:fails to respond to the Green Improvement Notice is unable to demonstrate to[Party A]’s reasonable satisfaction that it can match the Green Improvement.
+
+Other climate-related grounds for termination Include climate-related grounds for terminating the contract alongside standard grounds for termination.
+
+Example wording[Party A]may terminate this agreement with immediate effect if[Party B]commits a material or persistent breach of any of the climate obligations in this agreement and, if such breach can be remedied, fails to remedy that breach within[●]days after being notified[in writing]to do so.[Party A]may terminate this agreement by giving[●]months’ written notice to[Party B]if:[Party A]decides to switch to an alternative[supplier or third party]to reduce its scope 1 and 2[and 3]emissions[Party B]’s environmental practices, negative environmental impacts, lobbying activities, partnerships, trade associations or public policy positions bring[Party A]’s reputation into disrepute or conflict with[Party A]’s emissions-reduction targets[Party B]fails within[●]days to respond fully to a request for information made by[Party A]to assess[Party B]’s scope 1 and 2[and 3]emissions, environmental practices and policies that relate to[the activities]under this agreement.
+
+Conditions precedent Conditions precedent are most useful where the organisation can exercise non-contractual power over a supplier.
+
+For example, the organisation might withhold the award of a call-off contract under a framework, or refuse to grant preferred-supplier status until climate pre-conditions are met.
+
+This approach:incentivises suppliers to set and meet climate goals and contractual climate obligations that meet or exceed the organisation’s scope 3 emissions targets penalises suppliers who do not perform by withholding a future but discretionary benefit.
+
+For example, future contracts under the framework agreement.
+
+Awarding contracts under a framework agreement Sometimes organisations have discretion under a framework agreement to award suppliers non-tendered call-off contracts or contracts for mini tenders.
+
+If so, use the discretion to award contracts to suppliers who:have climate goals, such as a net-zero target and transition plan are meeting their climate obligations in existing contracts with the organisation.
+
+Special supplier status Where suppliers hold special status(for example, preferred supplier):make special status conditional on the supplier achieving and maintaining agreed climate goals create a mechanism for removing special status if the supplier fails to maintain them.
+
+This approach incentivises suppliers to protect their special status by meeting contractually agreed climate goals and obligations.
+
+Provide a route back to special status.
+
+If a supplier loses their special status, the organisation should maintain the relationship with the supplier while both parties work collaboratively to help the supplier regain special status.
+
+Case studies using the contractual solutions in this guide Climate clauses using the contractual solutions in this guide Glossary definitions used in this guide Related guide.
