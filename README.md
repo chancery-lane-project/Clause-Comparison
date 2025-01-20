@@ -32,6 +32,7 @@ Follow these steps to set up the project and run it locally:
 Make sure you have the following installed:
 - [Docker Desktop](https://www.docker.com/products/docker-desktop) (installed and running)
 - Git (to clone the repository)
+- Python and poetry installed on your machine
 
 ### Setup Instructions
 
