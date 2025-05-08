@@ -1,7 +1,0 @@
-2 Embodied Carbon means the Greenhouse Gases that are emitted through the production and delivery of building materials for and used in the[Development].
-
-Embodied Carbon(also known as Embedded Carbon or Embodied Energy)means the total Greenhouse Gases emitted in the[construction of the Development OR manufacturing and production of the Goods].
-
-This includes those emissions caused by extraction, manufacture, transportation and assembly of every element in the[Development OR Goods], as well as emissions caused by deconstruction at the end of the[Development’s lifetime OR Good’s useful life](if applicable).
-
-It does not include operational emissions.

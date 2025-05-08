@@ -5,19 +5,20 @@
 This was not the selected approach for the final output but is included for completeness."""
 
 # necessary imports
+import os
 import tkinter as tk
-from tkinter import ttk, filedialog
+from tkinter import filedialog, ttk
+
+import nltk
+import numpy as np
 from gensim.models.doc2vec import Doc2Vec, TaggedDocument
 from nltk.tokenize import word_tokenize
 from sklearn.metrics.pairwise import cosine_similarity
-import numpy as np
-import os
-import nltk
 
 
 # Load the pre-trained Doc2Vec model (or train one if not available)
 def load_model():
-    folder_path = "../../data/cleaned_clauses"
+    folder_path = "/Users/georgia/Documents/Clause-Comparison/tclp/data/clause_boxes"
     documents = []
     file_names = []
 

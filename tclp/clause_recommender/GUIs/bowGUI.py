@@ -4,7 +4,8 @@
 This was not the selected approach for the final output but is included for completeness."""
 
 import tkinter as tk
-from tkinter import ttk, filedialog
+from tkinter import filedialog, ttk
+
 from tclp.clause_recommender import utils
 
 
@@ -16,7 +17,7 @@ class SimilarityApp:
         self.root.geometry("600x700")
 
         self.documents, self.file_names = utils.load_clauses(
-            "../../data/cleaned_clauses"
+            "/Users/georgia/Documents/Clause-Comparison/tclp/data/clause_boxes"
         )
         self.merged_df = None
         self.top_clause_text = ""

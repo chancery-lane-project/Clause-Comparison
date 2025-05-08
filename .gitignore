@@ -1,6 +1,8 @@
 *.txt
-!tclp/data/cleaned_clauses/*.txt
-!tclp/data/clause_boxes/*.txt
 *.npy
 *.xml
 tclp/legalbert/
+tclp/data/
+tclp/clause_detector/notebooks/wandb/
+tclp/CC_BERT/CC_model/
+tclp/clause_recommender/legalbert/legalbert_model/model.safetensors

@@ -1,15 +1,14 @@
-from fastapi import FastAPI, UploadFile, Form, Depends
+import os
+
+import numpy as np
+from fastapi import Depends, FastAPI, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
 from starlette.status import HTTP_401_UNAUTHORIZED  # Import the status code
+from transformers import AutoModel, AutoTokenizer
 
-from transformers import AutoTokenizer, AutoModel
 from tclp.clause_recommender import utils
-import numpy as np
-import os
-from fastapi import HTTPException
-from fastapi.responses import FileResponse
-from typing import List
 
 app = FastAPI()
 
@@ -42,8 +41,8 @@ def verify_credentials(credentials: HTTPBasicCredentials = Depends(security)):
 
 # Load model and embeddings
 # NOTE: This still requires the user to have some things stored locally including the utils file
-local_model_dir = "/app/tclp/legalbert/legalbert_model"
-embeddings_dir = "/app/tclp/legalbert/legalbert_embeddings"
+local_model_dir = "/app/tclp/CC_BERT/CC_model"
+embeddings_dir = "/app/tclp/CC_BERT/CC_embeddings"
 tokenizer = AutoTokenizer.from_pretrained(local_model_dir)
 model = AutoModel.from_pretrained(local_model_dir)
 documents, file_names = utils.load_clauses("/app/tclp/data/clause_boxes")

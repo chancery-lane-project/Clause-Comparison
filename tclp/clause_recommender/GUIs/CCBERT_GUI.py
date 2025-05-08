@@ -1,6 +1,6 @@
 # legalBERTGUI.py
 
-"""This is a file to launch a localGUI of the legalBERT approach.
+"""This is a file to launch a localGUI of the CCBERT approach.
 
 Most users will be more interested in using the dockerized version but this is included for completeness."""
 
@@ -11,8 +11,9 @@ from tkinter import filedialog, ttk
 
 import nltk
 import numpy as np
-from tclp.clause_recommender import utils
 from transformers import AutoModel, AutoTokenizer
+
+from tclp.clause_recommender import utils
 
 light_blue_text = "#e6f5ff"
 mid_blue_text = "#b8e2ff"
@@ -77,14 +78,14 @@ class TCLPApp:
         self.load_model_thread.start()
 
     def load_model(self):
-        local_model_dir = "../legalbert/legalbert_model"
-        embeddings_dir = "../legalbert/legalbert_embeddings"
+        local_model_dir = "../../CC_BERT/CC_model"
+        embeddings_dir = "../../CC_BERT/CC_embeddings"
         self.progress["maximum"] = 6
 
         if not os.path.exists(local_model_dir):
             os.makedirs(local_model_dir)
-            self.tokenizer = AutoTokenizer.from_pretrained("casehold/legalbert")
-            self.model = AutoModel.from_pretrained("casehold/legalbert")
+            self.tokenizer = AutoTokenizer.from_pretrained(local_model_dir)
+            self.model = AutoModel.from_pretrained(local_model_dir)
             self.tokenizer.save_pretrained(local_model_dir)
             self.model.save_pretrained(local_model_dir)
         else:
@@ -94,7 +95,7 @@ class TCLPApp:
         self.progress["value"] += 1
         self.root.update_idletasks()
 
-        folder_path = "/Users/georgia/Documents/Clause-Comparison/tclp/data/clause_boxes"
+        folder_path = "../../data/clause_boxes"
         self.documents, self.file_names = utils.load_clauses(folder_path)
 
         if not os.path.exists(embeddings_dir):
