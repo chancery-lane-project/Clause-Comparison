@@ -2,15 +2,24 @@
 """This is the utils file for the clause_recommender task."""
 import os
 import re
+from collections import Counter
 from difflib import get_close_matches
 
+import hdbscan
+import hdbscan.prediction
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import plotly.express as px
 import torch
+import umap.umap_ as umap
 from bs4 import BeautifulSoup
 from sklearn.feature_extraction.text import ENGLISH_STOP_WORDS, CountVectorizer
+from sklearn.metrics import pairwise_distances
 from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import MultiLabelBinarizer
+from transformers import AutoModel, AutoTokenizer
 
 
 def get_embeddings(method, embeddings_dir, documents, tokenizer, model):
@@ -25,23 +34,28 @@ def get_embeddings(method, embeddings_dir, documents, tokenizer, model):
         np.save(path, embs)
         return embs
     
-def load_clauses(folder_path):
+def load_clauses(clause_folder):
     documents = []
     file_names = []
+    clause_titles = []
 
-    for filename in os.listdir(folder_path):
-        file_path = os.path.join(folder_path, filename)
-        if (
-            os.path.isfile(file_path)
-            and filename.endswith(".txt")
-            or filename.endswith(".html")
-        ):
-            with open(file_path, "r", encoding="utf-8") as file:
-                documents.append(file.read())
-                file_names.append(filename)
+    for fname in sorted(os.listdir(clause_folder)):
+        if fname.endswith(".txt"):
+            path = os.path.join(clause_folder, fname)
+            with open(path, "r") as f:
+                content = f.read()
+                documents.append(content)
+                file_names.append(fname)
 
-    return documents, file_names
+                # Try to extract the <h4> title if available
+                soup = BeautifulSoup(content, "html.parser")
+                title_tag = soup.find("h4")
+                if title_tag:
+                    clause_titles.append(title_tag.text.strip())
+                else:
+                    clause_titles.append(fname.replace(".txt", ""))  # fallback
 
+    return documents, file_names, clause_titles
 
 def open_target(file_path):
     with open(file_path, "r", encoding="utf-8") as file:
@@ -400,4 +414,190 @@ def rebuild_documents(df):
     
     return filenames, documents
 
+def getting_started(model_path, clause_folder, clause_html):
+    tokenizer = AutoTokenizer.from_pretrained(model_path)
+    model = AutoModel.from_pretrained(model_path)
 
+    documents, file_names, _ = load_clauses(clause_folder)
+
+    clause_boxes, _, _ = load_clauses(clause_html)
+    clause_box_df = parse_clause_boxes_to_df(clause_boxes)
+    final_df = attach_documents(clause_box_df, documents, file_names)
+    final_df
+    names, docs = rebuild_documents(final_df)
+    
+    return tokenizer, model, names, docs, final_df
+
+
+def combine_title_and_text(row, title_to_document):
+    title = row['Clause']
+    cleaned_title = clean_string(title)
+    
+    body = title_to_document.get(cleaned_title)
+    if body:
+        return f"Title: {title}\n\nText: {body}"
+    
+    # If direct lookup failed, try fuzzy matching
+    possible_matches = get_close_matches(cleaned_title, title_to_document.keys(), n=1, cutoff=0.6)
+    if possible_matches:
+        best_match = possible_matches[0]
+        print(f"Fuzzy match: '{title}' matched to '{best_match}'")
+        body = title_to_document[best_match]
+        return f"Title: {title}\n\nText: {body}"
+    else:
+        print(f"No match found for title: '{title}' (cleaned: '{cleaned_title}')")
+        return f"Title: {title}\n\nText: [NO MATCH FOUND]"
+    
+def most_common_tag(tags):
+    return Counter(tags).most_common(1)[0][0]
+
+def multi_label_jacccard(clause_tags, visualize = False):
+    mlb = MultiLabelBinarizer()
+    tag_matrix = mlb.fit_transform(clause_tags['Tag'])
+
+    # Jaccard distance: 1 - (intersection / union)
+    jaccard_distances = pairwise_distances(tag_matrix, metric='jaccard')
+    umap_jaccard = umap.UMAP(metric='precomputed', random_state=42)
+    jaccard_2d = umap_jaccard.fit_transform(jaccard_distances)
+    
+    if visualize:
+        plot_df = pd.DataFrame({
+            "x": jaccard_2d[:, 0],
+            "y": jaccard_2d[:, 1],
+            "NumTags": clause_tags['Tag'].apply(len),
+            "PrimaryTag": clause_tags['PrimaryTag'],
+            "Clause": clause_tags['Clause'],
+            "Hover": clause_tags.apply(lambda row: f"{row['Clause'][:100]}<br>Tags: {', '.join(row['Tag'])}", axis=1)
+        })
+
+        fig = px.scatter(
+            plot_df,
+            x="x",
+            y="y",
+            color="PrimaryTag",  # or use "NumTags" if you want a heat-style gradient
+            hover_name="Clause",
+            hover_data={"Hover": True},
+            title="Jaccard UMAP of TCLP Clauses by Tag Overlap"
+        )
+        fig.update_traces(marker=dict(size=6, opacity=0.7))
+        fig.show()
+    
+    return tag_matrix
+
+def perform_hdbscan(tag_matrix, embeddings): 
+    hybrid_features = np.hstack([embeddings, tag_matrix])
+    umap_model = umap.UMAP(random_state=42)
+    hybrid_2d = umap_model.fit_transform(hybrid_features)
+    clusterer = hdbscan.HDBSCAN(
+        min_cluster_size=5,
+        min_samples=1,  # more sensitive to fine structure
+        cluster_selection_epsilon=0.6,  # lower = more clusters, play with this
+        prediction_data=True
+    )
+    _ = clusterer.fit_predict(hybrid_2d)
+    soft_labels = hdbscan.prediction.all_points_membership_vectors(clusterer)
+    forced_labels = soft_labels.argmax(axis=1)
+    
+    return forced_labels, hybrid_2d
+
+def plot_clusters(clause_tags, forced_labels, hybrid_2d):
+    fig = px.scatter(
+        x=hybrid_2d[:, 0],
+        y=hybrid_2d[:, 1],
+        color=clause_tags['HybridCluster'].astype(str),
+        hover_data={
+            "Clause": clause_tags['Clause'],
+            "PrimaryTag": clause_tags['PrimaryTag'],
+            "Tags": clause_tags['Tag']
+        },
+        title="Hybrid UMAP: Text Embeddings + Tags + HDBSCAN Clusters"
+    )
+    fig.update_traces(marker=dict(size=6, opacity=0.7))
+    fig.show()
+    
+def per_cluster_split(X, y, cluster_labels, test_size=0.2, min_test_per_cluster=2, random_state=42):
+    """
+    Perform train/test split within each cluster to guarantee at least `min_test_per_cluster` from each cluster in the test set.
+    """
+    X = np.array(X)
+    print(X.shape)  # Should be (n_samples, n_features)
+
+    y = np.array(y)
+    cluster_labels = np.array(cluster_labels)
+
+    X_train_list, X_test_list = [], []
+    y_train_list, y_test_list = [], []
+
+    for label in np.unique(cluster_labels):
+        cluster_mask = cluster_labels == label
+        X_cluster = X[cluster_mask]
+        y_cluster = y[cluster_mask]
+        n = len(X_cluster)
+
+        # Determine test size for this cluster
+        n_test = max(min_test_per_cluster, int(np.floor(test_size * n)))
+        n_test = min(n - 1, n_test)  # Ensure at least one sample remains in train
+
+        # Do a deterministic split
+        X_train_c, X_test_c, y_train_c, y_test_c = train_test_split(
+            X_cluster, y_cluster,
+            test_size=n_test,
+            random_state=random_state,
+            shuffle=True  # You want some randomness but reproducible
+        )
+
+        X_train_list.append(X_train_c)
+        X_test_list.append(X_test_c)
+        y_train_list.append(y_train_c)
+        y_test_list.append(y_test_c)
+
+    # Combine per-cluster splits
+    X_train = np.vstack(X_train_list)
+    X_test = np.vstack(X_test_list)
+    y_train = np.hstack(y_train_list)
+    y_test = np.hstack(y_test_list)
+
+    return X_train, X_test, y_train, y_test
+
+def prepare_cluster(clause_tags, model, tokenizer, forced_labels):
+    filtered = clause_tags[clause_tags['HybridCluster'] != -1].copy()
+    X = filtered['CombinedText']
+    y = filtered['HybridCluster']
+    X_emb = np.vstack([
+    encode_text(text, tokenizer, model, method='cls') for text in X
+        ])
+    X_train, X_test, y_train, y_test = per_cluster_split(X_emb, y, forced_labels, test_size=0.2, min_test_per_cluster=2)
+    return X_train, X_test, y_train, y_test
+
+def perform_cluster(cluster_model, query_embedding, tokenizer, embedding_model, clause_tags, embed = False):
+    if embed:
+        query_embedding = encode_text(query_embedding, tokenizer, embedding_model, method='mean')
+    pred_cluster = cluster_model.predict(query_embedding.reshape(1, -1))[0]
+    cluster_subset_df = clause_tags[clause_tags['HybridCluster'] == pred_cluster]
+
+    # Get texts and titles
+    subset_docs = cluster_subset_df['CombinedText'].tolist()
+    subset_names = cluster_subset_df['Clause'].tolist()
+    print(clause_tags.columns)
+    cluster_subset_df = clause_tags[clause_tags['HybridCluster'] == pred_cluster]
+
+    # Get texts and titles
+    subset_docs = cluster_subset_df['CombinedText'].tolist()
+    subset_names = cluster_subset_df['Clause'].tolist()
+    
+    return subset_docs, subset_names, cluster_subset_df
+
+def prepare_clause_tags(clause_tags, final_df): 
+    cleaned_titles = final_df['Title'].apply(clean_string)
+    title_to_document = dict(zip(cleaned_titles, final_df['Document']))
+    
+    clause_tags["CombinedText"] = clause_tags.apply(
+    lambda row: combine_title_and_text(row, title_to_document), axis=1
+    )
+    clause_tags['Tag'] = clause_tags['Tag'].apply(lambda x: [tag.strip() for tag in x.split(',')])
+    
+    clause_tags['PrimaryTag'] = clause_tags['Tag'].apply(most_common_tag)
+
+    return clause_tags
+    
+    
