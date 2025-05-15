@@ -1,4 +1,5 @@
 # TCLP x Faculty AI Fellowship December 2024 
+## Please note: this is a live github with updates being made consistently. If you see something broken, especially in a branch, excuse our mess! :broom: 
 ## Detecting climate-aligned content in contracts and recommending TCLP content for contracts that are not already climate-aligned
 ![Alt text](readme_image.png)
 
