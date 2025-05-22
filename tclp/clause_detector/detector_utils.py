@@ -1,14 +1,20 @@
 import os
-import re
-import matplotlib.pyplot as plt
-from sklearn.metrics import f1_score, accuracy_score
-from sklearn.metrics import classification_report
-import pandas as pd
-import random
 import pickle
+import random
+import re
 import shutil
 import zipfile
-from termcolor import colored
+from typing import List
+
+import matplotlib.pyplot as plt
+import pandas as pd
+import torch
+from joblib import Parallel, delayed
+from rapidfuzz.fuzz import token_set_ratio
+from sklearn.metrics import accuracy_score, classification_report, f1_score
+from torch.nn.functional import softmax
+
+ALPHA_PATTERN = re.compile(r"[a-zA-Z]")
 
 def load_labeled_contracts(data_folder, modified=False):
     texts = []
@@ -16,27 +22,29 @@ def load_labeled_contracts(data_folder, modified=False):
     contract_ids = []
     contract_level_labels = []
 
+    contract_level_label = 1 if modified else 0
+
     for root, _, files in os.walk(data_folder):
         for file in files:
-            if file.endswith(".txt"):
-                contract_path = os.path.join(root, file)
-                contract_id = file
-                contract_level_label = (
-                    1 if modified else 0
-                )  # Assign contract-level label
+            if not file.endswith(".txt"):
+                continue
 
-                with open(contract_path, "r") as f:
-                    for line in f:
-                        line = line.strip()
-                        if line:
-                            label, text = line[0], line[1:].strip()
+            contract_path = os.path.join(root, file)
+            contract_id = file
 
-                            # filter lines with no alphabetic characters or shorter than 35 characters
-                            if len(text) >= 35 and re.search(r"[a-zA-Z]", text):
-                                labels.append(int(label))
-                                texts.append(text)
-                                contract_ids.append(contract_id)
-                                contract_level_labels.append(contract_level_label)
+            with open(contract_path, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if not line or len(line) < 36 or not ALPHA_PATTERN.search(line):
+                        continue  # Skip short or non-alphabetic lines
+
+                    label = int(line[0])
+                    text = line[1:].strip()
+
+                    texts.append(text)
+                    labels.append(label)
+                    contract_ids.append(contract_id)
+                    contract_level_labels.append(contract_level_label)
 
     return texts, labels, contract_ids, contract_level_labels
 
@@ -180,7 +188,7 @@ def evaluate_model_clause_level(model, X_val, y_val, verbose=False):
         for i in range(len(y_pred)):
             if y_pred[i] != y_val.iloc[i]:
                 print(X_val.iloc[i])
-                print(f"prediction:", y_pred[i], "actual:", y_val.iloc[i])
+                print("prediction:", y_pred[i], "actual:", y_val.iloc[i])
                 print("\n")
                 counter += 1
 
@@ -222,25 +230,36 @@ def threshold_graphs(contract_df, thresholds=range(1, 7), metric_type="f1"):
     return values, thresholds
 
 
-def highlight_climate_content(text, prediction, highlight_color="yellow"):
+def highlight_climate_content(results_df, text_column="sentence", prediction_column="prediction", keyword_column="contains_climate_keyword"):
     highlighted_text = ""
 
-    for segment, pred in zip(text, prediction):
-        if pred == 1:
-            # Highlight text segment
+    for _, row in results_df.iterrows():
+        text = row[text_column]
+        prediction = row[prediction_column]
+        keyword_match = row[keyword_column]
+
+        if prediction == 1 and keyword_match:
+            # Highlight in green for prediction + keyword match
+            color = "lightgreen"
             highlighted_segment = (
-                f"<span id='first-highlight' style='background-color: {highlight_color};'>{segment}</span>"
+                f"<span style='background-color: {color};'>{text}</span>"
             )
             highlighted_text += highlighted_segment + "<br><br>"
+
+        elif prediction == 1 and not keyword_match:
+            # Highlight in yellow for prediction only
+            color = "yellow"
+            highlighted_segment = (
+                f"<span style='background-color: {color};'>{text}</span>"
+            )
+            highlighted_text += highlighted_segment + "<br><br>"
+
         else:
-            # Add non-highlighted segment
-            highlighted_text += segment + "<br><br>"
+            # No highlight
+            highlighted_text += text + "<br><br>"
 
     # Wrap in basic HTML structure
     html_content = f"<html><body>{highlighted_text}</body></html>"
-
-    # convert to docx
-
     return html_content
 
 
@@ -249,26 +268,47 @@ def save_file(filename, content):
         f.write(content)
 
 
-def create_contract_df(X, data, y_pred, labelled=True):
-    X_df = pd.DataFrame({"text": X, "prediction": y_pred})
+def create_contract_df(results_df, processed_contracts, labelled=True):
+    X = results_df['sentence']
+    data = processed_contracts 
+    y_pred = results_df['prediction']
+    keyword_match = results_df['contains_climate_keyword']
+    
+    X_df = pd.DataFrame({"text": X, "prediction": y_pred, "contains_climate_keyword": keyword_match})
     combined_df = pd.concat([X_df, data], axis=1)
 
-    # group by contract id and see if the majority of the clauses are predicted as 1
+    # Group by contract_id and compute the sum of predicted positive clauses
     contract_level_preds = combined_df.groupby("contract_ids")["prediction"].sum()
-    contract_level_preds.sort_values(ascending=False)
+    contract_level_preds.sort_values(ascending=False, inplace=True)
+
+    # Compute keyword pass/fail per contract
+    keyword_pass_dict = {}
+    for contract_id, group in combined_df.groupby("contract_ids"):
+        predicted_clauses = group[group["prediction"] == 1]
+        if not predicted_clauses.empty:
+            no_keyword_count = (predicted_clauses["contains_climate_keyword"] == False).sum()
+            total_predicted = len(predicted_clauses)
+            # If 40% or more don't have a keyword match, mark as False
+            keyword_pass = (no_keyword_count / total_predicted) < 0.5
+        else:
+            keyword_pass = True  # If no clauses predicted as 1, we assume pass (or set to False if you prefer)
+        keyword_pass_dict[contract_id] = keyword_pass
+
+    keyword_pass_series = pd.Series(keyword_pass_dict)
 
     if labelled:
         contract_level_labels = combined_df.groupby("contract_ids")[
             "contract_label"
         ].first()
         contract_level_df = pd.concat(
-            [contract_level_labels, contract_level_preds], axis=1
+            [contract_level_labels, contract_level_preds, keyword_pass_series], axis=1
         )
-
+        contract_level_df.columns = ["contract_label", "prediction", "keyword_pass"]
     else:
-        contract_level_df = pd.DataFrame(contract_level_preds)
-        contract_level_df.reset_index(inplace=True)
+        contract_level_df = pd.concat([contract_level_preds, keyword_pass_series], axis=1)
+        contract_level_df.columns = ["prediction", "keyword_pass"]
 
+    contract_level_df.reset_index(inplace=True)
     return contract_level_df
 
 
@@ -375,15 +415,35 @@ def process_single_contract(file_path, texts, contract_ids):
 
 
 def create_threshold_buckets(contract_df):
-    bucket_1 = contract_df[
-        (contract_df["prediction"] >= 1) & (contract_df["prediction"] < 3)
-    ]
-    bucket_2 = contract_df[
-        (contract_df["prediction"] >= 3) & (contract_df["prediction"] < 7)
-    ]
-    bucket_3 = contract_df[contract_df["prediction"] >= 7]
-    bucket_none = contract_df[contract_df["prediction"] < 1]
-    return bucket_1, bucket_2, bucket_3, bucket_none
+    # Add a temporary column to track adjusted scores
+    df = contract_df.copy()
+
+    # Step 1: Determine initial bucket level
+    def assign_bucket(score):
+        if score >= 7:
+            return 3
+        elif score >= 3:
+            return 2
+        elif score >= 1:
+            return 1
+        else:
+            return 0
+
+    df["bucket"] = df["prediction"].apply(assign_bucket)
+
+    # Step 2: Downgrade if keyword_pass == False
+    df.loc[df["keyword_pass"] == False, "bucket"] -= 1
+
+    # Step 3: Ensure bucket is not less than 0
+    df["bucket"] = df["bucket"].clip(lower=0)
+
+    # Step 4: Assign contracts to buckets
+    bucket_0 = df[df["bucket"] == 0]  # none
+    bucket_1 = df[df["bucket"] == 1]  # could contain
+    bucket_2 = df[df["bucket"] == 2]  # likely
+    bucket_3 = df[df["bucket"] == 3]  # very likely
+
+    return bucket_1, bucket_2, bucket_3, bucket_0
 
 
 def print_percentages(
@@ -397,9 +457,9 @@ def print_percentages(
     )
 
     print("Not Likely: ", not_likely_percentage, "%")
-    print("Likely: ", likely_percentage, "%")
-    print("Very Likely: ", very_likely_percentage, "%")
-    print("Extremely Likely: ", extremely_likely_percentage, "%")
+    print("Could Contain: ", likely_percentage, "%")
+    print("Likely: ", very_likely_percentage, "%")
+    print("Very Likely: ", extremely_likely_percentage, "%")
 
     if return_result:
         return {
@@ -464,14 +524,14 @@ def make_folders(likely, very_likely, extremely_likely, none, temp_dir, output_f
 def print_single(likely, very_likely, extremely_likely, none, return_result=False):
     result = ""
     if len(extremely_likely) != 0:
-        result = "extremely likely"
-        output = "extremely likely"
-    elif len(very_likely) != 0:
         result = "very likely"
         output = "very likely"
-    elif len(likely) != 0:
+    elif len(very_likely) != 0:
         result = "likely"
         output = "likely"
+    elif len(likely) != 0:
+        result = "could contain"
+        output = "could contain"
     elif len(none) != 0:
         result = "unlikely"
         output = "unlikely"
@@ -490,3 +550,116 @@ def zip_folder(folder_path, zip_file_path):
             for file in files:
                 file_path = os.path.join(root, file)
                 zipf.write(file_path, os.path.relpath(file_path, folder_path))
+                
+climate_keywords = [
+    "adaptation", "agriculture", "air pollutants", "air quality", "allergen",
+    "alternative energy portfolio standard", "animal health", "asthma", "atmosphere",
+    "cafe standards", "cap and trade", "cap-and-trade-program", "carbon asset risks",
+    "carbon controls", "carbon dioxide", "co2", "carbon footprint", "carbon intensity",
+    "carbon pollution", "carbon pollution standard", "carbon tax", "catastrophic events",
+    "ch4", "changing precipitation patterns", "clean air act", "clean energy", "clean power plan",
+    "climate", "climate change", "climate change regulation", "climate change risk",
+    "climate disclosure", "climate issues", "climate opportunities", "climate reporting",
+    "climate risk", "climate risk disclosure", "climate risks", "climate-related financial risks",
+    "conference of the parties", "corporate average fuel economy", "crop failure", "droughts",
+    "earthquakes", "ecosystem", "emission", "emissions", "emissions certificates",
+    "emissions trading scheme", "emissions trading system", "emit", "environmental permits",
+    "ets", "eu ets", "extinction", "extreme weather", "extreme weather event", "fee and remission",
+    "fire season", "flooding", "fossil fuel", "fossil fuel reserves", "fossil fuels", "fuel economy",
+    "ghg", "ghg emissions", "ghg regulation", "ghg trades", "global average temperature",
+    "global climate", "global warming", "global warming potential", "gwp", "green",
+    "green initiatives", "greenhouse effect", "greenhouse gas", "greenhouse gases",
+    "gwp source", "habitat", "heat waves", "heavy precipitation", "hfcs", "high temperatures",
+    "human health", "hurricanes", "hydro fluorocarbon", "infectious disease", "insured losses",
+    "intended nationally determined contribution", "intergovernmental panel on climate change",
+    "invasive species", "kyoto protocol", "lcfs", "low carbon fuel standard", "methane",
+    "mitigation", "montreal protocol", "n2o", "natural disasters", "natural gas", "nf3",
+    "nitrogen oxides", "nox", "nitrogen trifluoride", "nitrous oxide", "oil", "opportunities regulations",
+    "ozone", "ozone-depleting substances", "ods", "paris agreement", "paris climate accord",
+    "particulate matter", "parts per million", "per fluorocarbons", "pfcs", "persistent organic pollutants",
+    "physical risks", "pollutant", "pre-industrial levels of carbon dioxide", "precipitation",
+    "precipitation patterns", "rain", "rainfall", "rainwater", "regulation or disclosure of gh emissions",
+    "regulatory risks", "renewable", "renewables", "renewable energy", "renewable energy goal",
+    "renewable energy standard", "renewable portfolio standard", "renewable resource", "reserves",
+    "risks from climate change", "risks regulations", "rps", "sea level rise", "sea-level rise",
+    "sf6", "significant air emissions", "solar radiation", "sulfur oxides", "sox",
+    "sulphur hexafluoride", "sustainab*", "temperatures", "ultraviolet radiation",
+    "ultraviolet (uv-b) radiation", "united nations framework convention on climate change",
+    "water availability", "water supply", "water vapor", "weather", "weather events",
+    "weather impacts", "wildfires", "energy", "energy efficiency", "energy transition",
+]
+
+wildcard_keywords = [kw.replace('*', '.*') for kw in climate_keywords]
+regex_patterns = [rf"\b{kw}\b" for kw in wildcard_keywords]
+compiled_patterns = [re.compile(p) for p in regex_patterns]
+
+def climate_keyword_matching(sentence: str, patterns: List[re.Pattern], threshold: int = 85) -> bool:
+    sentence_lower = sentence.lower()
+
+    # Fast regex pass
+    for pattern in patterns:
+        if pattern.search(sentence_lower):
+            return True
+
+    # Skip fuzzy check if sentence is very short
+    if len(sentence_lower.split()) < 4:
+        return False
+
+    # Optimized fuzzy match
+    for keyword in climate_keywords:
+        if token_set_ratio(sentence_lower, keyword.lower()) >= threshold:
+            return True
+
+    return False
+
+def add_climate_keyword_column(df: pd.DataFrame, text_column: str = "sentence") -> pd.DataFrame:
+    df = df.copy()
+    df["contains_climate_keyword"] = Parallel(n_jobs=-1)(
+        delayed(climate_keyword_matching)(x, compiled_patterns) for x in df[text_column]
+    )
+    return df
+
+def create_result_df(results, processed_contracts): 
+    result_df = pd.DataFrame({
+    "prediction": results,
+    "sentence": processed_contracts["text"]
+    })
+    
+    result_df = add_climate_keyword_column(result_df)
+    
+    result_df_true = result_df[result_df['contains_climate_keyword'] == True]
+    
+    return result_df, result_df_true
+
+def predict_climatebert(texts, tokenizer, device, model, batch_size=16):
+    model.eval()  # Ensure eval mode
+
+    all_preds = []
+    all_probs = []
+
+    for i in range(0, len(texts), batch_size):
+        batch = texts[i:i+batch_size]
+
+        # Tokenize on CPU then move each tensor to device
+        inputs = tokenizer(
+            batch,
+            padding=True,
+            truncation=True,
+            return_tensors="pt",
+            max_length=512
+        )
+        inputs = {key: val.to(device) for key, val in inputs.items()}
+
+        with torch.no_grad():
+            outputs = model(**inputs)
+            probs = softmax(outputs.logits, dim=1)
+            preds = torch.argmax(probs, dim=1)
+
+        all_preds.append(preds.cpu())
+        all_probs.append(probs.cpu())
+
+    # Concatenate tensors once (faster than extend + numpy conversion per loop)
+    all_preds = torch.cat(all_preds).numpy()
+    all_probs = torch.cat(all_probs).numpy()
+
+    return all_preds, all_probs

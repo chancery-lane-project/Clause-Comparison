@@ -140,6 +140,8 @@ plotly = "^6.0.1"
 lightgbm = "^4.6.0"
 xgboost = "^3.0.0"
 hdbscan = "^0.8.40"
+fuzzywuzzy = "^0.18.0"
+rapidfuzz = "^3.13.0"
 
 
 [tool.poetry.group.dev.dependencies]
