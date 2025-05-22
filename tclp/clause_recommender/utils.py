@@ -600,4 +600,3 @@ def prepare_clause_tags(clause_tags, final_df):
 
     return clause_tags
     
-#adding words here to test a commit issue    
