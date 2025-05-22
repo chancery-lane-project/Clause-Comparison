@@ -599,4 +599,4 @@ def prepare_clause_tags(clause_tags, final_df):
     clause_tags['PrimaryTag'] = clause_tags['Tag'].apply(most_common_tag)
 
     return clause_tags
-    
+     
